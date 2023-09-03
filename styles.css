@@ -1,0 +1,577 @@
+body {
+font-family: 'Staatliches', cursive;}
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.event {
+  margin-top: 120px;
+  border-radius: 5px;
+  font-size: 20px;
+  position: relative; /* Add relative positioning */
+  background-color: #ffffff;
+  border: none;
+}
+
+.event-description {
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  display: flex;
+  margin: 15px auto; /* Center horizontally */
+  padding: 20px;
+  max-width: 600px; /* Limit the maximum width if necessary */
+  border-radius: 10px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 22px;
+  height: 65px;
+}
+
+.feedback {
+  font-weight: bold;
+  margin-top: 0px;
+  font-weight: 800;
+  position: relative;
+}
+
+button {
+  margin-top: 15px;
+  width: 80px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: none;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: -20px; /* Adjust this value to move the buttons down */
+  
+}
+
+.action-button {
+  background-color: #f0f9ff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.menu-button,
+.restart-game-button,
+.next-button {
+  color: rgb(255, 255, 255);
+  background-color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin: -5px;
+  margin-top: 15px;
+  width: 110px;
+  font-family: 'Staatliches', cursive;
+  transition: background-color 0.3s, color 0.3s; /* Add transition for smooth color change */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.menu-button:hover,
+.restart-game-button:hover,
+.next-button:hover {
+  background-color: #ffffff; /* Change background color on hover */
+  color: #000; /* Change text color on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.gamemode-box {
+  width: 75px;
+  height: 25px;
+  background-color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 596px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px -4px 6px rgba(0, 0, 0, 0); /* Add box shadow */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gamemode-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-bottom: 14px;
+}
+
+.gamemode-box:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.gamemode-box:hover .gamemode-text {
+  color: rgb(0, 0, 0);
+}
+
+.gamemode-text {
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap; /* Prevent text from wrapping */
+  font-family: 'Staatliches', cursive;
+  color: #ffffff;
+}
+
+/* Styles for smaller screens (mobile devices) */
+@media (max-width: 767px) {
+  .gamemode-box {
+    background-color: rgba(0, 0, 0);
+  }
+
+  .gamemode-box .gamemode-text {
+    color: white;
+  }
+}
+
+.year-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  height: 90px;
+}
+
+.year-digit {
+  width: 75px;
+  height: 90px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0 5px;
+  background-color: #f0ffff; /* Reset box color to default */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent; /* Hide the font */
+}
+
+/* Add this CSS to handle the touch interaction */
+.year-digit:active {
+  transform: scale(1); /* Reset the scale to normal */
+}
+
+#yearInput:hover {
+  border-color: #313030;
+}
+
+.correct-year {
+  color: #86dc3d; /* Green color for correct year */
+  font-size: 30px; /* Adjust the font size as needed */
+  font-weight: 900;
+}
+
+.number-button {
+  padding: 5px;
+  margin: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add transform transition */
+  width: 40px;
+  height: 40px;
+  font-weight: 550;
+}
+
+.number-button:hover {
+  transform: scale(1.25); /* Increase size by 25% (10px) on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+
+/* Add this animation style to your existing CSS */
+@keyframes wiggle {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  75% {
+    transform: translateX(-2px);
+  }
+}
+
+/* Add this animation class to your existing CSS */
+.wiggle-animation {
+  animation: wiggle 0.2s ease-in-out 2; /* Run the animation twice */
+}
+
+/* Add this CSS to your existing styles */
+.popup-message {
+  position: fixed;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none; /* Prevent interaction with the hidden pop-up */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.button-icon {
+  width: 55px;
+  height: 55px;
+  vertical-align: middle;
+  transition: transform 0.2s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.button-icon:hover {
+  transform: scale(1.2); /* Add a slight zoom effect on hover */
+}
+
+#backspaceButton:hover #backspaceImage {
+  content: url('./assets/icons/backspace-hover.png');
+}
+
+/* Add this to your styles.css */
+#clearButton:hover #clearImage {
+  content: url('./assets/icons/delete-hover.png');
+}
+
+#submitGuess:hover #submitImage {
+  content: url('./assets/icons/accept-hover.png');
+}
+
+/* Styles for the top bar */
+.top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  color: #fff;
+  z-index: 100; /* Ensure the top bar is above other elements */
+  margin-bottom: 20px; /* Add margin below the top bar */
+}
+
+/* Styles for the menu */
+.menu {
+  width: 100%;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.logo img {
+  height: 50px; /* Adjust the height to make the logo smaller */
+  margin-right: 10px; /* Reduce the margin */
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Push the icons to the right */
+}
+
+.event-type-button {
+  /* Common styles for tab buttons */
+  font-size: 18px;
+  padding: 10px 10px; /* Add horizontal padding for better spacing */
+  border-radius: 5px;
+  font-family: 'Staatliches', cursive;
+  transition: background-color 0.3s, color 0.3s; /* Add transitions for smooth changes */
+  color: #000000;
+  text-align: center;
+  width: 100px;
+  
+}
+
+.event-type-button.active {
+  /* Styles for the active tab */
+  background-color: #000000;
+  border-color: #ccc;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 24px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.event-type-buttons-container {
+  display: flex;
+  justify-content: space-between; /* Distribute buttons evenly */
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.rating, .rating-value, .score-item.rating, .score-item.rating-value {
+  visibility: hidden;
+}
+
+
+
+.score-rating-container p {
+  font-size: 18px;
+  margin: 0px 30px; /* 10px bottom, 20px sides */
+  width: auto; /* Reset width */
+  
+}
+/* Hide the hidden class */
+.hidden {
+  display: none;
+  visibility: hidden;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the parent container for score and rating */
+.score-rating-container {
+  position: absolute;
+  top: 600px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribute elements evenly */
+  flex-direction: row; /* Vertically align elements */
+  align-items: center; /* Horizontally center elements */
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 92%; /* Default to 100% width */
+  font-size: 20px;
+  font-weight: 550;
+  margin-top: 10px;
+}
+
+/* Media query for screens with a width of 600px or wider */
+@media (min-width: 600px) {
+  .score-rating-container {
+    width: 600px; /* Set width to 600px on wider screens */
+    left: calc(50%); /* Center horizontally with 600px width */
+  }
+}
+
+
+/* Style the specific elements inside the score-rating-container */
+.score-rating-container .combo-value,
+.score-rating-container .rating-value,
+.score-rating-container .total-health-value,
+.score-rating-container .round-value {
+  font-size: 18px;
+  font-family: 'Staatliches', cursive;
+  text-align: center;
+  white-space: nowrap; /* Prevent text from wrapping */
+  
+}
+
+.score-rating-container .combo-value,
+.score-rating-container .rating-value,
+.score-rating-container .total-health-value,
+.score-rating-container .round-value {
+  font-size: 28px;
+  font-weight: 700;
+  
+}
+
+#resume-button:hover {
+  background-color: #333; /* Change background color on hover */
+}
+
+/* Add styles for the pop-up buttons */
+.start-game-button,
+.freeplay-button,
+.resume-button {
+  background-color: #000000;
+  width: 200px;
+  color: #ffffff;
+  font-size: 26px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'Staatliches', cursive;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.start-game-button:hover,
+.freeplay-button:hover,
+.resume-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Add styles for the pop-up overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent black background */
+  backdrop-filter: blur(10px); /* Apply blur effect to the background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure the overlay is on top */
+  visibility: hidden; /* Hide the overlay by default */
+  opacity: 0; /* Start with 0 opacity */
+  transition: visibility 0s, opacity 0.5s;
+}
+
+/* Styles for the popup message */
+.popup-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 1001;
+  max-width: 400px; /* Adjust the maximum width as needed */
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 1001; /* Make sure it's above the overlay */
+}
+
+#gameOverPopup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.popup-content {
+  background-color: #fff;
+
+  margin: 0 auto; /* Center horizontally */
+  position: absolute;
+  top: 50%; /* Position at 50% from the top */
+  left: 50%; /* Position at 50% from the left */
+  transform: translate(-50%, -50%); /* Center vertically and horizontally */
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the "Play Again" and "Freeplay" buttons */
+#playAgainButton,
+#freeplayAgainButton {
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px;
+  font-family: 'Staatliches', cursive;
+  transition: background-color 0.3s, color 0.3s;
+  width: 110px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+#playAgainButton:hover,
+#freeplayAgainButton:hover {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hide the rules popup by default */
+.rules-popup {
+  margin-top: 55px;
+}
+
+/* Add this CSS to style the health deduction element */
+.health-deduction {
+  position: absolute;
+  font-size: 24px;
+  color: red;
+  display: none;
+  animation: fadeOut 4s forwards;
+  margin-top: -32.5px;
+  margin-left: 75px;
+}
+
+.health-increment {
+  position: absolute;
+  font-size: 24px;
+  color: green; /* Set the color to green */
+  display: none;
+  animation: fadeOut 4s forwards;
+  left: 54%;
+  margin-top: -32.5px;
+  margin-left: 75px;
+}
+
+
+/* Add this CSS for the fade-out animation */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+

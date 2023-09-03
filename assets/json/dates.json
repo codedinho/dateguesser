@@ -1,0 +1,1214 @@
+[
+{
+    "id": 1,
+    "description": "What year was the signing of the Declaration of Independence?",
+    "correctDate": "1776-07-04",
+    "eventType": "history"
+},
+{
+    "id": 2,
+    "description": "What year was the Battle of Gettysburg?",
+    "correctDate": "1863-07-01",
+    "eventType": "history"
+},
+{
+    "id": 3,
+    "description": "What year was the Wright brothers' first powered flight?",
+    "correctDate": "1903-12-17",
+    "eventType": "history"
+},
+{
+    "id": 4,
+    "description": "What year was the Apollo 11 Moon landing?",
+    "correctDate": "1969-07-20",
+    "eventType": "history"
+},
+{
+    "id": 5,
+    "description": "What year did the Berlin Wall fall?",
+    "correctDate": "1989-11-09",
+    "eventType": "history"
+},
+{
+    "id": 6,
+    "description": "What year did World War II end?",
+    "correctDate": "1945-09-02",
+    "eventType": "history"
+},
+{
+    "id": 7,
+    "description": "When was the Statue of Liberty dedicated?",
+    "correctDate": "1886-10-28",
+    "eventType": "history"
+},
+{
+    "id": 8,
+    "description": "What year was Martin Luther King Jr.'s 'I Have a Dream' speech?",
+    "correctDate": "1963-08-28",
+    "eventType": "history"
+},
+{
+    "id": 9,
+    "description": "What year was the rise of the Ottoman Empire?",
+    "correctDate": "1299-07-27",
+    "eventType": "history"
+},
+{
+    "id": 10,
+    "description": "When was the Hiroshima atomic bombing?",
+    "correctDate": "1945-08-06",
+    "eventType": "history"
+},
+{
+    "id": 11,
+    "description": "When was Einstein's theory of relativity published?",
+    "correctDate": "1905-11-25",
+    "eventType": "history"
+},
+{
+    "id": 12,
+    "description": "When was Nelson Mandela released from prison?",
+    "correctDate": "1990-02-11",
+    "eventType": "history"
+},
+{
+    "id": 13,
+    "description": "What year was the first successful human heart transplant?",
+    "correctDate": "1967-12-03",
+    "eventType": "history"
+},
+{
+    "id": 14,
+    "description": "Louis Pasteur develops rabies vaccine",
+    "correctDate": "1885-07-06",
+    "eventType": "history"
+},
+{
+    "id": 15,
+    "description": "When was the Great Fire of London?",
+    "correctDate": "1666-09-02",
+    "eventType": "history"
+},
+{
+    "id": 16,
+    "description": "When did Athens first host the Olympic Games?",
+    "correctDate": "1896-04-06",
+    "eventType": "sports"
+},
+{
+    "id": 17,
+    "description": "When was the first Super Bowl?",
+    "correctDate": "1967-01-15",
+    "eventType": "sports"
+},
+{
+    "id": 18,
+    "description": "In what year did Leonardo da Vinci paint the Mona Lisa?",
+    "correctDate": "1503",
+    "eventType": "history"
+},  
+{
+    "id": 19,
+    "description": "What year did the signing of the Treaty of Paris take place?",
+    "correctDate": "1783-09-03",
+    "eventType": "history"
+},
+{
+    "id": 20,
+    "description": "What year was the telephone by Alexander Graham Bell invented?",
+    "correctDate": "1876-03-10",
+    "eventType": "history"
+},
+{
+    "id": 21,
+    "description": "When was 'Jurassic Park' released?",
+    "correctDate": "1993-06-11",
+    "eventType": "movies"
+},
+{
+    "id": 22,
+    "description": "What year was the light bulb by Thomas Edison invented?",
+    "correctDate": "1879-10-21",
+    "eventType": "history"
+},
+{
+    "id": 23,
+    "description": "What year was the light bulbprinting press by Johannes Gutenberg invented?",
+    "correctDate": "1440-05-14",
+    "eventType": "history"
+},
+{
+    "id": 24,
+    "description": "When was 'E.T. the Extra-Terrestrial' released?",
+    "correctDate": "1982-06-11",
+    "eventType": "movies"
+},
+{
+    "id": 25,
+    "description": "What year was the First Winter Olympic Games?",
+    "correctDate": "1924-01-25",
+    "eventType": "sports"
+},
+{
+    "id": 26,
+    "description": "When was 'Gone with the Wind' released?",
+    "correctDate": "1939-12-15",
+    "eventType": "movies"
+},
+{
+    "id": 27,
+    "description": "What year was the internet invented?",
+    "correctDate": "1969-10-29",
+    "eventType": "history"
+},
+{
+    "id": 28,
+    "description": "First electric car produced",
+    "correctDate": "1828-12-12",
+    "eventType": "history"
+},
+{
+    "id": 29,
+    "description": "When was 'The Godfather' released?",
+    "correctDate": "1972-03-24",
+    "eventType": "movies"
+},
+{
+    "id": 30,
+    "description": "What year was the first telephone call by Alexander Graham Bell?",
+    "correctDate": "1876-03-10",
+    "eventType": "history"
+},
+{
+    "id": 31,
+    "description": "What year was the first computer mouse demonstrated?",
+    "correctDate": "1968-12-09",
+    "eventType": "history"
+},
+{
+    "id": 32,
+    "description": "When was 'The Wizard of Oz' released?",
+    "correctDate": "1939-08-25",
+    "eventType": "movies"
+},
+{
+    "id": 33,
+    "description": "First successful organ transplant",
+    "correctDate": "1954-12-23",
+    "eventType": "history"
+},
+{
+    "id": 34,
+    "description": "What year was the steam engine invented?",
+    "correctDate": "1712-04-10",
+    "eventType": "history"
+},
+{
+    "id": 35,
+    "description": "What year was the first televised Olympic Games?",
+    "correctDate": "1936-08-01",
+    "eventType": "sports"
+},
+{
+    "id": 36,
+    "description": "When was 'Avatar' released?",
+    "correctDate": "2009-12-18",
+    "eventType": "movies"
+},
+{
+    "id": 37,
+    "description": "What year was the telephone by Elisha Gray invented?",
+    "correctDate": "1876-03-10",
+    "eventType": "history"
+},
+{
+    "id": 38,
+    "description": "What year was the 'Titanic' released?",
+    "correctDate": "1997-12-19",
+    "eventType": "movies"
+},
+{
+    "id": 39,
+    "description": "what year was the walkman invented?",
+    "correctDate": "1979-07-01",
+    "eventType": "history"
+},
+{
+    "id": 40,
+    "description": "What year was the first successful polio vaccine?",
+    "correctDate": "1955-04-12",
+    "eventType": "history"
+},
+{
+    "id": 41,
+    "description": "What year was the camera invented?",
+    "correctDate": "1826-06-11",
+    "eventType": "history"
+},
+{
+    "id": 42,
+    "description": "When was 'Jurassic Park' released?",
+    "correctDate": "1993-06-11",
+    "eventType": "movies"
+},
+{
+    "id": 43,
+    "description": "What year was 'Hallelujah' by Leonard Cohen released?",
+    "correctDate": "1984-12-01",
+    "eventType": "music"
+},
+{
+    "id": 44,
+    "description": "When was 'Harry Potter and the Sorcerer's Stone' released?",
+    "correctDate": "2001-11-16",
+    "eventType": "movies"
+},
+{
+    "id": 45,
+    "description": "When was 'Harry Potter and the Chamber of Secrets' released?",
+    "correctDate": "2002-11-15",
+    "eventType": "movies"
+},
+{
+    "id": 46,
+    "description": "When was 'Harry Potter and the Prisoner of Azkaban' released?",
+    "correctDate": "2004-06-04",
+    "eventType": "movies"
+},
+{
+    "id": 47,
+    "description": "When was 'Harry Potter and the Goblet of Fire' released?",
+    "correctDate": "2005-11-18",
+    "eventType": "movies"
+},
+{
+    "id": 48,
+    "description": "When was 'Harry Potter and the Order of the Phoenix' released?",
+    "correctDate": "2007-07-11",
+    "eventType": "movies"
+},
+{
+    "id": 49,
+    "description": "When was 'Harry Potter and the Half-Blood Prince' released?",
+    "correctDate": "2009-07-15",
+    "eventType": "movies"
+},
+{
+    "id": 50,
+    "description": "When was 'Harry Potter and the Deathly Hallows – Part 1' released?",
+    "correctDate": "2010-11-19",
+    "eventType": "movies"
+},
+{
+    "id": 51,
+    "description": "When was 'Harry Potter and the Deathly Hallows – Part 2' released?",
+    "correctDate": "2011-07-15",
+    "eventType": "movies"
+},
+{
+    "id": 52,
+    "description": "When was 'Star Wars: Episode I - The Phantom Menace' released?",
+    "correctDate": "1999-05-19",
+    "eventType": "movies"
+},
+{
+    "id": 53,
+    "description": "When was 'Star Wars: Episode II - Attack of the Clones' released?",
+    "correctDate": "2002-05-16",
+    "eventType": "movies"
+},
+{
+    "id": 54,
+    "description": "When was 'Star Wars: Episode III - Revenge of the Sith' released?",
+    "correctDate": "2005-05-19",
+    "eventType": "movies"
+},
+{
+    "id": 55,
+    "description": "When was 'Star Wars: Episode IV - A New Hope' released?",
+    "correctDate": "1977-05-25",
+    "eventType": "movies"
+},
+{
+    "id": 56,
+    "description": "When was 'Star Wars: Episode V - The Empire Strikes Back' released?",
+    "correctDate": "1980-05-17",
+    "eventType": "movies"
+},
+{
+    "id": 57,
+    "description": "When was 'Star Wars: Episode VI - Return of the Jedi' released?",
+    "correctDate": "1983-05-25",
+    "eventType": "movies"
+},
+{
+    "id": 58,
+    "description": "When was 'Star Wars: Episode VII - The Force Awakens' released?",
+    "correctDate": "2015-12-18",
+    "eventType": "movies"
+},
+{
+    "id": 59,
+    "description": "When was 'Star Wars: Episode VIII - The Last Jedi' released?",
+    "correctDate": "2017-12-15",
+    "eventType": "movies"
+},
+{
+    "id": 60,
+    "description": "When was 'Star Wars: Episode IX - The Rise of Skywalker' released?",
+    "correctDate": "2019-12-20",
+    "eventType": "movies"
+},
+{
+    "id": 61,
+    "description": "When was 'The Mandalorian' released?",
+    "correctDate": "2019-11-12",
+    "eventType": "series"
+},
+{
+    "id": 62,
+    "description": "When was the original 'The Lion King' released?",
+    "correctDate": "1994-06-15",
+    "eventType": "movies"
+},
+{
+    "id": 63,
+    "description": "When was 'Jurassic World' released?",
+    "correctDate": "2015-06-09",
+    "eventType": "movies"
+},
+{
+    "id": 64,
+    "description": "When was 'Frozen' released?",
+    "correctDate": "2013-11-22",
+    "eventType": "movies"
+},
+{
+    "id": 65,
+    "description": "When was 'Jurassic World: Fallen Kingdom' released?",
+    "correctDate": "2018-06-22",
+    "eventType": "movies"
+},
+{
+    "id": 66,
+    "description": "When was the original 'Iron Man' released?",
+    "correctDate": "2008-05-02",
+    "eventType": "movies"
+},
+{
+    "id": 67,
+    "description": "When was the original 'The Incredible Hulk' released?",
+    "correctDate": "2008-06-13",
+    "eventType": "movies"
+},
+{
+    "id": 68,
+    "description": "When was 'Iron Man 2' released?",
+    "correctDate": "2010-05-07",
+    "eventType": "movies"
+},
+{
+    "id": 4,
+    "description": "When was 'Thor' released?",
+    "correctDate": "2011-05-06",
+    "eventType": "movies"
+},
+{
+    "id": 69,
+    "description": "When was 'Captain America: The First Avenger' released?",
+    "correctDate": "2011-07-22",
+    "eventType": "movies"
+},
+{
+    "id": 70,
+    "description": "When was 'The Avengers' released?",
+    "correctDate": "2012-04-11",
+    "eventType": "movies"
+},
+{
+    "id": 71,
+    "description": "When was 'Iron Man 3' released?",
+    "correctDate": "2013-05-03",
+    "eventType": "movies"
+},
+{
+    "id": 72,
+    "description": "When was 'Thor: The Dark World' released?",
+    "correctDate": "2013-11-08",
+    "eventType": "movies"
+},
+{
+    "id": 73,
+    "description": "When was 'Captain America: The Winter Soldier' released?",
+    "correctDate": "2014-04-04",
+    "eventType": "movies"
+},
+{
+    "id": 74,
+    "description": "When was 'Guardians of the Galaxy' released?",
+    "correctDate": "2014-08-01",
+    "eventType": "movies"
+},
+{
+    "id": 75,
+    "description": "When was 'Avengers: Age of Ultron' released?",
+    "correctDate": "2015-04-22",
+    "eventType": "movies"
+},
+{
+    "id": 76,
+    "description": "When was 'Ant-Man' released?",
+    "correctDate": "2015-07-17",
+    "eventType": "movies"
+},
+{
+    "id": 77,
+    "description": "When was 'Captain America: Civil War' released?",
+    "correctDate": "2016-05-06",
+    "eventType": "movies"
+},
+{
+    "id": 78,
+    "description": "When was 'Doctor Strange' released?",
+    "correctDate": "2016-11-04",
+    "eventType": "movies"
+},
+{
+    "id": 79,
+    "description": "When was 'Guardians of the Galaxy Vol. 2' released?",
+    "correctDate": "2017-05-05",
+    "eventType": "movies"
+},
+{
+    "id": 80,
+    "description": "When was 'Spider-Man: Homecoming' released?",
+    "correctDate": "2017-07-07",
+    "eventType": "movies"
+},
+{
+    "id": 81,
+    "description": "When was 'Thor: Ragnarok' released?",
+    "correctDate": "2017-11-03",
+    "eventType": "movies"
+},
+{
+    "id": 82,
+    "description": "When was 'Black Panther' released?",
+    "correctDate": "2018-02-16",
+    "eventType": "movies"
+},
+{
+    "id": 83,
+    "description": "When was 'Avengers: Infinity War' released?",
+    "correctDate": "2018-04-27",
+    "eventType": "movies"
+},
+{
+    "id": 84,
+    "description": "When was 'Ant-Man and The Wasp' released?",
+    "correctDate": "2018-07-06",
+    "eventType": "movies"
+},
+{
+    "id": 85,
+    "description": "When was 'Captain Marvel' released?",
+    "correctDate": "2019-03-08",
+    "eventType": "movies"
+},
+{
+    "id": 86,
+    "description": "When was 'Avengers: Endgame' released?",
+    "correctDate": "2019-04-26",
+    "eventType": "movies"
+},
+{
+    "id": 87,
+    "description": "When was 'Spider-Man: Far From Home' released?",
+    "correctDate": "2019-07-02",
+    "eventType": "movies"
+},
+{
+    "id": 88,
+    "description": "When was 'Black Widow' released?",
+    "correctDate": "2021-07-09",
+    "eventType": "movies"
+},
+{
+    "id": 89,
+    "description": "When was 'Shang-Chi and the Legend of the Ten Rings' released?",
+    "correctDate": "2021-09-03",
+    "eventType": "movies"
+},
+{
+    "id": 90,
+    "description": "When was 'Eternals' released?",
+    "correctDate": "2021-11-05",
+    "eventType": "movies"
+},
+{
+    "id": 91,
+    "description": "When was 'Spider-Man: No Way Home' released?",
+    "correctDate": "2021-12-17",
+    "eventType": "movies"
+},
+{
+    "id": 92,
+    "description": "What year did the Titanic sink?",
+    "correctDate": "1912-04-15",
+    "eventType": "history"
+},
+{
+    "id": 93,
+    "description": "When was the FIFA World Cup first held?",
+    "correctDate": "1930-07-13",
+    "eventType": "sports"
+},
+{
+    "id": 94,
+    "description": "When was the first Super Bowl played?",
+    "correctDate": "1967-01-15",
+    "eventType": "sports"
+},
+{
+    "id": 95,
+    "description": "When was the Summer Olympics held in Rio de Janeiro?",
+    "correctDate": "2016-08-05",
+    "eventType": "sports"
+},
+{
+    "id": 96,
+    "description": "When was the Winter Olympics held in Pyeongchang?",
+    "correctDate": "2018-02-09",
+    "eventType": "sports"
+},
+{
+    "id": 97,
+    "description": "When was the UEFA Champions League final held in Istanbul?",
+    "correctDate": "2023-06-10",
+    "eventType": "sports"
+},
+{
+    "id": 98,
+    "description": "When was the FIFA World Cup held in Russia?",
+    "correctDate": "2018-06-14",
+    "eventType": "sports"
+},
+{
+    "id": 99,
+    "description": "When was the first Thanksgiving celebrated in the United States?",
+    "correctDate": "1621-11-01",
+    "eventType": "history"
+},
+{
+    "id": 100,
+    "description": "When was the Magna Carta signed?",
+    "correctDate": "1215-06-15",
+    "eventType": "history"
+},
+{
+    "id": 101,
+    "description": "When was the FIFA World Cup held in France?",
+    "correctDate": "1998-06-10",
+    "eventType": "sports"
+},
+{
+    "id": 102,
+    "description": "When was the UEFA European Championship held in Portugal?",
+    "correctDate": "2004-06-12",
+    "eventType": "sports"
+},
+{
+    "id": 103,
+    "description": "When was the first flight by the Wright brothers?",
+    "correctDate": "1903-12-17",
+    "eventType": "history"
+},
+{
+    "id": 104,
+    "description": "When was the first moon landing?",
+    "correctDate": "1969-07-20",
+    "eventType": "history"
+},
+{
+    "id": 105,
+    "description": "When was the fall of the Berlin Wall?",
+    "correctDate": "1989-11-09",
+    "eventType": "history"
+},
+{
+    "id": 106,
+    "description": "When was the Louisiana Purchase finalized?",
+    "correctDate": "1803-04-30",
+    "eventType": "history"
+},
+{
+    "id": 107,
+    "description": "When was the first color television broadcast?",
+    "correctDate": "1954-09-04",
+    "eventType": "history"
+},
+{
+    "id": 108,
+    "description": "When was the first official baseball game played?",
+    "correctDate": "1846-06-19",
+    "eventType": "sports"
+},
+{
+    "id": 109,
+    "description": "When was the first basketball game played?",
+    "correctDate": "1891-12-21",
+    "eventType": "sports"
+},
+{
+    "id": 110,
+    "description": "When was the first FIFA World Cup held in the United States?",
+    "correctDate": "1994-06-17",
+    "eventType": "sports"
+},
+{
+    "id": 141,
+    "description": "When was the 'Battle of the Sexes' tennis match between Billie Jean King and Bobby Riggs?",
+    "correctDate": "1973-09-20",
+    "eventType": "sports"
+},
+{
+    "id": 142,
+    "description": "When was the 'Rumble in the Jungle' boxing match between Muhammad Ali and George Foreman?",
+    "correctDate": "1974-10-30",
+    "eventType": "sports"
+},
+{
+    "id": 143,
+    "description": "When was the Super Bowl I between the Green Bay Packers and Kansas City Chiefs?",
+    "correctDate": "1967-01-15",
+    "eventType": "sports"
+},
+{
+    "id": 144,
+    "description": "When was the FIFA World Cup final between Brazil and Italy known as the 'Game of the Century'?",
+    "correctDate": "1970-06-17",
+    "eventType": "sports"
+},
+{
+    "id": 145,
+    "description": "When was the Ashes Test cricket match that introduced the concept of 'Bodyline' tactics?",
+    "correctDate": "1932-12-29",
+    "eventType": "sports"
+},
+{
+    "id": 146,
+    "description": "When did Serena Williams win her first Grand Slam title?",
+    "correctDate": "1999-09-11",
+    "eventType": "sports"
+},
+{
+    "id": 147,
+    "description": "When was the 'Shot Heard 'Round the World' baseball game between New York Giants and Brooklyn Dodgers?",
+    "correctDate": "1951-10-03",
+    "eventType": "sports"
+},
+{
+    "id": 148,
+    "description": "When was the 'Black Power Salute' at the Mexico City Olympics?",
+    "correctDate": "1968-10-16",
+    "eventType": "sports"
+},
+{
+    "id": 149,
+    "description": "When was the first official cricket Test match between England and Australia?",
+    "correctDate": "1877-03-15",
+    "eventType": "sports"
+},
+{
+    "id": 150,
+    "description": "When was the famous 'Game 6' in the baseball World Series between the New York Mets and Boston Red Sox?",
+    "correctDate": "1986-10-25",
+    "eventType": "sports"
+},
+{
+    "id": 151,
+    "description": "When was the 'Bartman Game' in the NLCS between the Chicago Cubs and Florida Marlins?",
+    "correctDate": "2003-10-14",
+    "eventType": "sports"
+},
+{
+    "id": 152,
+    "description": "When was the famous 'Music City Miracle' NFL playoff game between the Tennessee Titans and Buffalo Bills?",
+    "correctDate": "2000-01-08",
+    "eventType": "sports"
+},
+{
+    "id": 153,
+    "description": "When was the first Super Bowl appearance of the New England Patriots and Tom Brady?",
+    "correctDate": "2002-02-03",
+    "eventType": "sports"
+},
+{
+    "id": 154,
+    "description": "When was the first FIFA World Cup held in the United States?",
+    "correctDate": "1994-06-17",
+    "eventType": "sports"
+},
+{
+    "id": 155,
+    "description": "When was the famous 'Thrilla in Manila' boxing match between Muhammad Ali and Joe Frazier?",
+    "correctDate": "1975-10-01",
+    "eventType": "sports"
+},
+{
+    "id": 156,
+    "description": "When was the 'Fight of the Century' boxing match between Muhammad Ali and Joe Frazier?",
+    "correctDate": "1971-03-08",
+    "eventType": "sports"
+},
+{
+    "id": 157,
+    "description": "When was the 'Hand of God' goal by Diego Maradona in the FIFA World Cup quarterfinal?",
+    "correctDate": "1986-06-22",
+    "eventType": "sports"
+},
+{
+    "id": 158,
+    "description": "When was the 'Miracle on Ice' ice hockey game between USA and USSR?",
+    "correctDate": "1980-02-22",
+    "eventType": "sports"
+},
+{
+    "id": 159,
+    "description": "What year was 'Bad Romance' by Lady Gaga released?",
+    "correctDate": "2009-10-26",
+    "eventType": "music"
+},
+{
+    "id": 160,
+    "description": "What year was 'Radio Ga Ga' by Queen released?",
+    "correctDate": "1984-01-23",
+    "eventType": "music"
+},
+{
+    "id": 161,
+    "description": "What year was 'Like a Prayer' by Madonna released?",
+    "correctDate": "1989-03-03",
+    "eventType": "music"
+},
+{
+    "id": 162,
+    "description": "What year was 'Blinding Lights' by The Weeknd released?",
+    "correctDate": "2019-11-29",
+    "eventType": "music"
+},
+{
+    "id": 163,
+    "description": "What year was 'Billie Jean' by Michael Jackson released?",
+    "correctDate": "1983-01-02",
+    "eventType": "music"
+},
+{
+    "id": 164,
+    "description": "What year was 'Like a Rolling Stone' by Bob Dylan released?",
+    "correctDate": "1965-07-20",
+    "eventType": "music"
+},
+{
+    "id": 165,
+    "description": "What year was 'Imagine' by John Lennon released?",
+    "correctDate": "1971-09-09",
+    "eventType": "music"
+},
+{
+    "id": 166,
+    "description": "What year was 'Thriller' by Michael Jackson released?",
+    "correctDate": "1982-11-30",
+    "eventType": "music"
+},
+{
+    "id": 167,
+    "description": "What year was 'Hotel California' by Eagles released?",
+    "correctDate": "1976-12-08",
+    "eventType": "music"
+},
+{
+    "id": 168,
+    "description": "What year was 'Smells Like Teen Spirit' by Nirvana released?",
+    "correctDate": "1991-09-10",
+    "eventType": "music"
+},
+{
+    "id": 169,
+    "description": "What year was 'Hey Jude' by The Beatles released?",
+    "correctDate": "1968-08-26",
+    "eventType": "music"
+},
+{
+    "id": 170,
+    "description": "What year was 'Shape of You' by Ed Sheeran released?",
+    "correctDate": "2017-01-06",
+    "eventType": "music"
+},
+{
+    "id": 171,
+    "description": "What year was 'I Will Always Love You' by Whitney Houston released?",
+    "correctDate": "1992-11-03",
+    "eventType": "music"
+},
+{
+    "id": 172,
+    "description": "What year was 'Stairway to Heaven' by Led Zeppelin released?",
+    "correctDate": "1971-11-08",
+    "eventType": "music"
+},
+{
+    "id": 173,
+    "description": "What year was 'Let It Be' by The Beatles released?",
+    "correctDate": "1970-03-06",
+    "eventType": "music"
+},
+{
+    "id": 174,
+    "description": "What year was 'Sweet Child o' Mine' by Guns N' Roses released?",
+    "correctDate": "1988-08-17",
+    "eventType": "music"
+},
+{
+    "id": 175,
+    "description": "What year was 'We Will Rock You' by Queen released?",
+    "correctDate": "1977-10-07",
+    "eventType": "music"
+},
+{
+    "id": 176,
+    "description": "What year was 'Like a Virgin' by Madonna released?",
+    "correctDate": "1984-10-31",
+    "eventType": "music"
+},
+{
+    "id": 177,
+    "description": "What year was 'Yesterday' by The Beatles released?",
+    "correctDate": "1965-08-06",
+    "eventType": "music"
+},
+{
+    "id": 178,
+    "description": "What year was 'My Heart Will Go On' by Celine Dion released?",
+    "correctDate": "1997-12-08",
+    "eventType": "music"
+},
+{
+    "id": 179,
+    "description": "What year was 'Rolling in the Deep' by Adele released?",
+    "correctDate": "2010-11-29",
+    "eventType": "music"
+},
+{
+    "id": 180,
+    "description": "What year was 'Purple Haze' by Jimi Hendrix released?",
+    "correctDate": "1967-03-17",
+    "eventType": "music"
+},
+{
+    "id": 181,
+    "description": "What year was 'Livin' on a Prayer' by Bon Jovi released?",
+    "correctDate": "1986-10-31",
+    "eventType": "music"
+},
+{
+    "id": 182,
+    "description": "What year was 'Boys Don't Cry' by The Cure released?",
+    "correctDate": "1980-06-06",
+    "eventType": "music"
+},
+{
+    "id": 183,
+    "description": "What year was 'I Want to Hold Your Hand' by The Beatles released?",
+    "correctDate": "1963-11-29",
+    "eventType": "music"
+},
+{
+    "id": 184,
+    "description": "What year was 'Every Breath You Take' by The Police released?",
+    "correctDate": "1983-05-20",
+    "eventType": "music"
+},
+{
+    "id": 185,
+    "description": "What year was 'Wonderwall' by Oasis released?",
+    "correctDate": "1995-10-30",
+    "eventType": "music"
+},
+{
+    "id": 186,
+    "description": "What year was 'Another Brick in the Wall' by Pink Floyd released?",
+    "correctDate": "1979-11-23",
+    "eventType": "music"
+},
+{
+    "id": 187,
+    "description": "What year was 'Thriller' by Michael Jackson released?",
+    "correctDate": "1982-11-30",
+    "eventType": "music"
+},
+{
+    "id": 188,
+    "description": "What year was 'Total Eclipse of the Heart' by Bonnie Tyler released?",
+    "correctDate": "1983-02-11",
+    "eventType": "music"
+},
+{
+    "id": 189,
+    "description": "What year was 'Wannabe' by Spice Girls released?",
+    "correctDate": "1996-07-08",
+    "eventType": "music"
+},
+{
+    "id": 190,
+    "description": "What year was 'Viva la Vida' by Coldplay released?",
+    "correctDate": "2008-05-25",
+    "eventType": "music"
+},
+{
+    "id": 191,
+    "description": "What year was 'Black' by Pearl Jam released?",
+    "correctDate": "1991-10-19",
+    "eventType": "music"
+},
+{
+    "id": 192,
+    "description": "What year was 'All You Need Is Love' by The Beatles released?",
+    "correctDate": "1967-07-07",
+    "eventType": "music"
+},
+{
+    "id": 193,
+    "description": "What year was 'Don't Stop Believin'' by Journey released?",
+    "correctDate": "1981-06-03",
+    "eventType": "music"
+},
+{
+    "id": 194,
+    "description": "What year was 'Livin' on a Prayer' by Bon Jovi released?",
+    "correctDate": "1986-10-31",
+    "eventType": "music"
+},
+{
+    "id": 195,
+    "description": "What year was 'Bohemian Rhapsody' by Queen released?",
+    "correctDate": "1975-10-31",
+    "eventType": "music"
+},
+{
+    "id": 196,
+    "description": "What year was 'Uptown Funk' by Mark Ronson ft. Bruno Mars released?",
+    "correctDate": "2014-11-10",
+    "eventType": "music"
+},
+{
+    "id": 197,
+    "description": "What year was 'Smooth' by Santana ft. Rob Thomas released?",
+    "correctDate": "1999-06-29",
+    "eventType": "music"
+},
+{
+    "id": 198,
+    "description": "What year was 'All of Me' by John Legend released?",
+    "correctDate": "2013-08-12",
+    "eventType": "music"
+},
+{
+    "id": 199,
+    "description": "What year was 'Dancing Queen' by ABBA released?",
+    "correctDate": "1976-08-15",
+    "eventType": "music"
+},
+{
+    "id": 200,
+    "description": "What year was 'Eye of the Tiger' by Survivor released?",
+    "correctDate": "1982-05-29",
+    "eventType": "music"
+},
+{
+    "id": 203,
+    "description": "What year was 'Another One Bites the Dust' by Queen released?",
+    "correctDate": "1980-06-30",
+    "eventType": "music"
+},
+{
+    "id": 204,
+    "description": "What year was 'Wake Me Up Before You Go-Go' by Wham! released?",
+    "correctDate": "1984-05-14",
+    "eventType": "music"
+},
+{
+    "id": 205,
+    "description": "What year was 'Every Breath You Take' by The Police released?",
+    "correctDate": "1983-05-20",
+    "eventType": "music"
+},
+{
+    "id": 206,
+    "description": "What year was 'Wrecking Ball' by Miley Cyrus released?",
+    "correctDate": "2013-08-25",
+    "eventType": "music"
+},
+{
+    "id": 207,
+    "description": "What year was 'Let It Go' by Idina Menzel released?",
+    "correctDate": "2013-11-25",
+    "eventType": "music"
+},
+{
+    "id": 208,
+    "description": "What year was 'Royals' by Lorde released?",
+    "correctDate": "2013-06-03",
+    "eventType": "music"
+},
+{
+    "id": 209,
+    "description": "What year was 'Can't Stop the Feeling!' by Justin Timberlake released?",
+    "correctDate": "2016-05-06",
+    "eventType": "music"
+},
+{
+    "id": 210,
+    "description": "What year was 'Happy' by Pharrell Williams released?",
+    "correctDate": "2013-11-21",
+    "eventType": "music"
+},
+{
+    "id": 211,
+    "description": "What year was 'Radioactive' by Imagine Dragons released?",
+    "correctDate": "2012-04-02",
+    "eventType": "music"
+},
+{
+    "id": 212,
+    "description": "What year was 'Firework' by Katy Perry released?",
+    "correctDate": "2010-10-18",
+    "eventType": "music"
+},
+{
+    "id": 213,
+    "description": "What year was 'Uptown Funk' by Mark Ronson ft. Bruno Mars released?",
+    "correctDate": "2014-11-10",
+    "eventType": "music"
+},
+{
+    "id": 214,
+    "description": "What year was 'Somebody That I Used to Know' by Gotye ft. Kimbra released?",
+    "correctDate": "2011-07-05",
+    "eventType": "music"
+},
+{
+    "id": 215,
+    "description": "What year was 'Shake It Off' by Taylor Swift released?",
+    "correctDate": "2014-08-18",
+    "eventType": "music"
+},
+{
+    "id": 216,
+    "description": "What year was 'Can't Help Falling in Love' by Elvis Presley released?",
+    "correctDate": "1961-10-01",
+    "eventType": "music"
+},
+{
+    "id": 217,
+    "description": "What year was 'Shape of You' by Ed Sheeran released?",
+    "correctDate": "2017-01-06",
+    "eventType": "music"
+},
+{
+    "id": 218,
+    "description": "What year was 'Poker Face' by Lady Gaga released?",
+    "correctDate": "2008-09-26",
+    "eventType": "music"
+},
+{
+    "id": 219,
+    "description": "What year was 'Can't Buy Me Love' by The Beatles released?",
+    "correctDate": "1964-03-20",
+    "eventType": "music"
+},
+{
+    "id": 220,
+    "description": "What year was 'Black and Yellow' by Wiz Khalifa released?",
+    "correctDate": "2010-09-14",
+    "eventType": "music"
+},
+{
+    "id": 221,
+    "description": "What year was 'Yesterday' by The Beatles released?",
+    "correctDate": "1965-08-06",
+    "eventType": "music"
+},
+{
+    "id": 222,
+    "description": "What year was 'Hello' by Adele released?",
+    "correctDate": "2015-10-23",
+    "eventType": "music"
+},
+{
+    "id": 223,
+    "description": "What year was 'I Want to Hold Your Hand' by The Beatles released?",
+    "correctDate": "1963-11-29",
+    "eventType": "music"
+},
+{
+    "id": 224,
+    "description": "What year was 'Sugar, We're Goin Down' by Fall Out Boy released?",
+    "correctDate": "2005-04-12",
+    "eventType": "music"
+},
+{
+    "id": 225,
+    "description": "What year was 'Havana' by Camila Cabello released?",
+    "correctDate": "2017-08-03",
+    "eventType": "music"
+},
+{
+    "id": 226,
+    "description": "What year was 'Get Lucky' by Daft Punk ft. Pharrell Williams released?",
+    "correctDate": "2013-04-19",
+    "eventType": "music"
+},
+{
+    "id": 227,
+    "description": "What year was 'Dance Monkey' by Tones and I released?",
+    "correctDate": "2019-05-10",
+    "eventType": "music"
+},
+{
+    "id": 228,
+    "description": "What year was 'I Gotta Feeling' by The Black Eyed Peas released?",
+    "correctDate": "2009-06-16",
+    "eventType": "music"
+},
+{
+    "id": 229,
+    "description": "What year was 'Mr. Brightside' by The Killers released?",
+    "correctDate": "2003-09-29",
+    "eventType": "music"
+},
+{
+    "id": 230,
+    "description": "What year was 'The Sound of Silence' by Simon & Garfunkel released?",
+    "correctDate": "1964-10-19",
+    "eventType": "music"
+},
+{
+    "id": 231,
+    "description": "Battle of Hastings?",
+    "correctDate": "1066-10-14",
+    "eventType": "history"
+},
+{
+    "id": 232,
+    "description": "What year did The Plague (Black Death) arrive in england?",
+    "correctDate": "1346-04-23",
+    "eventType": "history"
+},
+{
+    "id": 233,
+    "description": "When was William Shakespear born?",
+    "correctDate": "1564-06-01",
+    "eventType": "history"
+}
+]
