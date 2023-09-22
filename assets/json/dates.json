@@ -31,9 +31,9 @@
 },
 {
     "id": 6,
-    "description": "What year did World War II end?",
-    "correctDate": "1945-09-02",
-    "eventType": "history"
+    "description": "What year did Liverpool stage a comeback against Barcelona, winning 4-0 to reach the Champions League final?",
+    "correctDate": "2019-05-07",
+    "eventType": "sports"
 },
 {
     "id": 7,
@@ -97,9 +97,9 @@
 },
 {
     "id": 17,
-    "description": "When was the first Super Bowl?",
-    "correctDate": "1967-01-15",
-    "eventType": "sports"
+    "description": "When was the release date of Pixar's 'Up'?",
+    "correctDate": "2009-05-29",
+    "eventType": "movies"
 },
 {
     "id": 18,
@@ -739,9 +739,9 @@
 },
 {
     "id": 153,
-    "description": "When was the first Super Bowl appearance of the New England Patriots and Tom Brady?",
-    "correctDate": "2002-02-03",
-    "eventType": "sports"
+    "description": "When was the release date of Pixar's 'Turning Red'?",
+    "correctDate": "2022-03-11",
+    "eventType": "movies"
 },
 {
     "id": 154,
@@ -1210,5 +1210,2219 @@
     "description": "When was William Shakespear born?",
     "correctDate": "1564-06-01",
     "eventType": "history"
+},
+{
+    "id": 234,
+    "description": "When did Julius Caesar get assassinated?",
+    "correctDate": "44-03-15",
+    "eventType": "history"
+},
+{
+    "id": 235,
+    "description": "When was the Battle of Gettysburg during the American Civil War?",
+    "correctDate": "1863-07-01",
+    "eventType": "history"
+},
+{
+    "id": 236,
+    "description": "When was the signing of the Declaration of Independence?",
+    "correctDate": "1776-07-04",
+    "eventType": "history"
+},
+{
+    "id": 237,
+    "description": "When did the Spanish Armada attempt to invade England?",
+    "correctDate": "1588-07-20",
+    "eventType": "history"
+},
+{
+    "id": 238,
+    "description": "When was the fall of the Roman Empire in the West?",
+    "correctDate": "476-09-04",
+    "eventType": "history"
+},
+{
+    "id": 239,
+    "description": "When did Christopher Columbus first reach the Americas?",
+    "correctDate": "1492-10-12",
+    "eventType": "history"
+},
+{
+    "id": 240,
+    "description": "When was the signing of the Treaty of Versailles after World War I?",
+    "correctDate": "1919-06-28",
+    "eventType": "history"
+},
+{
+    "id": 241,
+    "description": "What year was the Boston Tea Party?",
+    "correctDate": "1773-12-16",
+    "eventType": "history"
+},
+{
+    "id": 242,
+    "description": "When did Mahatma Gandhi lead the Salt March in India?",
+    "correctDate": "1930-03-12",
+    "eventType": "history"
+},
+{
+    "id": 243,
+    "description": "When was the fall of Constantinople to the Ottoman Empire?",
+    "correctDate": "1453-05-29",
+    "eventType": "history"
+},
+{
+    "id": 244,
+    "description": "What year was the construction of the Great Wall of China started?",
+    "correctDate": "221-04-20",
+    "eventType": "history"
+},
+{
+    "id": 245,
+    "description": "When was the first modern Olympic Games held in Athens?",
+    "correctDate": "1896-04-06",
+    "eventType": "sports"
+},
+{
+    "id": 246,
+    "description": "When did Jesse Owens win four gold medals at the Berlin Olympics?",
+    "correctDate": "1936-08-09",
+    "eventType": "sports"
+},
+{
+    "id": 247,
+    "description": "When was the first Wimbledon tennis championship held?",
+    "correctDate": "1877-07-09",
+    "eventType": "sports"
+},
+{
+    "id": 248,
+    "description": "When did Muhammad Ali win his first heavyweight boxing title?",
+    "correctDate": "1964-02-25",
+    "eventType": "sports"
+},
+{
+    "id": 249,
+    "description": "When did Usain Bolt set the world record for the 100m sprint?",
+    "correctDate": "2009-08-16",
+    "eventType": "sports"
+},
+{
+    "id": 250,
+    "description": "When was the first World Series in baseball played?",
+    "correctDate": "1903-10-01",
+    "eventType": "sports"
+},
+{
+    "id": 251,
+    "description": "When was the first FIFA World Cup held in Italy?",
+    "correctDate": "1934-05-27",
+    "eventType": "sports"
+},
+{
+    "id": 252,
+    "description": "When was the 'Fight of the Century' boxing match between Joe Frazier and Muhammad Ali?",
+    "correctDate": "1971-03-08",
+    "eventType": "sports"
+},
+{
+    "id": 253,
+    "description": "When was the first modern Ironman Triathlon held in Hawaii?",
+    "correctDate": "1978-02-18",
+    "eventType": "sports"
+},
+{
+    "id": 254,
+    "description": "What year was Beethoven's Symphony No. 9 (Choral) premiered?",
+    "correctDate": "1824-05-07",
+    "eventType": "music"
+},
+{
+    "id": 255,
+    "description": "When did Elvis Presley make his first appearance on The Ed Sullivan Show?",
+    "correctDate": "1956-09-09",
+    "eventType": "music"
+},
+{
+    "id": 256,
+    "description": "What year was Michael Jackson's 'Bad' album released?",
+    "correctDate": "1987-08-31",
+    "eventType": "music"
+},
+{
+    "id": 257,
+    "description": "When did The Beatles perform their last public concert?",
+    "correctDate": "1966-08-29",
+    "eventType": "music"
+},
+{
+    "id": 258,
+    "description": "When was the premiere of Tchaikovsky's 'Swan Lake' ballet?",
+    "correctDate": "1877-03-04",
+    "eventType": "music"
+},
+{
+    "id": 259,
+    "description": "What year was Bob Marley's 'Legend' album released?",
+    "correctDate": "1984-05-08",
+    "eventType": "music"
+},
+{
+    "id": 260,
+    "description": "When did Whitney Houston perform the national anthem at Super Bowl XXV?",
+    "correctDate": "1991-01-27",
+    "eventType": "music"
+},
+{
+    "id": 261,
+    "description": "When was the premiere of Mozart's 'The Magic Flute' opera?",
+    "correctDate": "1791-09-30",
+    "eventType": "music"
+},
+{
+    "id": 262,
+    "description": "What year was Pink Floyd's 'The Wall' album released?",
+    "correctDate": "1979-11-30",
+    "eventType": "music"
+},
+{
+    "id": 263,
+    "description": "When did Nirvana release their iconic album 'Nevermind'?",
+    "correctDate": "1991-09-24",
+    "eventType": "music"
+},
+{
+    "id": 264,
+    "description": "When was the premiere of Stravinsky's 'The Rite of Spring' ballet?",
+    "correctDate": "1913-05-29",
+    "eventType": "music"
+},
+{
+    "id": 265,
+    "description": "What year did Freddie Mercury pass away?",
+    "correctDate": "1991-11-24",
+    "eventType": "music"
+},
+{
+    "id": 266,
+    "description": "When was the release of Adele's album '21'?",
+    "correctDate": "2011-01-24",
+    "eventType": "music"
+},
+{
+    "id": 267,
+    "description": "When did the Wright brothers make their first powered flight?",
+    "correctDate": "1903-12-17",
+    "eventType": "history"
+},
+{
+    "id": 268,
+    "description": "When was the signing of the Treaty of Tordesillas between Spain and Portugal?",
+    "correctDate": "1494-06-07",
+    "eventType": "history"
+},
+{
+    "id": 269,
+    "description": "What year did the Titanic sink?",
+    "correctDate": "1912-04-15",
+    "eventType": "history"
+},
+{
+    "id": 270,
+    "description": "When was the construction of the Great Pyramid of Giza completed?",
+    "correctDate": "2560-04-23",
+    "eventType": "history"
+},
+{
+    "id": 271,
+    "description": "When did Babe Ruth hit his 60th home run in a single baseball season?",
+    "correctDate": "1927-09-30",
+    "eventType": "sports"
+},
+{
+    "id": 272,
+    "description": "When was the first modern Winter Olympics held in Chamonix, France?",
+    "correctDate": "1924-01-25",
+    "eventType": "sports"
+},
+{
+    "id": 273,
+    "description": "When did Serena Williams win her first Grand Slam title?",
+    "correctDate": "1999-09-11",
+    "eventType": "sports"
+},
+{
+    "id": 274,
+    "description": "When did the Chicago Bulls win their first NBA championship with Michael Jordan?",
+    "correctDate": "1991-06-12",
+    "eventType": "sports"
+},
+{
+    "id": 275,
+    "description": "When was the first modern Olympic Winter Games held in Chamonix, France?",
+    "correctDate": "1924-01-25",
+    "eventType": "sports"
+},
+{
+    "id": 276,
+    "description": "When did Muhammad Ali defeat George Foreman in the 'Rumble in the Jungle'?",
+    "correctDate": "1974-10-30",
+    "eventType": "sports"
+},
+{
+    "id": 277,
+    "description": "When did Leicester City win the Premier League against all odds?",
+    "correctDate": "2016-05-02",
+    "eventType": "sports"
+},
+{
+    "id": 278,
+    "description": "When was the premiere of Beethoven's Symphony No. 5?",
+    "correctDate": "1808-12-22",
+    "eventType": "music"
+},
+{
+    "id": 279,
+    "description": "What year did Elvis Presley pass away?",
+    "correctDate": "1977-08-16",
+    "eventType": "music"
+},
+{
+    "id": 280,
+    "description": "When was the release of Michael Jackson's 'Thriller' album?",
+    "correctDate": "1982-11-30",
+    "eventType": "music"
+},
+{
+    "id": 281,
+    "description": "When did The Rolling Stones perform their iconic concert in Hyde Park, London?",
+    "correctDate": "1969-07-05",
+    "eventType": "music"
+},
+{
+    "id": 282,
+    "description": "What year did Whitney Houston release her hit single 'I Will Always Love You'?",
+    "correctDate": "1992-11-03",
+    "eventType": "music"
+},
+{
+    "id": 283,
+    "description": "When was the premiere of Tchaikovsky's 'Nutcracker' ballet?",
+    "correctDate": "1892-12-18",
+    "eventType": "music"
+},
+{
+    "id": 284,
+    "description": "What year was Bob Dylan awarded the Nobel Prize in Literature?",
+    "correctDate": "2016-10-13",
+    "eventType": "music"
+},
+{
+    "id": 285,
+    "description": "When did John Lennon release his album 'Imagine'?",
+    "correctDate": "1971-09-09",
+    "eventType": "music"
+},
+{
+    "id": 286,
+    "description": "When was the premiere of Stravinsky's 'The Firebird' ballet?",
+    "correctDate": "1910-06-25",
+    "eventType": "music"
+},
+{
+    "id": 287,
+    "description": "What year did Jimi Hendrix pass away?",
+    "correctDate": "1970-09-18",
+    "eventType": "music"
+},
+{
+    "id": 288,
+    "description": "When did Adele release her album '25'?",
+    "correctDate": "2015-11-20",
+    "eventType": "music"
+},
+{
+    "id": 289,
+    "description": "When was the signing of the Magna Carta?",
+    "correctDate": "1215-06-15",
+    "eventType": "history"
+},
+{
+    "id": 290,
+    "description": "What year did the Russian Revolution begin?",
+    "correctDate": "1917-02-23",
+    "eventType": "history"
+},
+{
+    "id": 291,
+    "description": "When was the Battle of Stalingrad during World War II?",
+    "correctDate": "1942-08-23",
+    "eventType": "history"
+},
+{
+    "id": 292,
+    "description": "When did Nelson Mandela become President of South Africa?",
+    "correctDate": "1994-05-10",
+    "eventType": "history"
+},
+{
+    "id": 293,
+    "description": "What year did the Berlin Wall fall?",
+    "correctDate": "1989-11-09",
+    "eventType": "history"
+},
+{
+    "id": 294,
+    "description": "When was the signing of the Emancipation Proclamation by Abraham Lincoln?",
+    "correctDate": "1863-01-01",
+    "eventType": "history"
+},
+{
+    "id": 295,
+    "description": "When did Amelia Earhart complete her solo transatlantic flight?",
+    "correctDate": "1932-05-21",
+    "eventType": "history"
+},
+{
+    "id": 296,
+    "description": "What year did the Apollo 11 mission land the first humans on the moon?",
+    "correctDate": "1969-07-20",
+    "eventType": "history"
+},
+{
+    "id": 297,
+    "description": "When was the Treaty of Ghent signed to end the War of 1812?",
+    "correctDate": "1814-12-24",
+    "eventType": "history"
+},
+{
+    "id": 298,
+    "description": "When did the first successful human heart transplant take place?",
+    "correctDate": "1967-12-03",
+    "eventType": "history"
+},
+{
+    "id": 299,
+    "description": "What year was the first email sent over the ARPANET?",
+    "correctDate": "1971-10-29",
+    "eventType": "history"
+},
+{
+    "id": 300,
+    "description": "When was the first modern Olympic Games held in the United States?",
+    "correctDate": "1904-07-01",
+    "eventType": "sports"
+},
+{
+    "id": 301,
+    "description": "When did Serena Williams win her 23rd Grand Slam title?",
+    "correctDate": "2017-01-28",
+    "eventType": "sports"
+},
+{
+    "id": 302,
+    "description": "When was the release date of Pixar's 'Inside Out'?",
+    "correctDate": "2015-06-19",
+    "eventType": "movies"
+},
+{
+    "id": 303,
+    "description": "What year did Jesse Owens win four gold medals at the 1936 Olympics?",
+    "correctDate": "1936-08-09",
+    "eventType": "sports"
+},
+{
+    "id": 304,
+    "description": "When did Wayne Gretzky become the NHL's all-time leading scorer?",
+    "correctDate": "1989-10-15",
+    "eventType": "sports"
+},
+{
+    "id": 305,
+    "description": "When was the first official rugby international match played?",
+    "correctDate": "1871-03-27",
+    "eventType": "sports"
+},
+{
+    "id": 306,
+    "description": "What year did Muhammad Ali refuse induction into the U.S. Army?",
+    "correctDate": "1967-04-28",
+    "eventType": "sports"
+},
+{
+    "id": 307,
+    "description": "When was the first World Cup of Cricket held?",
+    "correctDate": "1975-06-07",
+    "eventType": "sports"
+},
+{
+    "id": 308,
+    "description": "When did Michael Phelps win eight gold medals at the Beijing Olympics?",
+    "correctDate": "2008-08-17",
+    "eventType": "sports"
+},
+{
+    "id": 309,
+    "description": "What year was the first electric guitar invented?",
+    "correctDate": "1931-10-13",
+    "eventType": "music"
+},
+{
+    "id": 310,
+    "description": "When was the premiere of Beethoven's Symphony No. 6 (Pastoral)?",
+    "correctDate": "1808-12-22",
+    "eventType": "music"
+},
+{
+    "id": 311,
+    "description": "What year did Johnny Cash release 'Ring of Fire'?",
+    "correctDate": "1963-04-19",
+    "eventType": "music"
+},
+{
+    "id": 312,
+    "description": "When did The Rolling Stones release their album 'Exile on Main St.'?",
+    "correctDate": "1972-05-12",
+    "eventType": "music"
+},
+{
+    "id": 313,
+    "description": "When was the premiere of Tchaikovsky's 'Eugene Onegin' opera?",
+    "correctDate": "1879-03-29",
+    "eventType": "music"
+},
+{
+    "id": 314,
+    "description": "What year did Bob Marley and the Wailers release 'No Woman, No Cry'?",
+    "correctDate": "1974-10-24",
+    "eventType": "music"
+},
+{
+    "id": 315,
+    "description": "When did Whitney Houston release 'I Wanna Dance with Somebody'?",
+    "correctDate": "1987-05-02",
+    "eventType": "music"
+},
+{
+    "id": 316,
+    "description": "What year was 'The Sound of Music' film released?",
+    "correctDate": "1965-03-29",
+    "eventType": "music"
+},
+{
+    "id": 317,
+    "description": "When was the premiere of Verdi's 'La Traviata' opera?",
+    "correctDate": "1853-03-06",
+    "eventType": "music"
+},
+{
+    "id": 318,
+    "description": "What year did Queen release 'Bohemian Rhapsody'?",
+    "correctDate": "1975-10-31",
+    "eventType": "music"
+},
+{
+    "id": 319,
+    "description": "When did Nirvana release their album 'In Utero'?",
+    "correctDate": "1993-09-21",
+    "eventType": "music"
+},
+{
+    "id": 320,
+    "description": "When was the premiere of Stravinsky's 'Petrushka' ballet?",
+    "correctDate": "1911-06-13",
+    "eventType": "music"
+},
+{
+    "id": 321,
+    "description": "What year did Nirvana release 'Nevermind'?",
+    "correctDate": "1991-09-24",
+    "eventType": "music"
+},
+{
+    "id": 322,
+    "description": "When did Kobe Bryant score 81 points in a single NBA game?",
+    "correctDate": "2006-01-22",
+    "eventType": "sports"
+},
+{
+    "id": 323,
+    "description": "What year did the Berlin Wall fall?",
+    "correctDate": "1989-11-09",
+    "eventType": "history"
+},
+{
+    "id": 324,
+    "description": "When was the signing of the Treaty of Versailles to end World War I?",
+    "correctDate": "1919-06-28",
+    "eventType": "history"
+},
+{
+    "id": 325,
+    "description": "What year did Queen release 'Bohemian Rhapsody'?",
+    "correctDate": "1975-10-31",
+    "eventType": "music"
+},
+{
+    "id": 326,
+    "description": "When was the premiere of 'Star Wars: Episode IV - A New Hope'?",
+    "correctDate": "1977-05-25",
+    "eventType": "movies"
+},
+{
+    "id": 327,
+    "description": "What year did Muhammad Ali win the gold medal in boxing at the Summer Olympics?",
+    "correctDate": "1960-09-05",
+    "eventType": "sports"
+},
+{
+    "id": 328,
+    "description": "When was the first official rugby international match played?",
+    "correctDate": "1871-03-27",
+    "eventType": "sports"
+},
+{
+    "id": 329,
+    "description": "What year did 'Avatar' become the highest-grossing film of all time?",
+    "correctDate": "2009-12-18",
+    "eventType": "movies"
+},
+{
+    "id": 330,
+    "description": "When did Serena Williams win her first Grand Slam title?",
+    "correctDate": "1999-09-11",
+    "eventType": "sports"
+},
+{
+    "id": 331,
+    "description": "What year did the Beatles perform on 'The Ed Sullivan Show' for the first time?",
+    "correctDate": "1964-02-09",
+    "eventType": "music"
+},
+{
+    "id": 332,
+    "description": "When was the premiere of 'Jurassic Park'?",
+    "correctDate": "1993-06-11",
+    "eventType": "movies"
+},
+{
+    "id": 333,
+    "description": "What year did 'Forrest Gump' win the Academy Award for Best Picture?",
+    "correctDate": "1994-03-27",
+    "eventType": "movies"
+},
+{
+    "id": 334,
+    "description": "When was the signing of the Declaration of Independence in the United States?",
+    "correctDate": "1776-07-04",
+    "eventType": "history"
+},
+{
+    "id": 335,
+    "description": "What year did Lionel Messi win his first Ballon d'Or award?",
+    "correctDate": "2009-12-01",
+    "eventType": "sports"
+},
+{
+    "id": 336,
+    "description": "When did the first FIFA World Cup tournament take place?",
+    "correctDate": "1930-07-13",
+    "eventType": "sports"
+},
+{
+    "id": 337,
+    "description": "What year did Madonna release 'Like a Virgin'?",
+    "correctDate": "1984-11-12",
+    "eventType": "music"
+},
+{
+    "id": 338,
+    "description": "When was the premiere of 'The Matrix'?",
+    "correctDate": "1999-03-31",
+    "eventType": "movies"
+},
+{
+    "id": 339,
+    "description": "What year did the film 'Titanic' win the Academy Award for Best Picture?",
+    "correctDate": "1998-03-23",
+    "eventType": "movies"
+},
+{
+    "id": 340,
+    "description": "When was the premiere of 'The Lord of the Rings: The Two Towers'?",
+    "correctDate": "2002-12-05",
+    "eventType": "movies"
+},
+{
+    "id": 341,
+    "description": "What year did Whitney Houston release 'I Will Always Love You'?",
+    "correctDate": "1992-11-03",
+    "eventType": "music"
+},
+{
+    "id": 342,
+    "description": "When was the first modern Olympic Games held in Athens, Greece?",
+    "correctDate": "1896-04-06",
+    "eventType": "sports"
+},
+{
+    "id": 343,
+    "description": "What year was the film 'The Grinch' featuring jim Carey released?",
+    "correctDate": "1999-11-15",
+    "eventType": "movies"
+},
+{
+    "id": 344,
+    "description": "When was the Battle of Gettysburg during the American Civil War?",
+    "correctDate": "1863-07-01",
+    "eventType": "history"
+},
+{
+    "id": 345,
+    "description": "What year did Michael Jordan return to the NBA after briefly retiring?",
+    "correctDate": "1995-03-19",
+    "eventType": "sports"
+},
+{
+    "id": 346,
+    "description": "When was the release date of Pixar's 'Coco'?",
+    "correctDate": "2017-11-22",
+    "eventType": "movies"
+},
+{
+    "id": 347,
+    "description": "What year did Babe Ruth hit his record-breaking 60th home run in a single MLB season?",
+    "correctDate": "1927-09-30",
+    "eventType": "sports"
+},
+{
+    "id": 348,
+    "description": "When was the premiere of 'Gone with the Wind'?",
+    "correctDate": "1939-12-15",
+    "eventType": "movies"
+},
+{
+    "id": 349,
+    "description": "What year did Michael Phelps win eight gold medals at the Beijing Olympics?",
+    "correctDate": "2008-08-17",
+    "eventType": "sports"
+},
+{
+    "id": 350,
+    "description": "When was the publication of 'The Da Vinci Code' by Dan Brown?",
+    "correctDate": "2003-03-18",
+    "eventType": "literature"
+},
+{
+    "id": 351,
+    "description": "What year did 'E.T. the Extra-Terrestrial' hit theaters?",
+    "correctDate": "1982-06-11",
+    "eventType": "movies"
+},
+{
+    "id": 352,
+    "description": "When was the premiere of 'Casablanca'?",
+    "correctDate": "1942-11-26",
+    "eventType": "movies"
+},
+{
+    "id": 353,
+    "description": "What year did the Boston Red Sox break the 'Curse of the Bambino' and win the World Series?",
+    "correctDate": "2004-10-27",
+    "eventType": "sports"
+},
+{
+    "id": 354,
+    "description": "When was the signing of the Magna Carta?",
+    "correctDate": "1215-06-15",
+    "eventType": "history"
+},
+{
+    "id": 355,
+    "description": "What year did 'The Lion King' animated film release?",
+    "correctDate": "1994-06-15",
+    "eventType": "movies"
+},
+{
+    "id": 356,
+    "description": "When did the first email ever get sent?",
+    "correctDate": "1971-10-29",
+    "eventType": "technology"
+},
+{
+    "id": 357,
+    "description": "What year did the song 'Billie Jean' by Michael Jackson release?",
+    "correctDate": "1983-01-02",
+    "eventType": "music"
+},
+{
+    "id": 358,
+    "description": "When was the premiere of 'Pulp Fiction'?",
+    "correctDate": "1994-09-10",
+    "eventType": "movies"
+},
+{
+    "id": 359,
+    "description": "What year did the first moon landing occur?",
+    "correctDate": "1969-07-20",
+    "eventType": "space"
+},
+{
+    "id": 360,
+    "description": "When did the Berlin Airlift begin during the Cold War?",
+    "correctDate": "1948-06-24",
+    "eventType": "history"
+},
+{
+    "id": 361,
+    "description": "What year did Nirvana's Kurt Cobain pass away?",
+    "correctDate": "1994-04-05",
+    "eventType": "music"
+},
+{
+    "id": 362,
+    "description": "When was the signing of the Emancipation Proclamation in the United States?",
+    "correctDate": "1863-01-01",
+    "eventType": "history"
+},
+{
+    "id": 363,
+    "description": "What year did Liverpool stage a comeback against Barcelona, winning 4-0 to reach the Champions League final?",
+    "correctDate": "2019-05-07",
+    "eventType": "sports"
+},
+{
+    "id": 364,
+    "description": "When was the release date of Pixar's 'Lightyear'?",
+    "correctDate": "2022-06-17",
+    "eventType": "movies"
+},
+{
+    "id": 365,
+    "description": "What year did the Chicago Bulls win their first NBA championship with Michael Jordan?",
+    "correctDate": "1991-06-12",
+    "eventType": "sports"
+},
+{
+    "id": 366,
+    "description": "When was the construction of the Great Wall of China completed?",
+    "correctDate": "1644-05-07",
+    "eventType": "history"
+},
+{
+    "id": 367,
+    "description": "What year did 'The Rolling Stones' release their album 'Sticky Fingers'?",
+    "correctDate": "1971-04-23",
+    "eventType": "music"
+},
+{
+    "id": 368,
+    "description": "When was the premiere of 'The Shining'?",
+    "correctDate": "1980-05-23",
+    "eventType": "movies"
+},
+{
+    "id": 369,
+    "description": "What year did Jesse Owens win four gold medals at the Berlin Olympics?",
+    "correctDate": "1936-08-09",
+    "eventType": "sports"
+},
+{
+    "id": 370,
+    "description": "When was the signing of the United States Constitution?",
+    "correctDate": "1787-09-17",
+    "eventType": "history"
+},
+{
+    "id": 371,
+    "description": "What year did 'The Beatles' release their album 'Sgt. Pepper's Lonely Hearts Club Band'?",
+    "correctDate": "1967-05-26",
+    "eventType": "music"
+},
+{
+    "id": 372,
+    "description": "When was the premiere of Beethoven's Symphony No. 9 (Choral Symphony)?",
+    "correctDate": "1824-05-07",
+    "eventType": "music"
+},
+{
+    "id": 373,
+    "description": "What year did 'The Silence of the Lambs' win the Academy Award for Best Picture?",
+    "correctDate": "1992-03-30",
+    "eventType": "movies"
+},
+{
+    "id": 374,
+    "description": "When did the first successful human heart transplant surgery take place?",
+    "correctDate": "1967-12-03",
+    "eventType": "medicine"
+},
+{
+    "id": 375,
+    "description": "What year did 'The Simpsons' television series debut?",
+    "correctDate": "1989-12-17",
+    "eventType": "tv"
+},
+{
+    "id": 376,
+    "description": "When was the premiere of 'The Godfather: Part II'?",
+    "correctDate": "1974-12-12",
+    "eventType": "movies"
+},
+{
+    "id": 377,
+    "description": "What year did the Chicago Cubs win the World Series after a long drought?",
+    "correctDate": "2016-11-02",
+    "eventType": "sports"
+},
+{
+    "id": 378,
+    "description": "When was the signing of the Treaty of Ghent to end the War of 1812?",
+    "correctDate": "1814-12-24",
+    "eventType": "history"
+},
+{
+    "id": 379,
+    "description": "What year did 'The Eagles' release their album 'Hotel California'?",
+    "correctDate": "1976-12-08",
+    "eventType": "music"
+},
+{
+    "id": 380,
+    "description": "When did Usain Bolt set the world record for the 100m sprint?",
+    "correctDate": "2009-08-16",
+    "eventType": "sports"
+},
+{
+    "id": 381,
+    "description": "What year did 'The Dark Knight' hit theaters?",
+    "correctDate": "2008-07-18",
+    "eventType": "movies"
+},
+{
+    "id": 382,
+    "description": "When was the premiere of 'The Wizard of Oz'?",
+    "correctDate": "1939-08-15",
+    "eventType": "movies"
+},
+{
+    "id": 383,
+    "description": "What year did Lionel Messi win his first Ballon d'Or award?",
+    "correctDate": "2009-12-01",
+    "eventType": "sports"
+},
+{
+    "id": 384,
+    "description": "When was the signing of the Treaty of Ghent to end the War of 1812?",
+    "correctDate": "1814-12-24",
+    "eventType": "history"
+},
+{
+    "id": 385,
+    "description": "What year did 'The Eagles' release their album 'Hotel California'?",
+    "correctDate": "1976-12-08",
+    "eventType": "music"
+},
+{
+    "id": 386,
+    "description": "When did Usain Bolt set the world record for the 100m sprint?",
+    "correctDate": "2009-08-16",
+    "eventType": "sports"
+},
+{
+    "id": 387,
+    "description": "What year did 'The Dark Knight' hit theaters?",
+    "correctDate": "2008-07-18",
+    "eventType": "movies"
+},
+{
+    "id": 388,
+    "description": "When was the premiere of 'The Wizard of Oz'?",
+    "correctDate": "1939-08-15",
+    "eventType": "movies"
+},
+{
+    "id": 389,
+    "description": "What year did Lionel Messi win his first Ballon d'Or award?",
+    "correctDate": "2009-12-01",
+    "eventType": "sports"
+},
+{
+    "id": 390,
+    "description": "When did the Berlin Wall fall?",
+    "correctDate": "1989-11-09",
+    "eventType": "history"
+},
+{
+    "id": 391,
+    "description": "What year did the film 'Titanic' win the Academy Award for Best Picture?",
+    "correctDate": "1998-03-23",
+    "eventType": "movies"
+},
+{
+    "id": 392,
+    "description": "When was the premiere of 'The Lord of the Rings: The Fellowship of the Ring'?",
+    "correctDate": "2001-12-10",
+    "eventType": "movies"
+},
+{
+    "id": 393,
+    "description": "What year did Whitney Houston release 'I Will Always Love You'?",
+    "correctDate": "1992-11-03",
+    "eventType": "music"
+},
+{
+    "id": 394,
+    "description": "When was the first modern Olympic Games held in Athens, Greece?",
+    "correctDate": "1896-04-06",
+    "eventType": "sports"
+},
+{
+    "id": 395,
+    "description": "What year did the film 'The Shawshank Redemption' release?",
+    "correctDate": "1994-09-23",
+    "eventType": "movies"
+},
+{
+    "id": 396,
+    "description": "When was the Battle of Gettysburg during the American Civil War?",
+    "correctDate": "1863-07-01",
+    "eventType": "history"
+},
+{
+    "id": 397,
+    "description": "What year did Michael Jordan return to the NBA after briefly retiring?",
+    "correctDate": "1995-03-19",
+    "eventType": "sports"
+},
+{
+    "id": 398,
+    "description": "When was the release date of Pixar's 'Luca'?",
+    "correctDate": "2021-06-18",
+    "eventType": "movies"
+},
+{
+    "id": 399,
+    "description": "What year did Babe Ruth hit his record-breaking 60th home run in a single MLB season?",
+    "correctDate": "1927-09-30",
+    "eventType": "sports"
+},
+{
+    "id": 400,
+    "description": "When was the premiere of 'Gone with the Wind'?",
+    "correctDate": "1939-12-15",
+    "eventType": "movies"
+},
+{
+    "id": 401,
+    "description": "What year did The Beatles release their album 'Abbey Road'?",
+    "correctDate": "1969-09-26",
+    "eventType": "music"
+},
+{
+    "id": 402,
+    "description": "When was the release date of Pixar's 'Incredibles 2'?",
+    "correctDate": "2018-06-15",
+    "eventType": "movies"
+},
+{
+    "id": 403,
+    "description": "What year did the RMS Titanic sink?",
+    "correctDate": "1912-04-15",
+    "eventType": "history"
+},
+{
+    "id": 404,
+    "description": "When was the premiere of 'The Lord of the Rings: The Return of the King'?",
+    "correctDate": "2003-12-17",
+    "eventType": "movies"
+},
+{
+    "id": 405,
+    "description": "What year did Michael Jackson release the album 'Bad'?",
+    "correctDate": "1987-08-31",
+    "eventType": "music"
+},
+{
+    "id": 406,
+    "description": "When did Serena Williams win her first Grand Slam title?",
+    "correctDate": "1999-09-11",
+    "eventType": "sports"
+},
+{
+    "id": 407,
+    "description": "What year did Christopher Columbus first arrive in the Americas?",
+    "correctDate": "1492-10-12",
+    "eventType": "history"
+},
+{
+    "id": 408,
+    "description": "When was the premiere of 'Pulp Fiction'?",
+    "correctDate": "1994-09-10",
+    "eventType": "movies"
+},
+{
+    "id": 409,
+    "description": "What year did Elvis Presley release his first single 'Heartbreak Hotel'?",
+    "correctDate": "1956-01-27",
+    "eventType": "music"
+},
+{
+    "id": 410,
+    "description": "When was the first FIFA World Cup held?",
+    "correctDate": "1930-07-13",
+    "eventType": "sports"
+},
+{
+    "id": 411,
+    "description": "What year did the Berlin Wall fall?",
+    "correctDate": "1989-11-09",
+    "eventType": "history"
+},
+{
+    "id": 412,
+    "description": "When was the premiere of 'The Matrix'?",
+    "correctDate": "1999-03-24",
+    "eventType": "movies"
+},
+{
+    "id": 413,
+    "description": "What year did Madonna release her album 'Like a Virgin'?",
+    "correctDate": "1984-11-12",
+    "eventType": "music"
+},
+{
+    "id": 414,
+    "description": "When was the first moon landing?",
+    "correctDate": "1969-07-20",
+    "eventType": "history"
+},
+{
+    "id": 415,
+    "description": "What year did the Chicago Bulls win their first NBA championship with Michael Jordan?",
+    "correctDate": "1991-06-12",
+    "eventType": "sports"
+},
+{
+    "id": 416,
+    "description": "When was the premiere of 'The Dark Knight'?",
+    "correctDate": "2008-07-14",
+    "eventType": "movies"
+},
+{
+    "id": 417,
+    "description": "What year did Michael Jackson release the album 'Thriller'?",
+    "correctDate": "1982-11-30",
+    "eventType": "music"
+},
+{
+    "id": 418,
+    "description": "When did World War II officially end?",
+    "correctDate": "1945-09-02",
+    "eventType": "history"
+},
+{
+    "id": 419,
+    "description": "What year did Queen release the album 'A Night at the Opera'?",
+    "correctDate": "1975-11-21",
+    "eventType": "music"
+},
+{
+    "id": 420,
+    "description": "When was the premiere of 'Jurassic Park'?",
+    "correctDate": "1993-06-11",
+    "eventType": "movies"
+},
+{
+    "id": 421,
+    "description": "What year did Bob Dylan win the Nobel Prize in Literature?",
+    "correctDate": "2016-10-13",
+    "eventType": "music"
+},
+{
+    "id": 422,
+    "description": "When did Jesse Owens win four gold medals at the Berlin Olympics?",
+    "correctDate": "1936-08-09",
+    "eventType": "sports"
+},
+{
+    "id": 423,
+    "description": "What year did the Renaissance begin in Europe?",
+    "correctDate": "14th century",
+    "eventType": "history"
+},
+{
+    "id": 424,
+    "description": "When was the premiere of 'Avatar'?",
+    "correctDate": "2009-12-18",
+    "eventType": "movies"
+},
+{
+    "id": 425,
+    "description": "What year did Beyoncé release her solo album 'Dangerously in Love'?",
+    "correctDate": "2003-06-20",
+    "eventType": "music"
+},
+{
+    "id": 426,
+    "description": "When was the first modern Olympic Games held?",
+    "correctDate": "1896-04-06",
+    "eventType": "sports"
+},
+{
+    "id": 427,
+    "description": "What year did the construction of the Great Wall of China begin?",
+    "correctDate": "7th century BC",
+    "eventType": "history"
+},
+{
+    "id": 428,
+    "description": "When was the premiere of 'E.T. the Extra-Terrestrial'?",
+    "correctDate": "1982-06-11",
+    "eventType": "movies"
+},
+{
+    "id": 429,
+    "description": "What year did Lionel Messi win his first Ballon d'Or award?",
+    "correctDate": "2009-12-01",
+    "eventType": "sports"
+},
+{
+    "id": 430,
+    "description": "When did Frank Sinatra release the song 'My Way'?",
+    "correctDate": "1969-03-19",
+    "eventType": "music"
+},
+{
+    "id": 431,
+    "description": "What year did the American Civil War begin?",
+    "correctDate": "1861-04-12",
+    "eventType": "history"
+},
+{
+    "id": 432,
+    "description": "When was the premiere of 'The Shawshank Redemption'?",
+    "correctDate": "1994-09-10",
+    "eventType": "movies"
+},
+{
+    "id": 433,
+    "description": "What year did Bob Marley pass away?",
+    "correctDate": "1981-05-11",
+    "eventType": "music"
+},
+{
+    "id": 434,
+    "description": "When was the Battle of Gettysburg during the American Civil War?",
+    "correctDate": "1863-07-01",
+    "eventType": "history"
+},
+{
+    "id": 435,
+    "description": "What year did Jesse Owens win four gold medals at the Berlin Olympics?",
+    "correctDate": "1936-08-09",
+    "eventType": "sports"
+},
+{
+    "id": 436,
+    "description": "When did David Bowie release his album 'Space Oddity'?",
+    "correctDate": "1969-07-11",
+    "eventType": "music"
+},
+{
+    "id": 437,
+    "description": "What year did Frank Sinatra release the song 'My Way'?",
+    "correctDate": "1969-03-19",
+    "eventType": "music"
+},
+{
+    "id": 438,
+    "description": "When did Michael Jordan return to the NBA after briefly retiring?",
+    "correctDate": "1995-03-19",
+    "eventType": "sports"
+},
+{
+    "id": 439,
+    "description": "What year did Queen release the album 'A Night at the Opera'?",
+    "correctDate": "1975-11-21",
+    "eventType": "music"
+},
+{
+    "id": 440,
+    "description": "When was the premiere of 'The Shawshank Redemption'?",
+    "correctDate": "1994-09-10",
+    "eventType": "movies"
+},
+{
+    "id": 441,
+    "description": "What year did the Titanic sink?",
+    "correctDate": "1912-04-15",
+    "eventType": "history"
+},
+{
+    "id": 442,
+    "description": "When did Cristiano Ronaldo transfer to Manchester United?",
+    "correctDate": "2021-08-31",
+    "eventType": "sports"
+},
+{
+    "id": 443,
+    "description": "What year did the first modern Olympic Games take place?",
+    "correctDate": "1896-04-06",
+    "eventType": "sports"
+},
+{
+    "id": 444,
+    "description": "When was the premiere of 'The Lion King' animated film?",
+    "correctDate": "1994-06-15",
+    "eventType": "movies"
+},
+{
+    "id": 445,
+    "description": "What year did Elvis Presley release his debut album?",
+    "correctDate": "1956-03-23",
+    "eventType": "music"
+},
+{
+    "id": 446,
+    "description": "When did Serena Williams win her first Grand Slam title?",
+    "correctDate": "1999-09-11",
+    "eventType": "sports"
+},
+{
+    "id": 447,
+    "description": "What year did the Russian Revolution take place?",
+    "correctDate": "1917-10-25",
+    "eventType": "history"
+},
+{
+    "id": 448,
+    "description": "When was the premiere of 'Jurassic Park'?",
+    "correctDate": "1993-06-11",
+    "eventType": "movies"
+},
+{
+    "id": 449,
+    "description": "What year did Madonna release her album 'Like a Virgin'?",
+    "correctDate": "1984-11-12",
+    "eventType": "music"
+},
+{
+    "id": 450,
+    "description": "When did Michael Jordan return to the NBA after briefly retiring?",
+    "correctDate": "1995-03-19",
+    "eventType": "sports"
+},
+{
+    "id": 451,
+    "description": "What year did Beyoncé release her solo album 'Dangerously in Love'?",
+    "correctDate": "2003-06-20",
+    "eventType": "music"
+},
+{
+    "id": 452,
+    "description": "When was the signing of the Magna Carta?",
+    "correctDate": "1215-06-15",
+    "eventType": "history"
+},
+{
+    "id": 453,
+    "description": "What year did the construction of the Great Wall of China begin?",
+    "correctDate": "7th century BC",
+    "eventType": "history"
+},
+{
+    "id": 454,
+    "description": "When was the premiere of 'E.T. the Extra-Terrestrial'?",
+    "correctDate": "1982-06-11",
+    "eventType": "movies"
+},
+{
+    "id": 455,
+    "description": "What year did Lionel Messi win his first Ballon d'Or award?",
+    "correctDate": "2009-12-01",
+    "eventType": "sports"
+},
+{
+    "id": 456,
+    "description": "When did Frank Sinatra release the song 'My Way'?",
+    "correctDate": "1969-03-19",
+    "eventType": "music"
+},
+{
+    "id": 457,
+    "description": "What year did the American Civil War begin?",
+    "correctDate": "1861-04-12",
+    "eventType": "history"
+},
+{
+    "id": 458,
+    "description": "When was the premiere of 'The Matrix'?",
+    "correctDate": "1999-03-24",
+    "eventType": "movies"
+},
+{
+    "id": 459,
+    "description": "What year did the first modern Olympic Games take place?",
+    "correctDate": "1896-04-06",
+    "eventType": "sports"
+},
+{
+    "id": 460,
+    "description": "When did World War II officially end?",
+    "correctDate": "1945-09-02",
+    "eventType": "history"
+},
+{
+    "id": 461,
+    "description": "What year did the Berlin Wall fall?",
+    "correctDate": "1989-11-09",
+    "eventType": "history"
+},
+{
+    "id": 462,
+    "description": "When was the premiere of 'The Dark Knight'?",
+    "correctDate": "2008-07-14",
+    "eventType": "movies"
+},
+{
+    "id": 463,
+    "description": "What year did Michael Jackson release the album 'Thriller'?",
+    "correctDate": "1982-11-30",
+    "eventType": "music"
+},
+{
+    "id": 464,
+    "description": "When was the first moon landing?",
+    "correctDate": "1969-07-20",
+    "eventType": "history"
+},
+{
+    "id": 465,
+    "description": "What year did the Chicago Bulls win their first NBA championship with Michael Jordan?",
+    "correctDate": "1991-06-12",
+    "eventType": "sports"
+},
+{
+    "id": 466,
+    "description": "When was the premiere of 'Avatar'?",
+    "correctDate": "2009-12-18",
+    "eventType": "movies"
+},
+{
+    "id": 467,
+    "description": "What year did Beyoncé release her solo album 'Dangerously in Love'?",
+    "correctDate": "2003-06-20",
+    "eventType": "music"
+},
+{
+    "id": 468,
+    "description": "When was the first FIFA World Cup held?",
+    "correctDate": "1930-07-13",
+    "eventType": "sports"
+},
+{
+    "id": 469,
+    "description": "What year did Christopher Columbus first arrive in the Americas?",
+    "correctDate": "1492-10-12",
+    "eventType": "history"
+},
+{
+    "id": 470,
+    "description": "When was the premiere of 'Pulp Fiction'?",
+    "correctDate": "1994-09-10",
+    "eventType": "movies"
+},
+{
+    "id": 471,
+    "description": "What year did Elvis Presley release his first single 'Heartbreak Hotel'?",
+    "correctDate": "1956-01-27",
+    "eventType": "music"
+},
+{
+    "id": 472,
+    "description": "When was the release date of Pixar's 'Soul'?",
+    "correctDate": "2020-12-25",
+    "eventType": "movies"
+},
+{
+    "id": 473,
+    "description": "When was the FIFA World Cup final between France and Brazil, featuring Zinedine Zidane's iconic headbutt?",
+    "correctDate": "2006-07-09",
+    "eventType": "sports"
+},
+{
+    "id": 474,
+    "description": "When was the premiere of 'Gone with the Wind'?",
+    "correctDate": "1939-12-15",
+    "eventType": "movies"
+},
+{
+    "id": 475,
+    "description": "What year did the RMS Titanic sink?",
+    "correctDate": "1912-04-15",
+    "eventType": "history"
+},
+{
+    "id": 476,
+    "description": "When was the premiere of 'The Lord of the Rings: The Fellowship of the Ring'?",
+    "correctDate": "2001-12-10",
+    "eventType": "movies"
+},
+{
+    "id": 477,
+    "description": "What year did Michael Jackson release the album 'Bad'?",
+    "correctDate": "1987-08-31",
+    "eventType": "music"
+},
+{
+    "id": 478,
+    "description": "When did Serena Williams win her first Grand Slam title?",
+    "correctDate": "1999-09-11",
+    "eventType": "sports"
+},
+{
+    "id": 479,
+    "description": "What year did Christopher Columbus first arrive in the Americas?",
+    "correctDate": "1492-10-12",
+    "eventType": "history"
+},
+{
+    "id": 480,
+    "description": "When was the premiere of 'Pulp Fiction'?",
+    "correctDate": "1994-09-10",
+    "eventType": "movies"
+},
+{
+    "id": 481,
+    "description": "What year did Elvis Presley release his first single 'Heartbreak Hotel'?",
+    "correctDate": "1956-01-27",
+    "eventType": "music"
+},
+{
+    "id": 482,
+    "description": "When was the release date of Pixar's 'Finding Nemo'?",
+    "correctDate": "2003-05-30",
+    "eventType": "movies"
+},
+{
+    "id": 483,
+    "description": "When did Michael Jordan return to the NBA after briefly retiring?",
+    "correctDate": "1995-03-19",
+    "eventType": "sports"
+},
+{
+    "id": 484,
+    "description": "When was the premiere of 'Gone with the Wind'?",
+    "correctDate": "1939-12-15",
+    "eventType": "movies"
+},
+{
+    "id": 485,
+    "description": "What year did the RMS Titanic sink?",
+    "correctDate": "1912-04-15",
+    "eventType": "history"
+},
+{
+    "id": 486,
+    "description": "When was the premiere of 'The Lord of the Rings: The Fellowship of the Ring'?",
+    "correctDate": "2001-12-10",
+    "eventType": "movies"
+},
+{
+    "id": 487,
+    "description": "What year did Michael Jackson release the album 'Bad'?",
+    "correctDate": "1987-08-31",
+    "eventType": "music"
+},
+{
+    "id": 488,
+    "description": "When did Serena Williams win her first Grand Slam title?",
+    "correctDate": "1999-09-11",
+    "eventType": "sports"
+},
+{
+    "id": 489,
+    "description": "What year did Christopher Columbus first arrive in the Americas?",
+    "correctDate": "1492-10-12",
+    "eventType": "history"
+},
+{
+    "id": 490,
+    "description": "When was the premiere of 'Pulp Fiction'?",
+    "correctDate": "1994-09-10",
+    "eventType": "movies"
+},
+{
+    "id": 491,
+    "description": "What year did Elvis Presley release his first single 'Heartbreak Hotel'?",
+    "correctDate": "1956-01-27",
+    "eventType": "music"
+},
+{
+    "id": 492,
+    "description": "When was the release date of Pixar's 'Toy Story'?",
+    "correctDate": "1995-11-22",
+    "eventType": "movies"
+},
+{
+    "id": 493,
+    "description": "When did Frank Sinatra release the song 'My Way'?",
+    "correctDate": "1969-03-19",
+    "eventType": "music"
+},
+{
+    "id": 494,
+    "description": "When was the premiere of 'Gone with the Wind'?",
+    "correctDate": "1939-12-15",
+    "eventType": "movies"
+},
+{
+    "id": 495,
+    "description": "What year did the RMS Titanic sink?",
+    "correctDate": "1912-04-15",
+    "eventType": "history"
+},
+{
+    "id": 496,
+    "description": "When was the premiere of 'The Lord of the Rings: The Fellowship of the Ring'?",
+    "correctDate": "2001-12-10",
+    "eventType": "movies"
+},
+{
+    "id": 497,
+    "description": "When was the premiere of 'The Hobbit: An Unexpected Journey'?",
+    "correctDate": "2012-12-14",
+    "eventType": "movies"
+},
+{
+    "id": 498,
+    "description": "When was the premiere of 'The Hobbit: The Desolation of Smaug'?",
+    "correctDate": "2013-12-02",
+    "eventType": "movies"
+},
+{
+    "id": 499,
+    "description": "When was the premiere of 'The Hobbit: The Battle of the Five Armies'?",
+    "correctDate": "2014-12-01",
+    "eventType": "movies"
+},
+{
+    "id": 500,
+    "description": "When was the premiere of 'The Lord of the Rings: The Fellowship of the Ring'?",
+    "correctDate": "2001-12-10",
+    "eventType": "movies"
+},
+{
+    "id": 501,
+    "description": "When was the premiere of 'The Lord of the Rings: The Two Towers'?",
+    "correctDate": "2002-12-05",
+    "eventType": "movies"
+},
+{
+    "id": 502,
+    "description": "When did England win their first and only FIFA World Cup, featuring Geoff Hurst's hat-trick in 1966?",
+    "correctDate": "1966-07-30",
+    "eventType": "sports"
+},
+{
+    "id": 503,
+    "description": "When was the FIFA World Cup final between Brazil and Germany in 2002, won by Brazil?",
+    "correctDate": "2002-06-30",
+    "eventType": "sports"
+},
+{
+    "id": 504,
+    "description": "When was the Rugby World Cup final between New Zealand and France in 1987, the inaugural edition?",
+    "correctDate": "1987-06-20",
+    "eventType": "sports"
+},
+{
+    "id": 505,
+    "description": "When did South Africa win the Rugby World Cup in 1995, hosted in their country?",
+    "correctDate": "1995-06-24",
+    "eventType": "sports"
+},
+{
+    "id": 506,
+    "description": "When was the Rugby World Cup final between England and Australia in 2003, won by England in extra time?",
+    "correctDate": "2003-11-22",
+    "eventType": "sports"
+},
+{
+    "id": 507,
+    "description": "When did New Zealand win the Rugby World Cup in 2011?",
+    "correctDate": "2011-10-23",
+    "eventType": "sports"
+},
+{
+    "id": 508,
+    "description": "When was the Rugby World Cup final between South Africa and England in 2019, won by South Africa?",
+    "correctDate": "2019-11-02",
+    "eventType": "sports"
+},
+{
+    "id": 509,
+    "description": "When was the Cricket World Cup final between West Indies and Australia in 1975, the first-ever Cricket World Cup?",
+    "correctDate": "1975-06-21",
+    "eventType": "sports"
+},
+{
+    "id": 510,
+    "description": "When did India win the Cricket World Cup in 1983, defeating the West Indies?",
+    "correctDate": "1983-06-25",
+    "eventType": "sports"
+},
+{
+    "id": 511,
+    "description": "When was the Cricket World Cup final between Australia and Pakistan in 1999?",
+    "correctDate": "1999-06-20",
+    "eventType": "sports"
+},
+{
+    "id": 512,
+    "description": "When did Australia win the Cricket World Cup in 2007?",
+    "correctDate": "2007-04-28",
+    "eventType": "sports"
+},
+{
+    "id": 513,
+    "description": "When was the Cricket World Cup final between India and Sri Lanka in 2011, won by India?",
+    "correctDate": "2011-04-02",
+    "eventType": "sports"
+},
+{
+    "id": 514,
+    "description": "When did England win the Cricket World Cup in 2019?",
+    "correctDate": "2019-07-14",
+    "eventType": "sports"
+},
+{
+    "id": 515,
+    "description": "When was the FIFA World Cup final between Brazil and Sweden in 1958, where a young Pelé made his debut?",
+    "correctDate": "1958-06-29",
+    "eventType": "sports"
+},
+{
+    "id": 516,
+    "description": "When did Italy win the FIFA World Cup by defeating West Germany in 1982?",
+    "correctDate": "1982-07-11",
+    "eventType": "sports"
+},
+{
+    "id": 517,
+    "description": "When was the FIFA World Cup final between Argentina and the Netherlands in 1978, won by Argentina?",
+    "correctDate": "1978-06-25",
+    "eventType": "sports"
+},
+{
+    "id": 518,
+    "description": "When did France win their second FIFA World Cup, defeating Croatia in 2018?",
+    "correctDate": "2018-07-15",
+    "eventType": "sports"
+},
+{
+    "id": 519,
+    "description": "When was the Rugby World Cup final between South Africa and New Zealand in 1995, with Nelson Mandela presenting the trophy?",
+    "correctDate": "1995-06-24",
+    "eventType": "sports"
+},
+{
+    "id": 520,
+    "description": "When did England win the Rugby World Cup for the second time, defeating Australia in 2003?",
+    "correctDate": "2003-11-22",
+    "eventType": "sports"
+},
+{
+    "id": 521,
+    "description": "When was the Rugby World Cup final between Australia and England in 1991, won by Australia?",
+    "correctDate": "1991-11-02",
+    "eventType": "sports"
+},
+{
+    "id": 522,
+    "description": "When did New Zealand win their second consecutive Rugby World Cup in 2015?",
+    "correctDate": "2015-10-31",
+    "eventType": "sports"
+},
+{
+    "id": 523,
+    "description": "When was the Rugby World Cup final between England and South Africa in 2019, won by South Africa?",
+    "correctDate": "2019-11-02",
+    "eventType": "sports"
+},
+{
+    "id": 524,
+    "description": "When was the Cricket World Cup final between India and West Indies in 1983, won by India?",
+    "correctDate": "1983-06-25",
+    "eventType": "sports"
+},
+{
+    "id": 525,
+    "description": "When did Australia win the Cricket World Cup for the third time, defeating Pakistan in 1999?",
+    "correctDate": "1999-06-20",
+    "eventType": "sports"
+},
+{
+    "id": 526,
+    "description": "When was the Cricket World Cup final between India and Sri Lanka in 1996, won by Sri Lanka?",
+    "correctDate": "1996-03-17",
+    "eventType": "sports"
+},
+{
+    "id": 527,
+    "description": "When did Australia win their fourth Cricket World Cup, defeating Pakistan in 2007?",
+    "correctDate": "2007-04-28",
+    "eventType": "sports"
+},
+{
+    "id": 528,
+    "description": "When was the Cricket World Cup final between Australia and New Zealand in 2015?",
+    "correctDate": "2015-03-29",
+    "eventType": "sports"
+},
+{
+    "id": 529,
+    "description": "When did England win the ICC T20 Cricket World Cup for the first time in 2010?",
+    "correctDate": "2010-05-16",
+    "eventType": "sports"
+},
+{
+    "id": 530,
+    "description": "When was the ICC Women's T20 Cricket World Cup final between Australia and India in 2020?",
+    "correctDate": "2020-03-08",
+    "eventType": "sports"
+},
+{
+    "id": 531,
+    "description": "When did South Africa win the ICC Women's T20 Cricket World Cup in 2014?",
+    "correctDate": "2014-04-06",
+    "eventType": "sports"
+},
+{
+    "id": 532,
+    "description": "When was the ICC Women's Cricket World Cup final between England and India in 2017?",
+    "correctDate": "2017-07-23",
+    "eventType": "sports"
+},
+{
+    "id": 533,
+    "description": "When did West Indies win their second ICC Women's T20 Cricket World Cup, defeating Australia in 2016?",
+    "correctDate": "2016-04-03",
+    "eventType": "sports"
+},
+{
+    "id": 534,
+    "description": "When was the ICC Women's Cricket World Cup final between Australia and England in 2013?",
+    "correctDate": "2013-02-17",
+    "eventType": "sports"
+},
+{
+    "id": 535,
+    "description": "When was the release date of Disney's 'The Lion King'?",
+    "correctDate": "1994-06-15",
+    "eventType": "movies"
+},
+{
+    "id": 536,
+    "description": "When was the release date of Disney's 'The Little Mermaid'?",
+    "correctDate": "1989-11-15",
+    "eventType": "movies"
+},
+{
+    "id": 537,
+    "description": "When was the release date of Disney's 'Pinocchio'?",
+    "correctDate": "1940-02-07",
+    "eventType": "movies"
+},
+{
+    "id": 538,
+    "description": "When was the release date of Disney's 'Beauty and the Beast'?",
+    "correctDate": "1991-11-13",
+    "eventType": "movies"
+},
+{
+    "id": 539,
+    "description": "When was the release date of Disney's 'Aladdin'?",
+    "correctDate": "1992-11-25",
+    "eventType": "movies"
+},
+{
+    "id": 540,
+    "description": "When was the release date of Disney's 'Mulan'?",
+    "correctDate": "1998-06-19",
+    "eventType": "movies"
+},
+{
+    "id": 541,
+    "description": "When was the release date of Disney's 'Bambi'?",
+    "correctDate": "1942-08-13",
+    "eventType": "movies"
+},
+{
+    "id": 542,
+    "description": "When was the release date of Disney's 'Cinderella'?",
+    "correctDate": "1950-02-15",
+    "eventType": "movies"
+},
+{
+    "id": 543,
+    "description": "When was the release date of Disney's 'Pocahontas'?",
+    "correctDate": "1995-06-16",
+    "eventType": "movies"
+},
+{
+    "id": 544,
+    "description": "When was the release date of Disney's 'Zootopia'?",
+    "correctDate": "2016-02-10",
+    "eventType": "movies"
+},
+{
+    "id": 545,
+    "description": "When was the release date of Disney's 'Moana'?",
+    "correctDate": "2016-11-14",
+    "eventType": "movies"
+},
+{
+    "id": 546,
+    "description": "When was the release date of Disney's 'Peter Pan'?",
+    "correctDate": "1953-02-05",
+    "eventType": "movies"
+},
+{
+    "id": 547,
+    "description": "When was the release date of Disney's 'Frozen'?",
+    "correctDate": "2013-11-27",
+    "eventType": "movies"
+},
+{
+    "id": 548,
+    "description": "When was the release date of Disney's 'Ratatouille'?",
+    "correctDate": "2007-06-22",
+    "eventType": "movies"
+},
+{
+    "id": 549,
+    "description": "When was the release date of Disney's 'Dumbo'?",
+    "correctDate": "1941-10-23",
+    "eventType": "movies"
+},
+{
+    "id": 550,
+    "description": "When was the release date of Disney's 'The Sword in the Stone'?",
+    "correctDate": "1963-12-25",
+    "eventType": "movies"
+},
+{
+    "id": 551,
+    "description": "When was the release date of Disney's 'Cinderella II: Dreams Come True'?",
+    "correctDate": "2002-02-26",
+    "eventType": "movies"
+},
+{
+    "id": 552,
+    "description": "When was the release date of Disney's 'The Jungle Book'?",
+    "correctDate": "1967-10-18",
+    "eventType": "movies"
+},
+{
+    "id": 553,
+    "description": "When was the release date of Disney's 'The Incredibles'?",
+    "correctDate": "2004-11-05",
+    "eventType": "movies"
+},
+{
+    "id": 554,
+    "description": "When was the release date of Disney's 'The Hunchback of Notre Dame'?",
+    "correctDate": "1996-06-21",
+    "eventType": "movies"
+},
+{
+    "id": 555,
+    "description": "When was the release date of Disney's 'The Princess and the Frog'?",
+    "correctDate": "2009-11-25",
+    "eventType": "movies"
+},
+{
+    "id": 556,
+    "description": "When was the release date of Disney's 'The Emperor's New Groove'?",
+    "correctDate": "2000-12-15",
+    "eventType": "movies"
+},
+{
+    "id": 557,
+    "description": "When was the release date of Disney's 'Tarzan'?",
+    "correctDate": "1999-06-12",
+    "eventType": "movies"
+},
+{
+    "id": 558,
+    "description": "When was the release date of Disney's 'The Rescuers'?",
+    "correctDate": "1977-06-22",
+    "eventType": "movies"
+},
+{
+    "id": 559,
+    "description": "When was the release date of Disney's 'The Fox and the Hound'?",
+    "correctDate": "1981-07-10",
+    "eventType": "movies"
+},
+{
+    "id": 560,
+    "description": "When was the release date of Disney's 'The Great Mouse Detective'?",
+    "correctDate": "1986-07-02",
+    "eventType": "movies"
+},
+{
+    "id": 561,
+    "description": "When was the release date of Disney's 'DuckTales the Movie: Treasure of the Lost Lamp'?",
+    "correctDate": "1990-08-03",
+    "eventType": "movies"
+},
+{
+    "id": 562,
+    "description": "When was the release date of Disney's 'The Black Cauldron'?",
+    "correctDate": "1985-07-24",
+    "eventType": "movies"
+},
+{
+    "id": 564,
+    "description": "When was the release date of Quentin Tarantino's 'Pulp Fiction'?",
+    "correctDate": "1994-10-14",
+    "eventType": "movies"
+},
+{
+    "id": 565,
+    "description": "When was the release date of Quentin Tarantino's 'Reservoir Dogs'?",
+    "correctDate": "1992-10-23",
+    "eventType": "movies"
+},
+{
+    "id": 566,
+    "description": "When was the release date of Quentin Tarantino's 'Kill Bill: Vol. 1'?",
+    "correctDate": "2003-10-10",
+    "eventType": "movies"
+},
+{
+    "id": 567,
+    "description": "When was the release date of Quentin Tarantino's 'Kill Bill: Vol. 2'?",
+    "correctDate": "2004-04-16",
+    "eventType": "movies"
+},
+{
+    "id": 568,
+    "description": "When was the release date of Quentin Tarantino's 'Django Unchained'?",
+    "correctDate": "2012-12-25",
+    "eventType": "movies"
+},
+{
+    "id": 569,
+    "description": "When was the release date of Quentin Tarantino's 'Inglourious Basterds'?",
+    "correctDate": "2009-08-21",
+    "eventType": "movies"
+},
+{
+    "id": 570,
+    "description": "When was the release date of Quentin Tarantino's 'The Hateful Eight'?",
+    "correctDate": "2015-12-25",
+    "eventType": "movies"
+},
+{
+    "id": 571,
+    "description": "When was the release date of Quentin Tarantino's 'Once Upon a Time in Hollywood'?",
+    "correctDate": "2019-07-26",
+    "eventType": "movies"
+},
+{
+    "id": 572,
+    "description": "When was the release date of Quentin Tarantino's 'Jackie Brown'?",
+    "correctDate": "1997-12-25",
+    "eventType": "movies"
+},
+{
+    "id": 573,
+    "description": "When was the release date of Quentin Tarantino's 'Death Proof'?",
+    "correctDate": "2007-04-06",
+    "eventType": "movies"
+},
+{
+    "id": 574,
+    "description": "What year did the United States officially reopen its embassy in Havana, Cuba?",
+    "correctDate": "2015-07-20",
+    "eventType": "history"
+},
+{
+    "id": 575,
+    "description": "When was the Paris Agreement on climate change adopted by the United Nations?",
+    "correctDate": "2015-12-12",
+    "eventType": "history"
+},
+{
+    "id": 576,
+    "description": "What year did the United Kingdom vote to leave the European Union ('Brexit')?",
+    "correctDate": "2016-06-23",
+    "eventType": "history"
+},
+{
+    "id": 577,
+    "description": "When was the inauguration date of Donald Trump as the 45th President of the United States?",
+    "correctDate": "2017-01-20",
+    "eventType": "history"
+},
+{
+    "id": 578,
+    "description": "What year did the Notre-Dame Cathedral in Paris catch fire?",
+    "correctDate": "2019-04-15",
+    "eventType": "history"
+},
+{
+    "id": 579,
+    "description": "When was the release date of the film 'Black Panther'?",
+    "correctDate": "2018-02-16",
+    "eventType": "movies"
+},
+{
+    "id": 580,
+    "description": "What year did the COVID-19 pandemic begin?",
+    "correctDate": "2019-12-31",
+    "eventType": "history"
+},
+{
+    "id": 581,
+    "description": "When was the signing date of the Abraham Accords, normalizing relations between Israel and several Arab countries?",
+    "correctDate": "2020-09-15",
+    "eventType": "history"
+},
+{
+    "id": 582,
+    "description": "What year did the United States experience widespread protests following the killing of George Floyd?",
+    "correctDate": "2020-05-25",
+    "eventType": "history"
+},
+{
+    "id": 583,
+    "description": "When was the release date of Christopher Nolan's film 'Dunkirk'?",
+    "correctDate": "2017-07-13",
+    "eventType": "movies"
+},
+{
+    "id": 584,
+    "description": "When was the release date of 'E.T. the Extra-Terrestrial'?",
+    "correctDate": "1982-06-11",
+    "eventType": "movies"
+},
+{
+    "id": 585,
+    "description": "When was the release date of 'The Breakfast Club'?",
+    "correctDate": "1985-02-15",
+    "eventType": "movies"
+},
+{
+    "id": 586,
+    "description": "When was the release date of 'Back to the Future'?",
+    "correctDate": "1985-07-03",
+    "eventType": "movies"
+},
+{
+    "id": 587,
+    "description": "When was the release date of 'Raiders of the Lost Ark'?",
+    "correctDate": "1981-06-12",
+    "eventType": "movies"
+},
+{
+    "id": 588,
+    "description": "When was the release date of 'The Shining'?",
+    "correctDate": "1980-06-13",
+    "eventType": "movies"
+},
+{
+    "id": 589,
+    "description": "When was the release date of 'Blade Runner'?",
+    "correctDate": "1982-06-25",
+    "eventType": "movies"
+},
+{
+    "id": 590,
+    "description": "When was the release date of 'The Empire Strikes Back'?",
+    "correctDate": "1980-05-21",
+    "eventType": "movies"
+},
+{
+    "id": 591,
+    "description": "When was the release date of 'The Princess Bride'?",
+    "correctDate": "1987-09-25",
+    "eventType": "movies"
+},
+{
+    "id": 592,
+    "description": "When was the release date of 'Ferris Bueller's Day Off'?",
+    "correctDate": "1986-06-11",
+    "eventType": "movies"
+},
+{
+    "id": 593,
+    "description": "When was the release date of 'Ghostbusters'?",
+    "correctDate": "1984-06-08",
+    "eventType": "movies"
+},
+{
+    "id": 594,
+    "description": "When was the release date of 'The Goonies'?",
+    "correctDate": "1985-06-07",
+    "eventType": "movies"
+},
+{
+    "id": 595,
+    "description": "When was the release date of 'Die Hard'?",
+    "correctDate": "1988-07-15",
+    "eventType": "movies"
+},
+{
+    "id": 596,
+    "description": "When was the release date of 'Scarface'?",
+    "correctDate": "1983-12-09",
+    "eventType": "movies"
+},
+{
+    "id": 597,
+    "description": "When was the release date of 'The Karate Kid'?",
+    "correctDate": "1984-06-22",
+    "eventType": "movies"
+},
+{
+    "id": 598,
+    "description": "When was the release date of 'The Terminator'?",
+    "correctDate": "1984-10-26",
+    "eventType": "movies"
+},
+{
+    "id": 599,
+    "description": "When was the release date of 'The Untouchables'?",
+    "correctDate": "1987-06-02",
+    "eventType": "movies"
+},
+{
+    "id": 600,
+    "description": "When was the release date of 'Rain Man'?",
+    "correctDate": "1988-12-16",
+    "eventType": "movies"
+},
+{
+    "id": 601,
+    "description": "When was the release date of 'Indiana Jones and the Last Crusade'?",
+    "correctDate": "1989-05-24",
+    "eventType": "movies"
+},
+{
+    "id": 602,
+    "description": "When was the release date of 'Top Gun'?",
+    "correctDate": "1986-05-16",
+    "eventType": "movies"
+},
+{
+    "id": 603,
+    "description": "When was the release date of 'The Lost Boys'?",
+    "correctDate": "1987-07-31",
+    "eventType": "movies"
 }
 ]
