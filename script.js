@@ -6,6 +6,7 @@ const feedback = document.querySelector('.feedback');
 const nextButton = document.querySelector('.next-button');
 const backspaceButton = document.getElementById('backspaceButton');
 
+let isGameActive = false;
 let eventDataList = [];
 let previousEventId = null;
 let selectedYear = '';
@@ -34,7 +35,9 @@ const defaultGameState = {
   comboValue: 0,
   correctQuestions: 0,
   totalQuestions: 0,
-  gameMode: 'Survival' // Set the initial game mode to 'Survival'
+  gameMode: 'Survival',
+  isGameActive: false,
+  previousEventId: null, // Add previousEventId to default game state
 };
 
 // Retrieve the saved game state from local storage
@@ -64,13 +67,27 @@ function isDefaultGameState(state) {
 // Update the game state in local storage
 localStorage.setItem('gameState', JSON.stringify(savedGameState));
 
-// Restore values from the saved game state
-totalRound = savedGameState.totalRound;
-totalHealth = savedGameState.totalHealth;
-comboValue = savedGameState.comboValue;
-correctQuestions = savedGameState.correctQuestions;
-totalQuestions = savedGameState.totalQuestions;
+// Add an event listener for the "load" event of the window
+window.addEventListener('load', () => {
+  // Call the function to restore saved game state
+  restoreValuesGameState();
+  // Update the score display based on the restored game state
+  updateScoreDisplay();
+});
 
+// Function to restore values from the saved game state
+function restoreValuesGameState() {
+  // Restore values from the saved game state
+  totalRound = savedGameState.totalRound;
+  totalHealth = savedGameState.totalHealth;
+  comboValue = savedGameState.comboValue;
+  correctQuestions = savedGameState.correctQuestions;
+  totalQuestions = savedGameState.totalQuestions;
+  isGameActive = savedGameState.isGameActive; // Restore isGameActive
+}
+
+
+restoreValuesGameState();
 // Update the score display
 updateScoreDisplay();
 
@@ -160,25 +177,89 @@ function hideSubmitClearButtons() {
 }
 
 const eventTypeButtons = document.querySelectorAll('.event-type-button');
-eventTypeButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const selectedEventType = button.getAttribute('data-event-type');
-    //reset combo value
-    comboValue = 0;
-    //reset round value
-    totalRound = 1;
-    // Check if the clicked tab is already active
-    if (!button.classList.contains('active')) {
-      filterEvents(selectedEventType);
+const warningPopup = document.getElementById('warningPopup');
+
+// Create a variable to track whether the warning popup is shown
+let isWarningPopupShown = false;
+let selectedEventTypeBeforeWarning = null; // Store the selected event type before showing the warning
+
+// Function to enable or disable event listeners for changing the tab
+function toggleTabChangeListeners(enable) {
+  eventTypeButtons.forEach(button => {
+    if (enable) {
+      button.addEventListener('click', tabChangeHandler);
     } else {
-      // Display "Select a date" message if the tab is already active
-      clearBoxStyles(); // Clear box colors and digits
-      selectedYear = '';
-      feedback.textContent = '';
-      resetBoxOutlines(); // Reset box outline colors
+      button.removeEventListener('click', tabChangeHandler);
     }
   });
+}
+
+// Event handler for changing the tab
+function tabChangeHandler() {
+  const selectedEventType = this.getAttribute('data-event-type');
+
+  // Store the selected event type before showing the warning
+  selectedEventTypeBeforeWarning = selectedEventType;
+
+  // Check if the game mode is not "Freeplay"
+  if (gameMode !== 'Freeplay') {
+    // Show the warning popup
+    showWarningPopup();
+  } else {
+    // If in "Freeplay" mode, directly change the tab
+    comboValue = 0;
+    totalRound = 1;
+    filterEvents(selectedEventType);
+  }
+}
+
+// Event listeners for each button (initial setup)
+toggleTabChangeListeners(true);
+
+// Handle confirm button click in the warning popup
+const confirmButton = warningPopup.querySelector('#confirmButton');
+confirmButton.addEventListener('click', () => {
+  // Use the stored selected event type
+  const selectedEventType = selectedEventTypeBeforeWarning;
+
+  // If the user confirms, reset combo and round values
+  comboValue = 0;
+  totalRound = 1;
+  filterEvents(selectedEventType);
+
+  // Hide the warning popup
+  hideWarningPopup();
+
+  // Re-enable tab change listeners
+  toggleTabChangeListeners(true);
 });
+
+// Handle cancel button click in the warning popup
+const cancelButton = warningPopup.querySelector('#cancelButton');
+cancelButton.addEventListener('click', () => {
+  // Hide the warning popup
+  hideWarningPopup();
+
+  // Re-enable tab change listeners
+  toggleTabChangeListeners(true);
+});
+
+// Event listener to show the warning popup when changing the tab
+eventTypeButtons.forEach(button => {
+  button.addEventListener('click', tabChangeHandler);
+});
+
+
+
+function setLocalStorage() {
+  localStorage.setItem('gameState', JSON.stringify({
+    totalRound,
+    totalHealth,
+    comboValue,
+    correctQuestions,
+    totalQuestions
+  }));
+}
 
 
 function filterEvents(selectedEventType) {
@@ -213,7 +294,17 @@ function updateScoreDisplay() {
   comboValueElement.textContent = comboValue; // Update the combo value
 }
 
+// Save the game state including the previousEventId
+const gameStateToSave = {
+  totalRound: totalRound,
+  totalHealth: totalHealth,
+  comboValue: comboValue,
+  correctQuestions: correctQuestions,
+  totalQuestions: totalQuestions,
+  previousEventId: previousEventId, // Save the previous event ID
+};
 
+localStorage.setItem('gameState', JSON.stringify(gameStateToSave));
 
 function updateTotalHealthDisplay(totalHealth) {
   const totalHealthValueElement = document.querySelector('.total-health-value');
@@ -223,13 +314,35 @@ function updateTotalHealthDisplay(totalHealth) {
 const gameOverPopup = document.getElementById('gameOverPopup');
 
 function showGameOverPopup() {
-  // Display the popup
+    // Assuming you have calculated the correctYear value
+  const correctYear = 2023; // Replace this with the actual correct year
+
+  // Get the correctYearInPopup span element
+  const correctYearInPopup = document.getElementById('correctYearInPopup');
+
+  // Update the content of the span element with the correct year
+  correctYearInPopup.textContent = correctYear;
+
+
+
   gameOverPopup.style.display = 'block';
+}
+
+function showWarningPopup() {
+  // Display the popup
+  warningPopup.style.display = 'block';
+}
+
+function hideWarningPopup() {
+  // Display the popup
+  warningPopup.style.display = 'none';
 }
 
 
 // Function to end the game
 function endGame() {
+  isGameActive = false;
+  resumeButton.style.display = 'none';
   // Update the correct questions, total questions, and round in the popup
   const correctQuestionsElement = document.getElementById('correctQuestions');
   correctQuestionsElement.textContent = correctQuestions;
@@ -240,13 +353,36 @@ function endGame() {
   const endRoundElement = document.getElementById('endRound');
   endRoundElement.textContent = totalRound;
 
-  // Show the game over popup
-  showGameOverPopup();
+  // Delay the game over popup by 2000ms (2 seconds)
+  setTimeout(() => {
+    showGameOverPopup();
 
-  submitButton.style.display = 'none';
-  clearButton.style.display = 'none';
+    // Reset game data
+    totalRound = 1;
+    totalHealth = 250;
+    comboValue = 0;
+    correctQuestions = 0;
+    totalQuestions = 0;
 
+    // Update the score display
+    updateScoreDisplay();
+
+    // Clear the selected year and feedback
+    selectedYear = '';
+    feedback.textContent = '';
+
+    // Start a new event
+    startNewEvent();
+
+    updateGameState();
+
+    localStorage.setItem('gameState', JSON.stringify(savedGameState));
+  }, 0);
+
+  hideSubmitClearButtons();
 }
+
+
 
 function showActionButtons() {
   const actionButtons = document.querySelectorAll('.action-button');
@@ -288,13 +424,6 @@ restartButton.addEventListener('click', () => {
 });
 
 
-// Add event listener for the "Restart" button
-restartButton.addEventListener('click', () => {
-  // Restart the current game mode
-  startNewGame();
-});
-
-
 // Add event listener for the "Backspace" button
 backspaceButton.addEventListener('click', () => {
   // Remove the last digit from the selectedYear array
@@ -317,9 +446,9 @@ backspaceButton.addEventListener('click', () => {
   }
 });
 
-
 // Attach the "Next" button click event listener outside of the submitGuess function
 nextButton.addEventListener('click', () => {
+  setLocalStorage();
   console.log('Next button clicked');
   rating = 0;
   updateRoundDisplay(totalRound); // Update the round value on the screen
@@ -347,16 +476,16 @@ function updateYearDisplay() {
   }
 }
 
+function updateGameState() {
+  savedGameState.totalRound = totalRound;
+  savedGameState.totalHealth = totalHealth;
+  savedGameState.comboValue = comboValue;
+  savedGameState.correctQuestions = correctQuestions;
+  savedGameState.totalQuestions = totalQuestions;
+}
 
 function submitGuess() {
-  localStorage.setItem('gameState', JSON.stringify({
-    totalRound,
-    totalHealth,
-    comboValue,
-    correctQuestions,
-    totalQuestions
-  }));
-
+  setLocalStorage();
   if (!selectedYear || selectedYear.length !== 4) {
     const popup = document.querySelector('.popup-message');
     popup.textContent = 'Date incomplete';
@@ -477,12 +606,7 @@ function submitGuess() {
         console.log('Round:', totalRound)
         console.log('Combo Level:', comboValue)
  
-        // Update the totalHealth in the saved game state
-        savedGameState.totalHealth = totalHealth;
-        savedGameState.totalRound = totalRound;
-        savedGameState.comboValue = comboValue;
-        savedGameState.totalQuestions = totalQuestions;
-        savedGameState.correctQuestions = correctQuestions;
+        updateGameState();
         
         updateScoreDisplay(comboValue)
         updateTotalHealthDisplay(totalHealth);
@@ -599,15 +723,17 @@ async function startNewEvent() {
 
   hideActionButtons();
   showSubmitClearButtons();
-
+  updateGameState();
   updateGameModeText(); // Update the displayed game mode
 
+  // Inside the startNewEvent() function
   if (filteredEvents.length > 0) {
     let randomEvent;
-
     do {
       randomEvent = filteredEvents[Math.floor(Math.random() * filteredEvents.length)];
-    } while (randomEvent.id === previousEventId);
+    } while (randomEvent.id === savedGameState.previousEventId); // Update here
+    savedGameState.previousEventId = randomEvent.id; // Update previousEventId
+
 
     previousEventId = randomEvent.id;
     eventDescription.textContent = randomEvent.description;
@@ -648,67 +774,22 @@ startGameOverlay.addEventListener('click', (event) => {
   }
 });
 
-// resume button
+if (!isGameActive) {
+resumeButton.style.display = 'none';
+}
+
+if (isGameActive) {
+  resumeButton.style.display = 'inline-block';
+  }
 
 // When the resume button is clicked
-resumeButton.addEventListener('click', async () => {
-  const savedGameState = JSON.parse(localStorage.getItem('gameState'));
-  if (savedGameState) {
-    totalRound = savedGameState.totalRound;
-    totalHealth = savedGameState.totalHealth;
-    comboValue = savedGameState.comboValue;
-    correctQuestions = savedGameState.correctQuestions;
-    totalQuestions = savedGameState.totalQuestions;
-
-    // Update the score display
-    updateScoreDisplay();
-    
-    // Clear the selected year and feedback
-    selectedYear = '';
-    feedback.textContent = '';
-
-    // Update the round display
-    updateRoundDisplay(totalRound);
-
-    // Update the combo and score displays
-    updateScoreDisplay();
-    updateComboValueDisplay(comboValue);
-    updateTotalHealthDisplay(totalHealth);
-    updateGameModeText();
-
-    // Fetch event data
-    await fetchEventData();
-
-
-    // Find the saved event by event ID
-    const savedEvent = eventDataList.find(event => event.id === savedGameState.previousEventId);
-
-    // Start the saved event if it exists
-    if (savedEvent) {
-      eventDescription.textContent = savedEvent.description;
-
-      // Update box outlines
-      updateBoxOutlines();
-
-      // Update box colors for the saved event
-      const correctYear = new Date(savedEvent.correctDate).getFullYear().toString();
-      updateBoxColors(correctYear);
-
-      // Show the submit and clear buttons
-      showSubmitClearButtons();
-
-      // Start the event
-      startNewGame();
-    } else {
-      startNewEvent();
-    }
-
+resumeButton.addEventListener('click', () => {
+  // Check if the game is active before resuming
+  if (isGameActive) {
     // Hide the overlay and popup
     hideOverlayAndPopup();
   }
 });
-
-
 
 // Function to show the overlay and pop-up
 function showOverlayAndPopup() {
@@ -789,6 +870,8 @@ startGameOverlay.addEventListener('click', (event) => {
 
 // Modify the startNewGame() function
 function startNewGame() {
+  isGameActive = true;
+  resumeButton.style.display = 'inline-block';
   comboValue = 0; // Reset the combo value
   totalRating = 0; // Reset the total rating
   totalRound = 1; // Reset the total round
@@ -800,6 +883,8 @@ function startNewGame() {
   // Update the round display
   updateRoundDisplay(totalRound);
 
+  updateTotalHealthDisplay(totalHealth)
+
   updateGameModeText(); // Update the displayed game mode
   
   startNewEvent(); // Start a new event
@@ -807,7 +892,6 @@ function startNewGame() {
   // Update the game state in local storage, including the game mode
   savedGameState.gameMode = gameMode;
   localStorage.setItem('gameState', JSON.stringify(savedGameState));
-
 }
 
 // Populate the year digits when the page loads

@@ -58,7 +58,7 @@
           <div class="rules-popup" id="rulesPopup">
             <h2>Survival Mode Rules</h2>
             <p>Survive as long as you can by guessing the correct dates.</p>
-            <p>Guess correct and you'll you gain health and combo multipliers. Guess incorrectly and you'll lose health.</p>
+            <p>Guess <span class="green-text">Correct</span> and you'll gain health and combo multipliers. Guess <span class="red-text">incorrectly</span> and you'll lose <span class="red-text">-1 health</span> for every missed year.</p>
             <p>If you run out of health, it's game over!</p>
           </div>
         
@@ -120,9 +120,18 @@
           <p class="value combo-value">0</p>
         </div>
       </div>
+      <div id="warningPopup" class="warning-popup">
+        <div class="popup-content">
+          <h2>Warning</h2>
+          <p>This will end the current game, are you sure you want to change category?</p>
+          <button id="confirmButton">Yes</button>
+          <button id="cancelButton">No</button>
+        </div>
+      </div>      
       <div id="gameOverPopup" class="popup">
         <div class="popup-content">
           <h2>Game Over</h2>
+          <p>The correct date was <span id="correctYearInPopup"></span>.</p>
           <p>You answered <span id="correctQuestions">0</span> out of <span id="totalQuestions">0</span> questions correctly.</p>
           <p>You reached round <span id="endRound">1</span>.</p>
           <h3>Select Mode</h3>
