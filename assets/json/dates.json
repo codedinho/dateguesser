@@ -1195,7 +1195,7 @@
 },
 {
     "id": 231,
-    "description": "Battle of Hastings?",
+    "description": "Battle of Hastings? come on..",
     "correctDate": "1066-10-14",
     "eventType": "history"
 },
@@ -2322,18 +2322,6 @@
     "eventType": "sports"
 },
 {
-    "id": 423,
-    "description": "What year did the Renaissance begin in Europe?",
-    "correctDate": "14th century",
-    "eventType": "history"
-},
-{
-    "id": 424,
-    "description": "When was the premiere of 'Avatar'?",
-    "correctDate": "2009-12-18",
-    "eventType": "movies"
-},
-{
     "id": 425,
     "description": "What year did Beyoncé release her solo album 'Dangerously in Love'?",
     "correctDate": "2003-06-20",
@@ -2566,12 +2554,6 @@
     "description": "What year did the Chicago Bulls win their first NBA championship with Michael Jordan?",
     "correctDate": "1991-06-12",
     "eventType": "sports"
-},
-{
-    "id": 466,
-    "description": "When was the premiere of 'Avatar'?",
-    "correctDate": "2009-12-18",
-    "eventType": "movies"
 },
 {
     "id": 467,
@@ -3364,12 +3346,6 @@
     "description": "When was the release date of the original 'The Lost Boys' directed by Joel Schumacher?",
     "correctDate": "1987-07-31",
     "eventType": "movies"
-},
-{
-    "id": 604,
-    "description": "When did the Industrial Revolution begin?",
-    "correctDate": "18th century",
-    "eventType": "history"
 },
 {
     "id": 605,

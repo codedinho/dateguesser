@@ -564,7 +564,7 @@ function submitGuess() {
       let healthIncrement = 0;
 
       if (gameMode === 'Survival') {
-        healthIncrement = 25 * comboMultiplier;
+        healthIncrement = parseInt(25 * comboMultiplier); // Convert to integer
         totalHealth += healthIncrement;
         updateTotalHealthDisplay(totalHealth);
 
