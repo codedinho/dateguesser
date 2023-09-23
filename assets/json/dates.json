@@ -1416,12 +1416,6 @@
     "eventType": "history"
 },
 {
-    "id": 270,
-    "description": "When was the construction of the Great Pyramid of Giza completed?",
-    "correctDate": "2560-04-23",
-    "eventType": "history"
-},
-{
     "id": 271,
     "description": "When did Babe Ruth hit his 60th home run in a single baseball season?",
     "correctDate": "1927-09-30",
@@ -2352,12 +2346,6 @@
     "eventType": "sports"
 },
 {
-    "id": 427,
-    "description": "What year did the construction of the Great Wall of China begin?",
-    "correctDate": "7th century BC",
-    "eventType": "history"
-},
-{
     "id": 428,
     "description": "When was the premiere of 'E.T. the Extra-Terrestrial'?",
     "correctDate": "1982-06-11",
@@ -2505,12 +2493,6 @@
     "id": 452,
     "description": "When was the signing of the Magna Carta?",
     "correctDate": "1215-06-15",
-    "eventType": "history"
-},
-{
-    "id": 453,
-    "description": "What year did the construction of the Great Wall of China begin?",
-    "correctDate": "7th century BC",
     "eventType": "history"
 },
 {
@@ -3379,7 +3361,7 @@
 },
 {
     "id": 603,
-    "description": "When was the release date of 'The Lost Boys'?",
+    "description": "When was the release date of the original 'The Lost Boys' directed by Joel Schumacher?",
     "correctDate": "1987-07-31",
     "eventType": "movies"
 },

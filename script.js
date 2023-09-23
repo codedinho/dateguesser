@@ -416,6 +416,9 @@ function updateGameModeText() {
 }
 
 const restartButton = document.querySelector('.restart-game-button');
+const confirmRestartButton = document.getElementById('confirm-restart');
+const cancelRestartButton = document.getElementById('cancel-restart');
+const customRestart = document.getElementById('custom-restart');
 const menuButton = document.querySelector('.menu-button');
 
 // Add event listener for the "Swap Gamemode" button
@@ -426,13 +429,23 @@ menuButton.addEventListener('click', () => {
 
 // Add event listener for the "Restart" button
 restartButton.addEventListener('click', () => {
-  // Show a confirmation dialog
-  const confirmed = confirm("Are you sure you want to restart the game?");
-  
-  if (confirmed) {
-    // Perform the game restart logic here
-    startNewGame(); // Call your restart function here
-  }
+  // Show the custom Restart
+  customRestart.style.display = 'block';
+});
+
+// Add event listener for the "Confirm Restart" button
+confirmRestartButton.addEventListener('click', () => {
+  // Hide the custom Restart
+  customRestart.style.display = 'none';
+
+  // Perform the game restart logic here
+  startNewGame(); // Call your restart function here
+});
+
+// Add event listener for the "Cancel Restart" button
+cancelRestartButton.addEventListener('click', () => {
+  // Hide the custom modal
+  customRestart.style.display = 'none';
 });
 
 
