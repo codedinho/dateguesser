@@ -423,7 +423,6 @@ const menuButton = document.querySelector('.menu-button');
 
 // Add event listener for the "Swap Gamemode" button
 menuButton.addEventListener('click', () => {
-  console.log('Button clicked');
   showOverlayAndPopup(); // Show the start game popup
 });
 
@@ -475,7 +474,6 @@ backspaceButton.addEventListener('click', () => {
 nextButton.addEventListener('click', () => {
   // Check if health is above 0
   setLocalStorage();
-  console.log('Next button clicked');
   rating = 0;
   updateRoundDisplay(totalRound); // Update the round value on the screen
   startNewEvent(); // Trigger a new event
@@ -599,7 +597,6 @@ function submitGuess() {
 
       // Calculate the year difference using the converted numbers
       const yearDifference = Math.abs(selectedYearNum - correctYearNum);
-      console.log('Year Difference:', yearDifference);
 
       // Increase combo value and update display
       comboValue = 0;
@@ -613,8 +610,6 @@ function submitGuess() {
 
       // Update the totalHealth display
       updateTotalHealthDisplay(totalHealth);
-
-      console.log('Health Deduction:', healthDeduction);
 
       if (gameMode !== 'Freeplay') {
         totalHealth -= healthDeduction;
@@ -713,7 +708,6 @@ clearButton.addEventListener('click', () => {
 });
 
 submitButton.addEventListener('click', () => {
-  console.log('Submit button clicked'); // Add this line
   submitGuess();
 });
 
@@ -781,8 +775,6 @@ const resumeButton = document.getElementById('resumeButton'); // Change the ID t
 const gamemodeButton = document.getElementById('gamemodeButton');
 
 gamemodeButton.addEventListener('click', () => {
-  console.log('Button clicked');
-  console.log('Current game mode:', gameMode);
   showOverlayAndPopup(); // Show the start game popup
   updateGameModeText(); // Update the displayed game mode
 });
