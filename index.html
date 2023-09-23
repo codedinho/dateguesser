@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> <!-- Add user-scalable=no here -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
@@ -12,6 +12,7 @@
   <div class="top-bar">
     <div class="logo">
       <img src="./assets/icons/logo.PNG" alt="DateGuesser">
+      <div class="highestScore" id="topScore">Top Score:</div>
     </div>
 
     <div class="menu">
@@ -122,7 +123,7 @@
       </div>
       <div id="warningPopup" class="warning-popup">
         <div class="popup-content">
-          <h2>Warning</h2>
+          <h2>Warning!</h2>
           <p>This will end the current game, are you sure you want to change category?</p>
           <button id="confirmButton">Yes</button>
           <button id="cancelButton">No</button>
@@ -130,10 +131,10 @@
       </div>      
       <div id="gameOverPopup" class="popup">
         <div class="popup-content">
-          <h2>Game Over</h2>
-          <p>The correct date was <span id="correctYearInPopup"></span>.</p>
+          <h2>Game Over!</h2>
+          <p>The correct date was <span id="correctYearInPopup" style="color: green; font-size: 24px; font-weight: 550;"></span>.</p>
+          <p>You reached round <span id="endRound" style="color: green; font-size: 24px; font-weight: 550;">1</span>.</p>
           <p>You answered <span id="correctQuestions">0</span> out of <span id="totalQuestions">0</span> questions correctly.</p>
-          <p>You reached round <span id="endRound">1</span>.</p>
           <h3>Select Mode</h3>
           <button id="playAgainButton">Survival</button>
           <button id="freeplayAgainButton">Freeplay</button>

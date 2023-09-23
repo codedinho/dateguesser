@@ -519,6 +519,7 @@ button {
   font-family: 'Staatliches', cursive;
   font-size: 18px;
   border-radius:  10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 #confirmButton:hover, #cancelButton:hover {
@@ -577,7 +578,7 @@ button {
   font-size: 24px;
   color: red;
   display: none;
-  animation: fadeOut 4s forwards;
+  animation: fadeOut 3s forwards;
   margin-top: -32.5px;
   margin-left: 75px;
 }
@@ -601,15 +602,12 @@ button {
   color: green;
 }
 
-
-
 .health-increment {
   position: absolute;
   font-size: 24px;
   color: green; /* Set the color to green */
   display: none;
-  animation: fadeOut 4s forwards;
-  left: 54%;
+  animation: fadeOut 3s forwards;
   margin-top: -32.5px;
   margin-left: 75px;
 }
@@ -626,4 +624,9 @@ button {
   }
 }
 
+#topScore {
+  position: absolute;
+  right: 20px;
+  font-size: 24px;
+}
 

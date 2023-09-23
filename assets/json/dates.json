@@ -1212,12 +1212,6 @@
     "eventType": "history"
 },
 {
-    "id": 234,
-    "description": "When did Julius Caesar get assassinated?",
-    "correctDate": "44-03-15",
-    "eventType": "history"
-},
-{
     "id": 235,
     "description": "When was the Battle of Gettysburg during the American Civil War?",
     "correctDate": "1863-07-01",
@@ -1233,12 +1227,6 @@
     "id": 237,
     "description": "When did the Spanish Armada attempt to invade England?",
     "correctDate": "1588-07-20",
-    "eventType": "history"
-},
-{
-    "id": 238,
-    "description": "When was the fall of the Roman Empire in the West?",
-    "correctDate": "476-09-04",
     "eventType": "history"
 },
 {
@@ -1591,7 +1579,7 @@
 },
 {
     "id": 297,
-    "description": "When was the Treaty of Ghent signed to end the War of 1812?",
+    "description": "When was the Treaty of Ghent signed to end the War?",
     "correctDate": "1814-12-24",
     "eventType": "history"
 },
@@ -2797,199 +2785,199 @@
 },
 {
     "id": 502,
-    "description": "When did England win their first and only FIFA World Cup, featuring Geoff Hurst's hat-trick in 1966?",
+    "description": "When did England win their first and only FIFA World Cup, featuring Geoff Hurst's hat-trick?",
     "correctDate": "1966-07-30",
     "eventType": "sports"
 },
 {
     "id": 503,
-    "description": "When was the FIFA World Cup final between Brazil and Germany in 2002, won by Brazil?",
+    "description": "When was the FIFA World Cup final between Brazil and Germany, won by Brazil?",
     "correctDate": "2002-06-30",
     "eventType": "sports"
 },
 {
     "id": 504,
-    "description": "When was the Rugby World Cup final between New Zealand and France in 1987, the inaugural edition?",
+    "description": "When was the Rugby World Cup final between New Zealand and France, the inaugural edition?",
     "correctDate": "1987-06-20",
     "eventType": "sports"
 },
 {
     "id": 505,
-    "description": "When did South Africa win the Rugby World Cup in 1995, hosted in their country?",
+    "description": "When did South Africa win the Rugby World Cup, hosted in their country?",
     "correctDate": "1995-06-24",
     "eventType": "sports"
 },
 {
     "id": 506,
-    "description": "When was the Rugby World Cup final between England and Australia in 2003, won by England in extra time?",
+    "description": "When was the Rugby World Cup final between England and Australia, won by England in extra time?",
     "correctDate": "2003-11-22",
     "eventType": "sports"
 },
 {
     "id": 507,
-    "description": "When did New Zealand win the Rugby World Cup in 2011?",
-    "correctDate": "2011-10-23",
+    "description": "When did New Zealand first win the Rugby World Cup?",
+    "correctDate": "1987-05-23",
     "eventType": "sports"
 },
 {
     "id": 508,
-    "description": "When was the Rugby World Cup final between South Africa and England in 2019, won by South Africa?",
+    "description": "When was the Rugby World Cup final between South Africa and England, won by South Africa?",
     "correctDate": "2019-11-02",
     "eventType": "sports"
 },
 {
     "id": 509,
-    "description": "When was the Cricket World Cup final between West Indies and Australia in 1975, the first-ever Cricket World Cup?",
+    "description": "When was the Cricket World Cup final between West Indies and Australia, the first-ever Cricket World Cup?",
     "correctDate": "1975-06-21",
     "eventType": "sports"
 },
 {
     "id": 510,
-    "description": "When did India win the Cricket World Cup in 1983, defeating the West Indies?",
+    "description": "When did India win the Cricket World Cup, defeating the West Indies?",
     "correctDate": "1983-06-25",
     "eventType": "sports"
 },
 {
     "id": 511,
-    "description": "When was the Cricket World Cup final between Australia and Pakistan in 1999?",
+    "description": "When was the Cricket World Cup final between Australia and Pakistan",
     "correctDate": "1999-06-20",
     "eventType": "sports"
 },
 {
     "id": 512,
-    "description": "When did Australia win the Cricket World Cup in 2007?",
-    "correctDate": "2007-04-28",
+    "description": "When did Australia first win the Cricket World Cup?",
+    "correctDate": "1987-04-28",
     "eventType": "sports"
 },
 {
     "id": 513,
-    "description": "When was the Cricket World Cup final between India and Sri Lanka in 2011, won by India?",
+    "description": "When was the Cricket World Cup final between India and Sri Lanka, won by India?",
     "correctDate": "2011-04-02",
     "eventType": "sports"
 },
 {
     "id": 514,
-    "description": "When did England win the Cricket World Cup in 2019?",
+    "description": "When did England first win the Cricket World Cup?",
     "correctDate": "2019-07-14",
     "eventType": "sports"
 },
 {
     "id": 515,
-    "description": "When was the FIFA World Cup final between Brazil and Sweden in 1958, where a young Pelé made his debut?",
+    "description": "When was the FIFA World Cup final between Brazil and Sweden, where a young Pelé made his debut?",
     "correctDate": "1958-06-29",
     "eventType": "sports"
 },
 {
     "id": 516,
-    "description": "When did Italy win the FIFA World Cup by defeating West Germany in 1982?",
+    "description": "When did Italy win the FIFA World Cup by defeating West Germany?",
     "correctDate": "1982-07-11",
     "eventType": "sports"
 },
 {
     "id": 517,
-    "description": "When was the FIFA World Cup final between Argentina and the Netherlands in 1978, won by Argentina?",
+    "description": "When was the FIFA World Cup final between Argentina and the Netherlands, won by Argentina?",
     "correctDate": "1978-06-25",
     "eventType": "sports"
 },
 {
     "id": 518,
-    "description": "When did France win their second FIFA World Cup, defeating Croatia in 2018?",
+    "description": "When did France win their second FIFA World Cup, defeating Croatia?",
     "correctDate": "2018-07-15",
     "eventType": "sports"
 },
 {
     "id": 519,
-    "description": "When was the Rugby World Cup final between South Africa and New Zealand in 1995, with Nelson Mandela presenting the trophy?",
+    "description": "When was the Rugby World Cup final between South Africa and New Zealand, with Nelson Mandela presenting the trophy?",
     "correctDate": "1995-06-24",
     "eventType": "sports"
 },
 {
     "id": 520,
-    "description": "When did England win the Rugby World Cup for the second time, defeating Australia in 2003?",
+    "description": "When did England win the Rugby World Cup for the second time, defeating Australia?",
     "correctDate": "2003-11-22",
     "eventType": "sports"
 },
 {
     "id": 521,
-    "description": "When was the Rugby World Cup final between Australia and England in 1991, won by Australia?",
+    "description": "When was the Rugby World Cup final between Australia and England, won by Australia?",
     "correctDate": "1991-11-02",
     "eventType": "sports"
 },
 {
     "id": 522,
-    "description": "When did New Zealand win their second consecutive Rugby World Cup in 2015?",
+    "description": "When did New Zealand win their second consecutive Rugby World Cup?",
     "correctDate": "2015-10-31",
     "eventType": "sports"
 },
 {
     "id": 523,
-    "description": "When was the Rugby World Cup final between England and South Africa in 2019, won by South Africa?",
+    "description": "When was the Rugby World Cup final between England and South Africa, won by South Africa?",
     "correctDate": "2019-11-02",
     "eventType": "sports"
 },
 {
     "id": 524,
-    "description": "When was the Cricket World Cup final between India and West Indies in 1983, won by India?",
+    "description": "When was the Cricket World Cup final between India and West Indies, won by India?",
     "correctDate": "1983-06-25",
     "eventType": "sports"
 },
 {
     "id": 525,
-    "description": "When did Australia win the Cricket World Cup for the third time, defeating Pakistan in 1999?",
+    "description": "When did Australia win the Cricket World Cup for the third time, defeating Pakistan?",
     "correctDate": "1999-06-20",
     "eventType": "sports"
 },
 {
     "id": 526,
-    "description": "When was the Cricket World Cup final between India and Sri Lanka in 1996, won by Sri Lanka?",
+    "description": "When was the Cricket World Cup final between India and Sri Lanka, won by Sri Lanka?",
     "correctDate": "1996-03-17",
     "eventType": "sports"
 },
 {
     "id": 527,
-    "description": "When did Australia win their fourth Cricket World Cup, defeating Pakistan in 2007?",
+    "description": "When did Australia win their fourth Cricket World Cup, defeating Pakistan?",
     "correctDate": "2007-04-28",
     "eventType": "sports"
 },
 {
     "id": 528,
-    "description": "When was the Cricket World Cup final between Australia and New Zealand in 2015?",
+    "description": "When was the Cricket World Cup final between Australia and New Zealand?",
     "correctDate": "2015-03-29",
     "eventType": "sports"
 },
 {
     "id": 529,
-    "description": "When did England win the ICC T20 Cricket World Cup for the first time in 2010?",
+    "description": "When did England win the ICC T20 Cricket World Cup for the first time?",
     "correctDate": "2010-05-16",
     "eventType": "sports"
 },
 {
     "id": 530,
-    "description": "When was the ICC Women's T20 Cricket World Cup final between Australia and India in 2020?",
+    "description": "When was the ICC Women's T20 Cricket World Cup final between Australia and India?",
     "correctDate": "2020-03-08",
     "eventType": "sports"
 },
 {
     "id": 531,
-    "description": "When did South Africa win the ICC Women's T20 Cricket World Cup in 2014?",
+    "description": "When did South Africa win the ICC Women's T20 Cricket World Cup?",
     "correctDate": "2014-04-06",
     "eventType": "sports"
 },
 {
     "id": 532,
-    "description": "When was the ICC Women's Cricket World Cup final between England and India in 2017?",
+    "description": "When was the ICC Women's Cricket World Cup final between England and India?",
     "correctDate": "2017-07-23",
     "eventType": "sports"
 },
 {
     "id": 533,
-    "description": "When did West Indies win their second ICC Women's T20 Cricket World Cup, defeating Australia in 2016?",
+    "description": "When did West Indies win their second ICC Women's T20 Cricket World Cup, defeating Australia?",
     "correctDate": "2016-04-03",
     "eventType": "sports"
 },
 {
     "id": 534,
-    "description": "When was the ICC Women's Cricket World Cup final between Australia and England in 2013?",
+    "description": "When was the ICC Women's Cricket World Cup final between Australia and England?",
     "correctDate": "2013-02-17",
     "eventType": "sports"
 },

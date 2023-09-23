@@ -16,6 +16,7 @@ let totalQuestions = 0; // Total number of questions in the game
 let currentQuestion = '';
 let totalHealth = 250; // Total score for the game
 let totalRound = 1; //Total rounds for the game
+let highestScore = 1;
 let comboValue = 0;
 let correctQuestions = 0;
 let comboMultiplier = 1.25; // Initial combo multiplier
@@ -67,12 +68,23 @@ function isDefaultGameState(state) {
 // Update the game state in local storage
 localStorage.setItem('gameState', JSON.stringify(savedGameState));
 
-// Add an event listener for the "load" event of the window
+// Add this code inside the "load" event listener
 window.addEventListener('load', () => {
   // Call the function to restore saved game state
   restoreValuesGameState();
   // Update the score display based on the restored game state
   updateScoreDisplay();
+
+  // Retrieve the highest score from local storage
+  const savedHighestScore = localStorage.getItem('highestScore');
+  if (savedHighestScore) {
+    highestScore = parseInt(savedHighestScore);
+  }
+
+  // Display the highest score in the "topScore" div
+  const topScoreElement = document.getElementById('topScore');
+  topScoreElement.textContent = `Highest Round: ${highestScore}`;
+  
 });
 
 // Function to restore values from the saved game state
@@ -252,14 +264,17 @@ eventTypeButtons.forEach(button => {
 
 
 function setLocalStorage() {
-  localStorage.setItem('gameState', JSON.stringify({
+  const gameState = {
     totalRound,
     totalHealth,
     comboValue,
     correctQuestions,
-    totalQuestions
-  }));
+    totalQuestions,
+    highestScore // Add the highest score property here
+  };
+  localStorage.setItem('gameState', JSON.stringify(gameState));
 }
+
 
 
 function filterEvents(selectedEventType) {
@@ -311,23 +326,6 @@ function updateTotalHealthDisplay(totalHealth) {
   totalHealthValueElement.textContent = totalHealth;
 }
 
-const gameOverPopup = document.getElementById('gameOverPopup');
-
-function showGameOverPopup() {
-    // Assuming you have calculated the correctYear value
-  const correctYear = 2023; // Replace this with the actual correct year
-
-  // Get the correctYearInPopup span element
-  const correctYearInPopup = document.getElementById('correctYearInPopup');
-
-  // Update the content of the span element with the correct year
-  correctYearInPopup.textContent = correctYear;
-
-
-
-  gameOverPopup.style.display = 'block';
-}
-
 function showWarningPopup() {
   // Display the popup
   warningPopup.style.display = 'block';
@@ -338,6 +336,18 @@ function hideWarningPopup() {
   warningPopup.style.display = 'none';
 }
 
+function updateHighScore() {
+  // Display the highest score in the "topScore" div
+  const topScoreElement = document.getElementById('topScore');
+  if (gameMode !== 'Freeplay') {
+    if (totalRound > highestScore) {
+      highestScore = totalRound; // Update the highest score
+      // Save the highest score in local storage
+      localStorage.setItem('highestScore', highestScore);
+    }
+  }
+  topScoreElement.textContent = `Top Score: ${highestScore}`;
+}
 
 // Function to end the game
 function endGame() {
@@ -352,31 +362,33 @@ function endGame() {
   
   const endRoundElement = document.getElementById('endRound');
   endRoundElement.textContent = totalRound;
-
+  
   // Delay the game over popup by 2000ms (2 seconds)
   setTimeout(() => {
-    showGameOverPopup();
+      // Get the correct year from the current event
+      const currentEvent = eventDataList.find(event => event.description === eventDescription.textContent);
+      const correctYear = currentEvent ? new Date(currentEvent.correctDate).getFullYear().toString() : null;
 
-    // Reset game data
-    totalRound = 1;
-    totalHealth = 250;
-    comboValue = 0;
-    correctQuestions = 0;
-    totalQuestions = 0;
+      // Show the game over popup with the correct year
+      showGameOverPopup(correctYear);
 
-    // Update the score display
-    updateScoreDisplay();
+      // Reset game data
+      totalRound = 1;
+      totalHealth = 250;
+      comboValue = 0;
+      correctQuestions = 0;
+      totalQuestions = 0;
 
-    // Clear the selected year and feedback
-    selectedYear = '';
-    feedback.textContent = '';
+      // Update the score display
+      updateScoreDisplay();
 
-    // Start a new event
-    startNewEvent();
+      // Clear the selected year and feedback
+      selectedYear = '';
+      feedback.textContent = '';
 
-    updateGameState();
+      updateGameState();
 
-    localStorage.setItem('gameState', JSON.stringify(savedGameState));
+      localStorage.setItem('gameState', JSON.stringify(savedGameState));
   }, 0);
 
   hideSubmitClearButtons();
@@ -448,6 +460,7 @@ backspaceButton.addEventListener('click', () => {
 
 // Attach the "Next" button click event listener outside of the submitGuess function
 nextButton.addEventListener('click', () => {
+  // Check if health is above 0
   setLocalStorage();
   console.log('Next button clicked');
   rating = 0;
@@ -455,13 +468,11 @@ nextButton.addEventListener('click', () => {
   startNewEvent(); // Trigger a new event
   feedback.textContent = ''; // Clear the feedback text
   hideActionButtons();
+  if (totalHealth > 0) {
+    totalRound++; // Increment totalRound if health is above 0
+    updateRoundDisplay(totalRound);
+  }
   showSubmitClearButtons();
-
-  // Update the totalRound and comboValue in the savedGameState
-  savedGameState.totalRound = totalRound;
-
-  // Update the game state in local storage
-  localStorage.setItem('gameState', JSON.stringify(savedGameState));
 });
 
 
@@ -477,6 +488,7 @@ function updateYearDisplay() {
 }
 
 function updateGameState() {
+  updateHighScore();
   savedGameState.totalRound = totalRound;
   savedGameState.totalHealth = totalHealth;
   savedGameState.comboValue = comboValue;
@@ -485,7 +497,6 @@ function updateGameState() {
 }
 
 function submitGuess() {
-  setLocalStorage();
   if (!selectedYear || selectedYear.length !== 4) {
     const popup = document.querySelector('.popup-message');
     popup.textContent = 'Date incomplete';
@@ -500,24 +511,25 @@ function submitGuess() {
     setTimeout(() => {
       popup.style.opacity = 0;
     }, 2500);
-
+    setLocalStorage();
     return; // Don't proceed with further logic
   } else {
-
     // Increase correctly value and update display
     totalQuestions++;
-
-    totalRound++;
-    updateRoundDisplay(totalRound);
     
-
+    updateRoundDisplay(totalRound);
     // Show the submit and clear buttons
     showSubmitClearButtons();
 
     const currentEvent = eventDataList.find(event => event.description === eventDescription.textContent);
     const correctYear = currentEvent ? new Date(currentEvent.correctDate).getFullYear().toString() : null;
+
+    if (selectedYear !== correctYear) {
+      playIncorrectSound();
+    }
     
     if (selectedYear === correctYear) {
+      playCorrectSound();
       feedback.innerHTML = `<span style="color: #00FF00; font-size: 30px;">Correct!</span> You guessed the year!`;
 
       // Increase combo value and update display
@@ -525,8 +537,8 @@ function submitGuess() {
 
       // Increase correctly value and update display
       correctQuestions++;
-
-      totalRound++;
+      
+      // Update the round display
       updateRoundDisplay(totalRound);
 
       // Update the Combo display
@@ -551,9 +563,8 @@ function submitGuess() {
         // Hide the health increment element after 4 seconds
         setTimeout(() => {
           healthIncrementElement.style.display = 'none';
-        }, 4000);
+        }, 6000);
       }
-
 
       // Update the Total Health display
       updateTotalHealthDisplay(totalHealth);
@@ -592,20 +603,9 @@ function submitGuess() {
 
       console.log('Health Deduction:', healthDeduction);
 
-      // Log the updated health value
-      console.log('Health:', totalHealth);
-      console.log('Round:', totalRound)
-      console.log('Combo Level:', comboValue)
-    
       if (gameMode !== 'Freeplay') {
-        const healthDeduction = Math.min(Math.abs(yearDifference), maxDamage);
         totalHealth -= healthDeduction;
-      
-        // Log the updated health value
-        console.log('Health:', totalHealth);
-        console.log('Round:', totalRound)
-        console.log('Combo Level:', comboValue)
- 
+
         updateGameState();
         
         updateScoreDisplay(comboValue)
@@ -622,10 +622,9 @@ function submitGuess() {
         // Hide the health deduction element after 4 seconds
         setTimeout(() => {
           healthDeductionElement.style.display = 'none';
-        }, 4000);
+        }, 6000);
       
         if (totalHealth === 0) {
-          totalRound--;
           updateRoundDisplay(totalRound);
           endGame();
           return; // Exit the function early to avoid further logic
@@ -639,7 +638,14 @@ function submitGuess() {
       hideActionButtons();
 
       if (yearDifference <= 1) {
+        feedback.innerHTML = `<span style="color: #FF0000; font-size: 30px;">Oh no!</span> You're only 1 year off! It's <span class="correct-year">${correctYear}</span>`;
+      } else {
+        feedback.innerHTML = `<span style="color: #FF0000; font-size: 30px;">Oops!</span> It's <span class="correct-year">${correctYear}</span>`;
+      }
+
+      if (yearDifference <= 1) {
         feedback.innerHTML = `<span style="color: #FF0000; font-size: 30px;">Oh no!</span> You're only 1 year off! It's <span class="correct-year">${correctYear}.</span>`;
+        playCloseSound();
       } else if (yearDifference <= 5) {
         feedback.innerHTML = `<span style="color: #FF0000; font-size: 30px;">Not bad!</span> Only ${yearDifference} years away. It's <span class="correct-year">${correctYear}.</span>`;
       } else if (yearDifference <= 10) {
@@ -648,6 +654,7 @@ function submitGuess() {
         feedback.innerHTML = `<span style="color: #FF0000; font-size: 30px;">Nope.  </span> You're ${yearDifference} years off. It's <span class="correct-year">${correctYear}.</span>`;
       } else {
         feedback.innerHTML = `<span style="color: #FF0000; font-size: 30px;">Yikes!</span> You're ${yearDifference} years off. It's <span class="correct-year">${correctYear}.</span>`;
+        playFailSound();
       }
     }
 
@@ -692,7 +699,10 @@ clearButton.addEventListener('click', () => {
   resetBoxOutlines(); // Reset box outline colors
 });
 
-submitButton.addEventListener('click', submitGuess);
+submitButton.addEventListener('click', () => {
+  console.log('Submit button clicked'); // Add this line
+  submitGuess();
+});
 
 numberButtons.forEach(img => {
   img.addEventListener('click', () => {
@@ -868,6 +878,19 @@ startGameOverlay.addEventListener('click', (event) => {
   }
 });
 
+const gameOverPopup = document.getElementById('gameOverPopup');
+
+function showGameOverPopup(correctYear) {
+  // Get the correctYearInPopup span element
+  const correctYearInPopup = document.getElementById('correctYearInPopup');
+
+  // Update the content of the span element with the correct year
+  correctYearInPopup.textContent = correctYear;
+
+  gameOverPopup.style.display = 'block';
+}
+
+
 // Modify the startNewGame() function
 function startNewGame() {
   isGameActive = true;
@@ -893,6 +916,38 @@ function startNewGame() {
   savedGameState.gameMode = gameMode;
   localStorage.setItem('gameState', JSON.stringify(savedGameState));
 }
+
+
+// Function to play a correct sound with reduced volume
+function playCorrectSound() {
+  const audioCorrect = new Audio('./assets/sounds/correct.mp3');
+  const audioClap = new Audio('./assets/sounds/clap.mp3');
+  audioCorrect.volume = 0.4; // Set the volume to 50%
+  audioClap.volume = 0.4; // Set the volume to 50%
+  audioClap.play();
+}
+
+// Function to play an incorrect sound with reduced volume
+function playIncorrectSound() {
+  const audio = new Audio('./assets/sounds/incorrect.mp3');
+  audio.volume = 0.3; // Set the volume to 50%
+  audio.play();
+}
+
+// Function to play a close sound with reduced volume
+function playCloseSound() {
+  const audio = new Audio('./assets/sounds/close.mp3');
+  audio.volume = 0.4; // Set the volume to 50%
+  audio.play();
+}
+
+// Function to play a fail sound with reduced volume
+function playFailSound() {
+  const audio = new Audio('./assets/sounds/fail.mp3');
+  audio.volume = 0.2; // Set the volume to 50%
+  audio.play();
+}
+
 
 // Populate the year digits when the page loads
 updateYearDisplay();
