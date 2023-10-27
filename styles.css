@@ -1006,9 +1006,8 @@ button {
 .capital-health-increment {
   opacity: 0;
   font-size: 24px;
-  font-weight: 500;
   position: absolute;
-  left: calc(50% + 37px); /* Fix the elements horizontally at 10px to the right of the center */
+  left: calc(50% + 44px); /* Fix the elements horizontally at 10px to the right of the center */
   bottom: 23%; /* Fix the elements vertically at 10% from the bottom */
   transform: translateX(-50%);
   transition: opacity 0.5s ease-in-out;

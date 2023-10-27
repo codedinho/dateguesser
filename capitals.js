@@ -46,12 +46,16 @@ function startGame() {
 
 function getRandomCountry() {
     // Get a random index from the remaining countries array
-    const remainingCountries = countries.filter(country => !usedCountries.includes(country) && country.capital && country.capital[0]);
+    const remainingCountries = countries.filter(country => 
+        !usedCountries.includes(country) && // Check if the country is not used
+        country.capital && country.capital[0] && // Check if the country has a valid capital
+        country.population && country.population > 500000 // Check if the population is over 500k
+    );
     
-    // Check if there are remaining countries with valid capital data
+    // Check if there are remaining countries with valid capital data and population over 1 million
     if (remainingCountries.length === 0) {
-        // Handle the case where no valid countries with capital data are available
-        console.error('No valid countries with capital data available.');
+        // Handle the case where no valid countries with capital data and population over 1 million are available
+        console.error('No valid countries with capital data and population over 1 million are available.');
         return null;
     }
 
@@ -59,6 +63,7 @@ function getRandomCountry() {
     // Return the country at the random index
     return remainingCountries[randomIndex];
 }
+
 
 
 function normalizeInput(input) {
@@ -123,7 +128,7 @@ function checkGuess() {
         funFactBox.style.display = 'none';
     });
 
-    const defaultHealthIncrement = 35;
+    const defaultHealthIncrement = 50;
     // Calculate combo multiplier (starts at 0.35 and increases by 0.0025 for every correct answer)
     const comboMultiplier = Math.floor(35 * parseInt(document.getElementById("capitalCombo").textContent) / 4) + defaultHealthIncrement;
 
