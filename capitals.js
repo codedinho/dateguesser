@@ -49,7 +49,7 @@ function getRandomCountry() {
     const remainingCountries = countries.filter(country => 
         !usedCountries.includes(country) && // Check if the country is not used
         country.capital && country.capital[0] && // Check if the country has a valid capital
-        country.population && country.population > 500000 // Check if the population is over 500k
+        country.population && country.population > 150000 // Check if the population is over 150k
     );
     
     // Check if there are remaining countries with valid capital data and population over 1 million
