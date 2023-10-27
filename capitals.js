@@ -46,11 +46,20 @@ function startGame() {
 
 function getRandomCountry() {
     // Get a random index from the remaining countries array
-    const remainingCountries = countries.filter(country => !usedCountries.includes(country));
+    const remainingCountries = countries.filter(country => !usedCountries.includes(country) && country.capital && country.capital[0]);
+    
+    // Check if there are remaining countries with valid capital data
+    if (remainingCountries.length === 0) {
+        // Handle the case where no valid countries with capital data are available
+        console.error('No valid countries with capital data available.');
+        return null;
+    }
+
     const randomIndex = Math.floor(Math.random() * remainingCountries.length);
     // Return the country at the random index
     return remainingCountries[randomIndex];
 }
+
 
 function normalizeInput(input) {
     // Normalize input to ignore character accents, remove common prefixes, replace hyphens with spaces, replace abbreviations, and remove "city"
