@@ -12,141 +12,198 @@
 <body>
   <div class="top-bar">
     <div class="logo">
-      <img src="./assets/icons/logo.PNG" alt="DateGuesser">
       <div class="highestScore" id="topScore">Top Score:</div>
     </div>
     <div class="menu">
-      <!-- menu items here -->
-    </div>
+      <div class="tab active" onclick="openTab('Dates')">Dates</div>
+      <div class="tab" onclick="openTab('Capitals')">Capitals</div>
+      <div class="tab" id="tab3" onclick="openTab('Tab3')">Tab3</div>
+    </div>    
     <div class="icons">
       <!-- icons here -->
     </div>
-  </div>  
-  <div class="container">
-    <div class="event">
-      <div class="event-type-buttons-container">
-        <button class="event-type-button active" data-event-type="all">All</button>
-        <button class="event-type-button" data-event-type="history">History</button>
-        <button class="event-type-button" data-event-type="movies">Movies</button>
-        <button class="event-type-button" data-event-type="music">Music</button> 
-        <button class="event-type-button" data-event-type="sports">Sports</button>
-      </div>           
-      <p class="event-description">...</p>
-      <div class="year-input">
-        <div class="year-digit year-digit-1"></div>
-        <div class="year-digit year-digit-2"></div>
-        <div class="year-digit year-digit-3"></div>
-        <div class="year-digit year-digit-4"></div>
-      </div>
-      <!-- Add the pop-up message here -->
-      <div class="popup-message" id="popupMessage">
-        Select a date.
-      </div>
-      <!-- Start Game and Freeplay pop-up window -->
-      <div class="overlay" id="startGameOverlay">
+  </div>
+
+  <div class="tab-content" id="DatesContent">
+    <div class="container">
+      <div class="event">
+        <div class="event-type-buttons-container">
+          <button class="event-type-button active" data-event-type="all">All</button>
+          <button class="event-type-button" data-event-type="history">History</button>
+          <button class="event-type-button" data-event-type="movies">Movies</button>
+          <button class="event-type-button" data-event-type="music">Music</button> 
+          <button class="event-type-button" data-event-type="sports">Sports</button>
+        </div>           
+        <p class="event-description">...</p>
+        <div class="year-input">
+          <div class="year-digit year-digit-1"></div>
+          <div class="year-digit year-digit-2"></div>
+          <div class="year-digit year-digit-3"></div>
+          <div class="year-digit year-digit-4"></div>
+        </div>
+        <!-- Add the pop-up message here -->
+        <div class="popup-message" id="popupMessage">
+          Select a date.
+        </div>
         <!-- Start Game and Freeplay pop-up window -->
-        <div class="container">
+        <div class="overlay" id="startGameOverlay">
           <!-- Start Game and Freeplay pop-up window -->
-          <div class="start-game-popup" id="startGamePopup">
-            <h2>Welcome to DateGuesser!</h2>
-            <p>Choose a game mode:</p>
-            <button class="resume-button" id="resumeButton">RESUME</button>
-            <button class="freeplay-button" id="freeplayButton">FREEPLAY</button>
-            <button class="start-game-button" id="startGameButton">SURVIVAL</button>
+          <div class="container">
+            <!-- Start Game and Freeplay pop-up window -->
+            <div class="start-game-popup" id="startGamePopup">
+              <h2>Welcome to DateGuesser!</h2>
+              <p>Choose a game mode:</p>
+              <button class="resume-button" id="resumeButton">RESUME</button>
+              <button class="freeplay-button" id="freeplayButton">FREEPLAY</button>
+              <button class="start-game-button" id="startGameButton">SURVIVAL</button>
+            </div>
+            
+            <!-- Rules popup -->
+            <div class="rules-popup" id="rulesPopup">
+              <h2>Survival Mode Rules</h2>
+              <p>Survive as long as you can by guessing the correct dates.</p>
+              <p>Guess <span class="green-text">Correct</span> and you'll gain health and combo multipliers. Guess <span class="red-text">incorrectly</span> and you'll lose <span class="red-text">-1 health</span> for every missed year.</p>
+              <p>If you run out of health, it's game over!</p>
+            </div>
+          
+            <!-- Rest of your HTML -->
           </div>
           
-          <!-- Rules popup -->
-          <div class="rules-popup" id="rulesPopup">
-            <h2>Survival Mode Rules</h2>
-            <p>Survive as long as you can by guessing the correct dates.</p>
-            <p>Guess <span class="green-text">Correct</span> and you'll gain health and combo multipliers. Guess <span class="red-text">incorrectly</span> and you'll lose <span class="red-text">-1 health</span> for every missed year.</p>
-            <p>If you run out of health, it's game over!</p>
-          </div>
-        
-          <!-- Rest of your HTML -->
+        </div>      
+        <div class="number-buttons">
+          <!-- Number buttons from 1 to 9 -->
+          <img class="number-button" src="./assets/number-icons/0.png" alt="0" data-number="0">
+          <img class="number-button" src="./assets/number-icons/1.png" alt="1" data-number="1">
+          <img class="number-button" src="./assets/number-icons/2.png" alt="2"data-number="2">
+          <img class="number-button" src="./assets/number-icons/3.png" alt="3"data-number="3">
+          <img class="number-button" src="./assets/number-icons/4.png" alt="4"data-number="4">
+          <img class="number-button" src="./assets/number-icons/5.png" alt="5"data-number="5">
+          <img class="number-button" src="./assets/number-icons/6.png" alt="6"data-number="6">
+          <img class="number-button" src="./assets/number-icons/7.png" alt="7"data-number="7">
+          <img class="number-button" src="./assets/number-icons/8.png" alt="8"data-number="8">
+          <img class="number-button" src="./assets/number-icons/9.png" alt="9"data-number="9">
         </div>
-        
-      </div>      
-      <div class="number-buttons">
-        <!-- Number buttons from 1 to 9 -->
-        <img class="number-button" src="./assets/number-icons/0.png" alt="0" data-number="0">
-        <img class="number-button" src="./assets/number-icons/1.png" alt="1" data-number="1">
-        <img class="number-button" src="./assets/number-icons/2.png" alt="2"data-number="2">
-        <img class="number-button" src="./assets/number-icons/3.png" alt="3"data-number="3">
-        <img class="number-button" src="./assets/number-icons/4.png" alt="4"data-number="4">
-        <img class="number-button" src="./assets/number-icons/5.png" alt="5"data-number="5">
-        <img class="number-button" src="./assets/number-icons/6.png" alt="6"data-number="6">
-        <img class="number-button" src="./assets/number-icons/7.png" alt="7"data-number="7">
-        <img class="number-button" src="./assets/number-icons/8.png" alt="8"data-number="8">
-        <img class="number-button" src="./assets/number-icons/9.png" alt="9"data-number="9">
-      </div>
-      <button id="backspaceButton">
-        <img src="./assets/icons/backspace.png" alt="Backspace" class="button-icon" id="backspaceImage">
-      </button> 
-      <button id="clearButton">
-        <img src="./assets/icons/delete.png" alt="Clear" class="button-icon" id="clearImage">
-      </button>
-      <button id="submitGuess">
-        <img src="./assets/icons/accept.png" alt="Submit" class="button-icon" id="submitImage">
-      </button>      
-      <p class="feedback"></p>
-      <div class="next-event-icon"></div>
-      <div class="button-container">
-        <button class="action-button menu-button" style="display: none;">Menu</button>
-        <button class="action-button restart-game-button" style="display: none;">Restart</button>
-        <button class="action-button next-button" style="display: none;" alt="Next Event">Next</button>
-      </div>
-      <div id="custom-restart" class="custom-restart">
-        <div class="restart-content">
-          <p>Are you sure you want to restart the game?</p>
-          <button id="confirm-restart">Yes</button>
-          <button id="cancel-restart">No</button>
-        </div>
-      </div>      
-      <div class="gamemode-box" id="gamemodeBox">
-        <button class="gamemode-button" id="gamemodeButton">
-          <span class="gamemode-text">Gamemode</span>
+        <button id="backspaceButton">
+          <img src="./assets/icons/backspace.png" alt="Backspace" class="button-icon" id="backspaceImage">
+        </button> 
+        <button id="clearButton">
+          <img src="./assets/icons/delete.png" alt="Clear" class="button-icon" id="clearImage">
         </button>
-      </div>         
-      <div class="score-rating-container">
-        <div class="score-item">
-          <p class="title round">Round</p>
-          <p class="value round-value">1</p>
+        <button id="submitGuess">
+          <img src="./assets/icons/accept.png" alt="Submit" class="button-icon" id="submitImage">
+        </button>      
+        <p class="feedback"></p>
+        <div class="next-event-icon"></div>
+        <div class="button-container">
+          <button class="action-button menu-button" style="display: none;">Menu</button>
+          <button class="action-button restart-game-button" style="display: none;">Restart</button>
+          <button class="action-button next-button" style="display: none;" alt="Next Event">Next</button>
         </div>
-        <div class="score-item rating hidden">
-          <p class="title rating">Rating</p>
-          <p class="value rating-value">0</p>
+        <div id="custom-restart" class="custom-restart">
+          <div class="restart-content">
+            <p>Are you sure you want to restart the game?</p>
+            <button id="confirm-restart">Yes</button>
+            <button id="cancel-restart">No</button>
+          </div>
+        </div>      
+        <div class="gamemode-box" id="gamemodeBox">
+          <button class="gamemode-button" id="gamemodeButton">
+            <span class="gamemode-text">Gamemode</span>
+          </button>
+        </div>         
+        <div class="score-rating-container">
+          <div class="score-item">
+            <p class="title round">Round</p>
+            <p class="value round-value">1</p>
+          </div>
+          <div class="score-item rating hidden">
+            <p class="title rating">Rating</p>
+            <p class="value rating-value">0</p>
+          </div>
+          <div class="score-item">
+            <p class="title total-rating">Health</p>
+            <p class="value total-health-value">250</p>
+            <div class="health-deduction" id="healthDeduction">-10</div>
+            <div class="health-increment" id="healthIncrement">+20</div> <!-- Add the health increment element -->
+          </div>        
+          <div class="score-item">
+            <p class="title combo">Combo</p>
+            <p class="value combo-value">0</p>
+          </div>
         </div>
-        <div class="score-item">
-          <p class="title total-rating">Health</p>
-          <p class="value total-health-value">250</p>
-          <div class="health-deduction" id="healthDeduction">-10</div>
-          <div class="health-increment" id="healthIncrement">+20</div> <!-- Add the health increment element -->
-        </div>        
-        <div class="score-item">
-          <p class="title combo">Combo</p>
-          <p class="value combo-value">0</p>
+        <div id="warningPopup" class="warning-popup">
+          <div class="popup-content">
+            <h2>Warning!</h2>
+            <p>This will end the current game, are you sure you want to change category?</p>
+            <button id="confirmButton">Yes</button>
+            <button id="cancelButton">No</button>
+          </div>
+        </div>      
+        <div id="gameOverPopup" class="popup">
+          <div class="popup-content">
+            <h2>Game Over!</h2>
+            <p>The correct date was <span id="correctYearInPopup" style="color: green; font-size: 24px; font-weight: 550;"></span>.</p>
+            <p>You reached round <span id="endRound" style="color: green; font-size: 24px; font-weight: 550;">1</span>.</p>
+            <p>You answered <span id="correctQuestions">0</span> out of <span id="totalQuestions">0</span> questions correctly.</p>
+            <h3>Select Mode</h3>
+            <button id="playAgainButton">Survival</button>
+            <button id="freeplayAgainButton">Freeplay</button>
+          </div>        
         </div>
+      </div> 
+    </div>      
+  </div>  
+  <div class="tab-content" id="CapitalsContent">
+    <div id="game-container">
+      <h1>Guess the Capital!</h1>
+      <div id="country-name"></div>
+      <input type="text" id="user-guess" autocomplete="off" placeholder="Enter your guess...">
+      <div id="feedback"></div>
+      <div class="button-container">
+        <button id="submitGuessButton" onclick="checkGuess()">Submit</button>
+        <button id="restartButton" style="display: none;">Restart</button>
+        <button id="nextQuestionButton" style="display: none;">Next</button>
       </div>
-      <div id="warningPopup" class="warning-popup">
-        <div class="popup-content">
-          <h2>Warning!</h2>
-          <p>This will end the current game, are you sure you want to change category?</p>
-          <button id="confirmButton">Yes</button>
-          <button id="cancelButton">No</button>
-        </div>
+    </div>
+    <div class="score-rating-container">
+      <div class="score-item">
+        <p class="title round">Round</p>
+        <p class="value round-value" id="capitalRound">1</p>
+      </div>
+      <div class="score-item rating hidden">
+        <p class="title rating">Rating</p>
+        <p class="value rating-value" id="capitalRating">0</p>
+      </div>
+      <div class="score-item">
+        <p class="title total-rating">Health</p>
+        <p class="value total-health-value" id="capitalHealth">250</p>
+        <div class="capital-health-deduction" id="capitalHealthDeduction">1</div>
+        <div class="capital-health-increment" id="capitalHealthIncrement">1</div>
       </div>      
-      <div id="gameOverPopup" class="popup">
-        <div class="popup-content">
+      <div class="score-item">
+        <p class="title combo">Combo</p>
+        <p class="value combo-value" id="capitalCombo">0</p>
+      </div>
+    </div>       
+    <div id="capitalGameOverPopup" class="popup">
+      <div class="popup-content">
           <h2>Game Over!</h2>
-          <p>The correct date was <span id="correctYearInPopup" style="color: green; font-size: 24px; font-weight: 550;"></span>.</p>
-          <p>You reached round <span id="endRound" style="color: green; font-size: 24px; font-weight: 550;">1</span>.</p>
-          <p>You answered <span id="correctQuestions">0</span> out of <span id="totalQuestions">0</span> questions correctly.</p>
-          <h3>Select Mode</h3>
-          <button id="playAgainButton">Survival</button>
-          <button id="freeplayAgainButton">Freeplay</button>
-        </div>        
-      </div>      
+          <p>The correct capital was <span id="correctCapitalInPopup" style="color: green; font-size: 24px; font-weight: 550;"></span>.</p>
+          <p>You reached round <span id="capitalEndRound" style="color: green; font-size: 24px; font-weight: 550;">1</span>.</p>
+          <p>You answered <span id="capitalCorrectQuestions">0</span> out of <span id="capitalTotalQuestions">0</span> questions correctly.</p>
+          <button id="capitalPlayAgainButton">Play Again</button>
+      </div>
+    </div>
+      <div id="funFactBox">
+        <p id="funFactContent"></p>
+      </div> 
+  </div>      
+</div>  
+  </div>    
+    <div class="tab-content" id="AgeContent" hidden>
+      <!-- Age content goes here -->
+    </div>
     <script src="script.js"></script>
+    <script src="capitals.js"></script>
   </body>
 </html>

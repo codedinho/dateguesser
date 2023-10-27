@@ -75,6 +75,8 @@ window.addEventListener('load', () => {
   // Update the score display based on the restored game state
   updateScoreDisplay();
 
+  showOverlayAndPopup();
+
   // Retrieve the highest score from local storage
   const savedHighestScore = localStorage.getItem('highestScore');
   if (savedHighestScore) {
@@ -83,8 +85,7 @@ window.addEventListener('load', () => {
 
   // Display the highest score in the "topScore" div
   const topScoreElement = document.getElementById('topScore');
-  topScoreElement.textContent = `Highest Round: ${highestScore}`;
-  
+  topScoreElement.textContent = `Highest Round: ${highestScore}`; 
 });
 
 // Function to restore values from the saved game state
@@ -779,16 +780,6 @@ gamemodeButton.addEventListener('click', () => {
   updateGameModeText(); // Update the displayed game mode
 });
 
-// Show the overlay and pop-up when the page loads
-showOverlayAndPopup();
-
-// Hide the overlay and pop-up when clicking outside the pop-up or gamemode box
-startGameOverlay.addEventListener('click', (event) => {
-  if (event.target === startGameOverlay || event.target === gamemodeButton) {
-    hideOverlayAndPopup();
-  }
-});
-
 if (!isGameActive) {
 resumeButton.style.display = 'none';
 }
@@ -873,19 +864,10 @@ playAgainButton.addEventListener('click', () => {
   hideOverlayAndPopup();
 });
 
-// Show the overlay and pop-up when the page loads
-showOverlayAndPopup();
-
-// Hide the overlay and pop-up when clicking outside the pop-up
-startGameOverlay.addEventListener('click', (event) => {
-  if (event.target === startGameOverlay) {
-    hideOverlayAndPopup();
-  }
-});
-
 const gameOverPopup = document.getElementById('gameOverPopup');
 
 function showGameOverPopup(correctYear) {
+  playGameOverSound();
   // Get the correctYearInPopup span element
   const correctYearInPopup = document.getElementById('correctYearInPopup');
 
@@ -939,6 +921,12 @@ function playIncorrectSound() {
   audio.play();
 }
 
+function playGameOverSound() {
+  const audioGameOver = new Audio('./assets/sounds/game-over.mp3');
+  audioGameOver.volume = 0.2; // Set the volume to 40%
+  audioGameOver.play();
+}
+
 // Function to play a close sound with reduced volume
 function playCloseSound() {
   const audio = new Audio('./assets/sounds/close.mp3');
@@ -953,8 +941,32 @@ function playFailSound() {
   audio.play();
 }
 
+function openTab(tabName) {
+  var i, tabContent, tabButtons;
+  tabContent = document.getElementsByClassName("tab-content");
+  tabButtons = document.getElementsByClassName("tab");
+
+  // Hide all tab contents and remove active class from all tabs
+  for (i = 0; i < tabContent.length; i++) {
+    tabContent[i].style.display = "none";
+    tabButtons[i].classList.remove("active");
+  }
+
+  // Display the selected tab and add active class to the selected tab
+  document.getElementById(tabName + "Content").style.display = "block";
+  for (i = 0; i < tabButtons.length; i++) {
+    if (tabButtons[i].textContent === tabName) {
+      tabButtons[i].classList.add("active");
+    }
+  }
+}
+
 
 // Populate the year digits when the page loads
 updateYearDisplay();
+
+// DELETE THIS WHEN U WANT TO ENABLE TAB 3
+document.getElementById('tab3').style.display = 'none';
+
 
 
