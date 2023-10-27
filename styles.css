@@ -7,12 +7,27 @@ body {
   margin-top: 50px;
 }
 
+/* Default styles for both PC and mobile */
 .menu {
   display: flex;
-  justify-content: center; /* Center the items horizontally */
-  align-items: center; /* Center the items vertically */
-  width: 100%;
-  margin: 0 auto; /* Center the menu horizontally within the container */
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Media query for PC (min-width: 768px) */
+@media (min-width: 768px) {
+  .menu {
+    width: 96%;
+  }
+}
+
+/* Media query for mobile devices (max-width: 767px) */
+@media (max-width: 767px) {
+  .menu {
+    width: 80%;
+  }
 }
 
 h1 {
@@ -23,7 +38,7 @@ h1 {
 
 .tab {
   cursor: pointer;
-  width: 120px;
+  width: 100px;
   height: 50px;
   display: inline-block;
   transition: background-color 0.3s ease;
@@ -31,7 +46,6 @@ h1 {
   font-size: 18px; /* Adjusted font size */
   text-align: center;
   line-height: 50px;
-  
 }
 
 .tab:hover {
@@ -49,6 +63,7 @@ h1 {
   font-weight: 700;
   font-size: 18px; /* Adjusted font size */
   background-color: #ffffff;
+  width: 100px;
 }
 
 .tab-content {
@@ -973,7 +988,7 @@ button {
 /* Media query for mobile devices */
 @media (max-width: 766px) {
   #funFactBox {
-    bottom: 97.5px; /* Adjust the bottom position for mobile devices */
+    bottom: 100px; /* Adjust the bottom position for mobile devices */
     width: 300px;
   }
 }

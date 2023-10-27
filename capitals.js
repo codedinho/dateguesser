@@ -15,6 +15,16 @@ function startGame() {
     }
 
     // Get a random country from the remaining countries
+    let validCountryFound = false;
+    while (!validCountryFound) {
+        currentCountry = getRandomCountry();
+        // Check if the selected country has a valid capital
+        if (currentCountry.capital && currentCountry.capital[0]) {
+            validCountryFound = true;
+        }
+    }
+
+    // Get a random country from the remaining countries
     currentCountry = getRandomCountry();
     // Log the current country object to inspect its structure
     console.log(currentCountry);
@@ -382,4 +392,3 @@ fetch('https://restcountries.com/v3.1/all')
     console.error('Error fetching data:', error);
   });
 
-  
