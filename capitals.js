@@ -197,7 +197,6 @@ function normalizeInput(input) {
     const normalizedInput = input.trim().toLowerCase().normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "")
         .replace(/'|’/g, " ") // Replace single quotes with spaces
-        .replace(/-/g, " ") // Replace hyphens with spaces
         .replace(/\bcity of\b/g, "")
         .replace(/\bcity\b/g, "") // Remove the word "city"
         .replace(/\bthe\b/g, "") // Remove the word "the"
@@ -211,16 +210,18 @@ function normalizeInput(input) {
 }
 
 function checkGuess() {
-    const userGuess = normalizeInput(document.getElementById('user-guess').value);
+    const userGuess = normalizeInput(document.getElementById('user-guess').value).toLowerCase();
     const feedbackElement = document.getElementById('feedback');
-    const correctCapital = currentCountry.capital[0]; // Get the capital without formatting
+    const correctCapital = currentCountry.capital[0].toLowerCase(); // Get the capital without formatting
+    const unformattedCorrectCapital = currentCountry.capital[0]
+
 
     // Normalize the correct capital for calculations
     const funFactBox = document.getElementById('funFactBox');
 
     // Remove spaces from user input and correct capital before comparison
-    const formattedUserGuess = userGuess.replace(/\s/g, '');
-    const formattedCorrectCapital = normalizeInput(correctCapital);
+    const formattedUserGuess = normalizeInput(userGuess).toLowerCase();
+    const formattedCorrectCapital = normalizeInput(correctCapital).toLowerCase();
 
     // Fetch and display fun fact along with feedback
     fetch(`https://restcountries.com/v3.1/name/${currentCountry.name.common}`)
@@ -281,7 +282,7 @@ function checkGuess() {
         feedbackElement.style.margin = '20px 0'; // Add margin-top and margin-bottom of 20px
         feedbackElement.innerHTML = `
             <span style="color: green; font-size: 28px; font-weight: 600;">Correct! <span style="color: black; font-size: 24px;">It is  
-                <span style="color: green; font-size: 28px; font-weight: 600;">${correctCapital}.</span></span>`;
+                <span style="color: green; font-size: 28px; font-weight: 600;">${unformattedCorrectCapital}.</span></span>`;
 
         // Check if health is zero or below
         if (getHealth() <= 0) {
@@ -307,14 +308,14 @@ function checkGuess() {
         feedbackElement.style.margin = '20px 0'; // Add margin-top and margin-bottom of 20px
         feedbackElement.innerHTML = `
             <span style="color: #ff0000; font-size: 28px; font-weight: 600;">Wrong! <span style="color: black; font-size: 24px;">The capital is
-                <span style="color: green; font-size: 28px; font-weight: 600;">${correctCapital}.
+                <span style="color: green; font-size: 28px; font-weight: 600;">${unformattedCorrectCapital}.
                 </span>
             </span>`;            
 
         // Check if health is zero or below
         if (getHealth() <= 0) {
             // Display game over popup with restart option
-            showCapitalGameOverPopup(correctCapital);
+            showCapitalGameOverPopup(unformattedCorrectCapital);
         }
     }
 
@@ -451,7 +452,7 @@ function updateCapitalScore(round, rating, health, healthDeduction, healthIncrem
 
 const capitalGameOverPopup = document.getElementById('capitalGameOverPopup');
 
-function showCapitalGameOverPopup(correctCapital) {
+function showCapitalGameOverPopup(unformattedCorrectCapital) {
     playGameOverSound();
     // Get the correctCapitalInPopup span element
     const correctCapitalInPopup = document.getElementById('correctCapitalInPopup');
@@ -461,7 +462,7 @@ function showCapitalGameOverPopup(correctCapital) {
 
 
     // Update the content of the span element with the correct capital
-    correctCapitalInPopup.textContent = correctCapital;
+    correctCapitalInPopup.textContent = unformattedCorrectCapital;
     
     // Display correct and total questions count in the popup
     correctQuestions.textContent = capitalCorrectQuestions;
