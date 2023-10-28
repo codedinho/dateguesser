@@ -435,7 +435,7 @@ button {
   /* Styles for the active tab */
   background-color: #000000;
   border-color: #ccc;
-  color: #f0f9ff;
+  color: #ffffff;
   font-weight: 700;
   font-size: 24px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -443,9 +443,9 @@ button {
 
 .event-type-button:hover {
   /* Styles for the active tab */
-  background-color: #e6e6e6;
+  background-color: #000000;
   border-color: #ccc;
-  color: #000000;
+  color: #ffffff;
   font-weight: 700;
   font-size: 24px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -627,6 +627,7 @@ button {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9999;
+  font-size: 22px;
 }
 
 /* Style for the Yes button */
@@ -805,17 +806,13 @@ button {
 /* Capitals */
 
 #game-container {
-  position: fixed;
-  top: 33%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 400px;
   text-align: center;
-  padding: 20px;
-  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.container {
   text-align: center;
-  max-width: 600px; /* Limit the maximum width if necessary */
-  width: 96%;
+  margin-top: 50px;
 }
 
 #country-name {
@@ -1021,3 +1018,81 @@ button {
   color: red;
 }
 
+.difficulty-type-buttons-container {
+  display: flex;
+  justify-content: space-between; /* Distribute buttons evenly */
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.difficulty-type-button {
+  /* Common styles for tab buttons */
+  font-size: 18px;
+  padding: 10px 10px; /* Add horizontal padding for better spacing */
+  border-radius: 5px;
+  font-family: 'Staatliches', cursive;
+  transition: background-color 0.3s, color 0.3s; /* Add transitions for smooth changes */
+  color: #000000;
+  text-align: center;
+  width: 100px;
+  
+}
+
+.difficulty-type-button.active {
+  /* Styles for the active tab */
+  background-color: #000000;
+  border-color: #ffffff;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 24px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.difficulty-type-button:hover {
+  /* Styles for the active tab */
+  background-color: #000000;
+  border-color: #ccc;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 24px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.difficulty-type-buttons-container {
+  display: flex;
+  justify-content: space-between; /* Distribute buttons evenly */
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#warningCapitalPopup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+
+/* Style for the Yes button */
+#confirmCapitalButton, #cancelCapitalButton {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-right: 10px; /* Add some spacing between buttons */
+  font-family: 'Staatliches', cursive;
+  font-size: 18px;
+  border-radius:  10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#confirmCapitalButton:hover, #cancelCapitalButton:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}

@@ -155,7 +155,21 @@
   </div>  
   <div class="tab-content" id="CapitalsContent">
     <div id="game-container">
-      <h1>Guess the Capital!</h1>
+      <div class="popup" id="warningCapitalPopup">
+        <div class="popup-content">
+            <h2>Warning!</h2>
+            <p>Changing difficulty will end the current game. Are you sure?</p>
+            <button id="confirmCapitalButton">Yes</button>
+            <button id="cancelCapitalButton">No</button>
+        </div>
+    </div>
+      <div class="difficulty-type-buttons-container" id="difficultyButtonsContainer">
+        <button class="difficulty-type-button active" data-difficulty="all">All</button>
+        <button class="difficulty-type-button" data-difficulty="easy">Easy</button>
+        <button class="difficulty-type-button" data-difficulty="medium">Medium</button>
+        <button class="difficulty-type-button" data-difficulty="hard">Hard</button>
+        <button class="difficulty-type-button" data-difficulty="insane">Insane</button>
+      </div>      
       <div id="country-name"></div>
       <input type="text" id="user-guess" autocomplete="off" spellcheck="false" autocorrect="off" placeholder="Enter your guess...">
       <div id="feedback"></div>

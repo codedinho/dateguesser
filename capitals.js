@@ -6,21 +6,32 @@ let capitalCorrectQuestions = 0;
 let capitalTotalQuestions = 1; 
 let capitalEndRound = 1; 
 
+// Get all difficulty buttons
+const difficultyButtons = document.querySelectorAll('.difficulty-type-button');
+
+// Sample function to handle updating the selected difficulty
+function updateSelectedDifficulty(difficulty) {
+  // Replace this line with your actual logic to handle the selected difficulty
+  console.log(`Selected Difficulty: ${difficulty}`);
+}
 
 
 function startGame() {
-    // Check if all countries have been used, reset the used countries if so
-    if (usedCountries.length >= countries.length) {
-        usedCountries = [];
-    }
+    funFactBox.style.display = 'none';
 
     // Get a random country from the remaining countries
     let validCountryFound = false;
     while (!validCountryFound) {
         currentCountry = getRandomCountry();
+
         // Check if the selected country has a valid capital
-        if (currentCountry.capital && currentCountry.capital[0]) {
+        if (currentCountry) {
             validCountryFound = true;
+        } else {
+            // Handle the case where no valid countries are available
+            console.error('No valid countries with capital data and population within the selected threshold are available.');
+            // Reset the used countries array to allow all countries to be displayed again
+            usedCountries = [];
         }
     }
 
@@ -43,25 +54,140 @@ function startGame() {
     usedCountries.push(currentCountry);
 }
 
+// Define a global variable to store the selected difficulty population threshold
+let selectedDifficultyPopulationThreshold = {
+    min: 0, // Default minimum population threshold
+    max: Infinity // Default maximum population threshold (Infinity means no upper limit)
+};
+
+const warningCapitalPopup = document.getElementById('warningCapitalPopup');
+const confirmCapitalButton = document.getElementById('confirmCapitalButton');
+const cancelCapitalButton = document.getElementById('cancelCapitalButton');
+
+difficultyButtons.forEach(button => {
+    button.addEventListener('click', async function() {
+        // Show the warning popup when changing difficulty
+        warningCapitalPopup.style.display = 'block';
+
+        // Get the selected difficulty from the clicked button's data attribute
+        const selectedDifficulty = button.getAttribute('data-difficulty');
+
+        async function handleConfirmClick() {
+            // Remove the click event listeners to prevent multiple clicks
+            confirmCapitalButton.removeEventListener('click', handleConfirmClick);
+            cancelCapitalButton.removeEventListener('click', handleCancelClick);
+
+            // Update the selected difficulty population threshold
+            selectedDifficultyPopulationThreshold = getPopulationThreshold(selectedDifficulty);
+
+            // Fetch countries based on the selected difficulty
+            await fetchCountries(selectedDifficulty);
+
+            // Call the necessary functions
+            updateSelectedDifficulty(selectedDifficulty);
+            resetGame();
+
+            // Hide the warning popup when the user confirms
+            warningCapitalPopup.style.display = 'none';
+
+            // Remove the 'active' class from all buttons
+            difficultyButtons.forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Add 'active' class to the clicked button
+            button.classList.add('active');
+        }
+
+        function handleCancelClick() {
+            // Remove the click event listeners to prevent multiple clicks
+            confirmCapitalButton.removeEventListener('click', handleConfirmClick);
+            cancelCapitalButton.removeEventListener('click', handleCancelClick);
+
+            // Hide the warning popup when the user cancels
+            warningCapitalPopup.style.display = 'none';
+        }
+
+        // Add click event listener to the "Yes" button in the warning popup
+        confirmCapitalButton.addEventListener('click', handleConfirmClick);
+
+        // Add click event listener to the "No" button in the warning popup
+        cancelCapitalButton.addEventListener('click', handleCancelClick);
+    });
+});
+
+async function fetchCountries(selectedDifficulty) {
+    try {
+        const response = await fetch('https://restcountries.com/v3.1/all');
+        const data = await response.json();
+
+        // Filter countries based on the selected difficulty and update the countries array
+        countries.length = 0; // Clear the existing countries array
+        countries.push(...data.filter(country => 
+            country.capital && country.capital[0] &&
+            country.population &&
+            country.population >= selectedDifficultyPopulationThreshold.min &&
+            country.population <= selectedDifficultyPopulationThreshold.max
+        ));
+
+        // Check if there are valid countries available
+        if (countries.length === 0) {
+            console.error('No valid countries with capital data and population within the selected threshold are available.');
+        }
+    } catch (error) {
+        // Handle errors here
+        console.error('Error fetching data:', error);
+    }
+}
+
+
+function getPopulationThreshold(difficulty) {
+    switch (difficulty) {
+        case 'easy':
+            return { min: 15000000, max: Infinity }; // Minimum 15 million for easy difficulty, no maximum
+        case 'medium':
+            return { min: 5000000, max: 15000000 }; // Minimum 5 million and maximum 15 million for medium difficulty
+        case 'hard':
+            return { min: 1000000, max: 5000000 }; // Minimum 1 million and maximum 5 million for hard difficulty
+        case 'insane':
+            return { min: 1, max: 1000000 }; // Minimum 1 and maximum 1 million for insane difficulty
+        case 'all':
+        default:
+            return { min: 0, max: Infinity }; // 0 for all countries (no filter), no maximum
+    }
+}
 
 function getRandomCountry() {
+    // Check if all countries have been used, reset the used countries if so
+    if (usedCountries.length >= countries.length) {
+        usedCountries = [];
+    }
+
     // Get a random index from the remaining countries array
     const remainingCountries = countries.filter(country => 
         !usedCountries.includes(country) && // Check if the country is not used
         country.capital && country.capital[0] && // Check if the country has a valid capital
-        country.population && country.population > 150000 // Check if the population is over 150k
+        country.population && 
+        country.population >= selectedDifficultyPopulationThreshold.min &&
+        country.population <= selectedDifficultyPopulationThreshold.max // Check if the population is within the selected threshold
     );
     
-    // Check if there are remaining countries with valid capital data and population over 1 million
+    // Check if there are remaining countries with valid capital data and population within the threshold
     if (remainingCountries.length === 0) {
-        // Handle the case where no valid countries with capital data and population over 1 million are available
-        console.error('No valid countries with capital data and population over 1 million are available.');
+        // Handle the case where no valid countries with capital data and population within the threshold are available
+        console.error('No valid countries with capital data and population within the selected threshold are available.');
         return null;
     }
 
     const randomIndex = Math.floor(Math.random() * remainingCountries.length);
-    // Return the country at the random index
-    return remainingCountries[randomIndex];
+    // Get the country at the random index
+    const selectedCountry = remainingCountries[randomIndex];
+    
+    // Add the current country to the used countries list
+    usedCountries.push(selectedCountry);
+    
+    // Return the selected country
+    return selectedCountry;
 }
 
 
@@ -87,21 +213,24 @@ function normalizeInput(input) {
 function checkGuess() {
     const userGuess = normalizeInput(document.getElementById('user-guess').value);
     const feedbackElement = document.getElementById('feedback');
-    const correctCapital = normalizeInput(currentCountry.capital[0]);
+    const correctCapital = currentCountry.capital[0]; // Get the capital without formatting
+
+    // Normalize the correct capital for calculations
     const funFactBox = document.getElementById('funFactBox');
 
     // Remove spaces from user input and correct capital before comparison
     const formattedUserGuess = userGuess.replace(/\s/g, '');
-    const formattedCorrectCapital = correctCapital.replace(/\s/g, '');
+    const formattedCorrectCapital = normalizeInput(correctCapital);
 
     // Fetch and display fun fact along with feedback
     fetch(`https://restcountries.com/v3.1/name/${currentCountry.name.common}`)
         .then(response => response.json())
         .then(data => {
+            console.log(data); // Log the API response data to inspect its structure
+
             const population = data[0]?.population?.toLocaleString() || 'N/A';
             const funFactContent = document.getElementById('funFactContent');
             funFactContent.textContent = `${currentCountry.name.common} is home to ${population} people.`;
-
         })
         .catch(error => {
             // Handle errors here
@@ -143,6 +272,7 @@ function checkGuess() {
         document.getElementById("capitalCombo").textContent = currentCombo;
         // Show the Fun Fact box
         funFactBox.style.display = 'block';
+        document.getElementById('user-guess').disabled = true;
 
         // Trigger correct sound
         playClapSound();
@@ -162,6 +292,7 @@ function checkGuess() {
     } else {
         // Reset combo to 0 on incorrect answer
         document.getElementById("capitalCombo").textContent = 0;
+        document.getElementById('user-guess').disabled = true;
 
         // Show the Fun Fact box
         funFactBox.style.display = 'block';
@@ -178,7 +309,7 @@ function checkGuess() {
             <span style="color: #ff0000; font-size: 28px; font-weight: 600;">Wrong! <span style="color: black; font-size: 24px;">The capital is
                 <span style="color: green; font-size: 28px; font-weight: 600;">${correctCapital}.
                 </span>
-            </span>`;           
+            </span>`;            
 
         // Check if health is zero or below
         if (getHealth() <= 0) {
@@ -278,6 +409,8 @@ function nextQuestion() {
     // Increment the capital round by 1
     const capitalRoundElement = document.getElementById("capitalRound");
     capitalRoundElement.textContent = parseInt(capitalRoundElement.textContent) + 1;
+    document.getElementById('user-guess').disabled = false;
+
 
     // Clear user input and feedback
     document.getElementById('user-guess').value = '';
@@ -349,6 +482,7 @@ document.getElementById('capitalPlayAgainButton').addEventListener('click', func
 
 function resetGame() {
     // Reset game-related variables
+    document.getElementById('user-guess').disabled = false;
     capitalCorrectQuestions = 0;
     capitalTotalQuestions = 1;
     capitalEndRound = 1;
