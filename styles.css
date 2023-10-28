@@ -1157,6 +1157,7 @@ button {
   justify-content: center;
   align-items: center;
   font-size: 22px;
+  z-index: 999;
 }
 
 /* Style for the Yes button */
