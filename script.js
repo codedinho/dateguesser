@@ -10,7 +10,7 @@ let isGameActive = false;
 let eventDataList = [];
 let previousEventId = null;
 let selectedYear = '';
-let gameMode = 'Freeplay'; // Set the initial game mode to 'Survival'
+let gameMode = 'Survival'; // Set the initial game mode to 'Survival'
 let totalRating = 0;
 let totalQuestions = 0; // Total number of questions in the game
 let currentQuestion = '';
@@ -74,8 +74,6 @@ window.addEventListener('load', () => {
   restoreValuesGameState();
   // Update the score display based on the restored game state
   updateScoreDisplay();
-
-  showOverlayAndPopup();
 
   // Retrieve the highest score from local storage
   const savedHighestScore = localStorage.getItem('highestScore');
@@ -325,7 +323,18 @@ localStorage.setItem('gameState', JSON.stringify(gameStateToSave));
 function updateTotalHealthDisplay(totalHealth) {
   const totalHealthValueElement = document.querySelector('.total-health-value');
   totalHealthValueElement.textContent = totalHealth;
+
+  const startingHealth = 250; // Set the starting health score
+  const twentyPercentOfStartingHealth = 0.2 * startingHealth;
+
+  // Check if total health is less than or equal to 20% of the starting score
+  if (totalHealth <= twentyPercentOfStartingHealth) {
+      totalHealthValueElement.style.color = 'red';
+  } else {
+      totalHealthValueElement.style.color = 'black'; // Set it back to the default color
+  }
 }
+
 
 function showWarningPopup() {
   // Display the popup
@@ -375,7 +384,7 @@ function endGame() {
 
       // Reset game data
       totalRound = 1;
-      totalHealth = 250;
+      totalHealth = 0;
       comboValue = 0;
       correctQuestions = 0;
       totalQuestions = 0;
@@ -948,25 +957,35 @@ function openTab(tabName) {
 
   // Hide all tab contents and remove active class from all tabs
   for (i = 0; i < tabContent.length; i++) {
-    tabContent[i].style.display = "none";
-    tabButtons[i].classList.remove("active");
+      tabContent[i].style.display = "none";
+      tabButtons[i].classList.remove("active");
   }
+
+  // Check if the tabName is "Dates"
+  if (tabName === "Dates") {
+      // Call the function to show overlay and popup
+      document.querySelector(".container").style.display = "block";
+      showOverlayAndPopup();
+  }
+
+  if (tabName === "Capitals") {
+    // Call the function to show overlay and popup
+    showCapitalsOverlayAndPopup();
+}
 
   // Display the selected tab and add active class to the selected tab
   document.getElementById(tabName + "Content").style.display = "block";
   for (i = 0; i < tabButtons.length; i++) {
-    if (tabButtons[i].textContent === tabName) {
-      tabButtons[i].classList.add("active");
-    }
+      if (tabButtons[i].textContent === tabName) {
+          tabButtons[i].classList.add("active");
+      }
   }
 }
 
 
-// Populate the year digits when the page loads
-updateYearDisplay();
-
 // DELETE THIS WHEN U WANT TO ENABLE TAB 3
 document.getElementById('tab3').style.display = 'none';
+document.getElementById('Home').style.display = 'block';
 
 
 

@@ -15,7 +15,8 @@
       <div class="highestScore" id="topScore">Top Score:</div>
     </div>
     <div class="menu">
-      <div class="tab active" onclick="openTab('Dates')">Dates</div>
+      <div class="tab active" onclick="openTab('Home')">Home</div>
+      <div class="tab" onclick="openTab('Dates')">Dates</div>
       <div class="tab" onclick="openTab('Capitals')">Capitals</div>
       <div class="tab" id="tab3" onclick="openTab('Tab3')">Tab3</div>
     </div>    
@@ -25,7 +26,7 @@
   </div>
 
   <div class="tab-content" id="DatesContent">
-    <div class="container">
+    <div class="container" style="display: none;">
       <div class="event">
         <div class="event-type-buttons-container">
           <button class="event-type-button active" data-event-type="all">All</button>
@@ -51,7 +52,7 @@
           <div class="container">
             <!-- Start Game and Freeplay pop-up window -->
             <div class="start-game-popup" id="startGamePopup">
-              <h2>Welcome to DateGuesser!</h2>
+              <h2>Guess The Date!</h2>
               <p>Choose a game mode:</p>
               <button class="resume-button" id="resumeButton">RESUME</button>
               <button class="freeplay-button" id="freeplayButton">FREEPLAY</button>
@@ -141,13 +142,13 @@
         </div>      
         <div id="gameOverPopup" class="popup">
           <div class="popup-content">
-            <h2>Game Over!</h2>
-            <p>The correct date was <span id="correctYearInPopup" style="color: green; font-size: 24px; font-weight: 550;"></span>.</p>
-            <p>You reached round <span id="endRound" style="color: green; font-size: 24px; font-weight: 550;">1</span>.</p>
-            <p>You answered <span id="correctQuestions">0</span> out of <span id="totalQuestions">0</span> questions correctly.</p>
-            <h3>Select Mode</h3>
-            <button id="playAgainButton">Survival</button>
-            <button id="freeplayAgainButton">Freeplay</button>
+              <img src="./assets/icons/game-over.png" alt="Game Over Image" class="game-over-image">
+              <p>The correct date was <span id="correctYearInPopup" style="color: green; font-size: 24px; font-weight: 550;"></span>.</p>
+              <p>You reached round <span id="endRound" style="color: green; font-size: 24px; font-weight: 550;">1</span>.</p>
+              <p>You answered <span id="correctQuestions">0</span> out of <span id="totalQuestions">0</span> questions correctly.</p>
+              <h3>Select Mode</h3>
+              <button id="playAgainButton">Survival</button>
+              <button id="freeplayAgainButton">Freeplay</button>
           </div>        
         </div>
       </div> 
@@ -201,7 +202,7 @@
     </div>       
     <div id="capitalGameOverPopup" class="popup">
       <div class="popup-content">
-          <h2>Game Over!</h2>
+          <img src="./assets/icons/game-over.png" alt="Game Over Image" class="game-over-image">
           <p>The correct capital was <span id="correctCapitalInPopup" style="color: green; font-size: 24px; font-weight: 550;"></span>.</p>
           <p>You reached round <span id="capitalEndRound" style="color: green; font-size: 24px; font-weight: 550;">1</span>.</p>
           <p>You answered <span id="capitalCorrectQuestions">0</span> out of <span id="capitalTotalQuestions">0</span> questions correctly.</p>
@@ -214,9 +215,28 @@
   </div>      
 </div>  
   </div>    
-    <div class="tab-content" id="AgeContent" hidden>
+    <div class="tab-content" id="AgeContent">
       <!-- Age content goes here -->
     </div>
+  </div>
+    <div class="tab-content" id="HomeContent">
+      <div class="home-container" id="HomeContainer">
+          <img src="./assets/icons/info-icon.png" alt="Game Over Image" class="game-over-image">
+          <h2>Welcome to Survival Guesser</h2>
+          <p>The Home of Historical & Geographical Knowledge Champions.</p>
+          <h4>Select Gamemode:</h4>
+          <div class="icon-container">
+              <div class="icon-button-wrapper" onclick="openTab('Dates')">
+                  <img src="./assets/icons/dates-tab-icon.png" alt="Dates Icon" class="icon-button">
+                  <div class="button-text">Guess The Date</div>
+              </div>
+              <div class="icon-button-wrapper" onclick="openTab('Capitals')">
+                  <img src="./assets/icons/capitals-tab-icon.png" alt="Capitals Icon" class="icon-button">
+                  <div class="button-text">Guess The Capital</div>
+              </div>
+          </div>
+      </div>
+  </div>
     <script src="script.js"></script>
     <script src="capitals.js"></script>
   </body>

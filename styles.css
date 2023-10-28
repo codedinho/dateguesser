@@ -1,3 +1,76 @@
+
+/* Home Screen */
+
+.home-container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.home-container p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #252525;
+}
+
+.home-container h2 {
+  text-align: center;
+  font-size: 38px;
+}
+
+.home-container h3 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.home-container h4 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.icon-button {
+  /* Set initial styles for the icon button */
+  width: 75px;
+  height: 75x;
+  margin: 10px;
+  margin-right: 25px;
+  margin-left: 25px;
+  border-radius: 50%; /* Make the button circular */
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease; /* Add smooth transition for hover effect */
+}
+
+.icon-button:hover {
+  cursor: pointer;
+  width: 90px; /* Increase width on hover */
+  height: 90px; /* Increase height on hover */
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 20px; /* Adjust margin-top as needed */
+}
+
+.icon-button-wrapper {
+  text-align: center;
+  margin: 0 20px; /* Adjust horizontal margin as needed */
+}
+
+.button-text {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #252525;
+}
+
+
+
+/* Dates Game */
+
 body {
   font-family: 'Staatliches', cursive;
 }
@@ -75,6 +148,10 @@ h1 {
 }
 
 #DatesContent {
+  display: block;
+}
+
+#HomeContent {
   display: block;
 }
 
@@ -617,6 +694,13 @@ button {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9999;
 }
+
+/* CSS styles */
+.game-over-image {
+  width: 100px; /* Set the width to your desired size */
+  height: 100px; /* Set the height to your desired size */
+}
+
 
 #warningPopup {
   display: none;

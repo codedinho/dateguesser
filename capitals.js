@@ -6,6 +6,7 @@ let capitalCorrectQuestions = 0;
 let capitalTotalQuestions = 1; 
 let capitalEndRound = 1; 
 
+
 // Get all difficulty buttons
 const difficultyButtons = document.querySelectorAll('.difficulty-type-button');
 
@@ -14,7 +15,6 @@ function updateSelectedDifficulty(difficulty) {
   // Replace this line with your actual logic to handle the selected difficulty
   console.log(`Selected Difficulty: ${difficulty}`);
 }
-
 
 function startGame() {
     funFactBox.style.display = 'none';
@@ -144,9 +144,9 @@ async function fetchCountries(selectedDifficulty) {
 function getPopulationThreshold(difficulty) {
     switch (difficulty) {
         case 'easy':
-            return { min: 15000000, max: Infinity }; // Minimum 15 million for easy difficulty, no maximum
+            return { min: 20000000, max: Infinity }; // Minimum 15 million for easy difficulty, no maximum
         case 'medium':
-            return { min: 5000000, max: 15000000 }; // Minimum 5 million and maximum 15 million for medium difficulty
+            return { min: 5000000, max: 20000000 }; // Minimum 5 million and maximum 15 million for medium difficulty
         case 'hard':
             return { min: 1000000, max: 5000000 }; // Minimum 1 million and maximum 5 million for hard difficulty
         case 'insane':
@@ -371,7 +371,22 @@ function updateHealth(value) {
     if (getHealth() < 0) {
         healthElement.textContent = 0;
     }
+
+    // Check if health is exactly 0 and change color to black
+    if (getHealth() === 0) {
+        healthElement.style.color = 'red';
+    } else {
+        // Check if health is at 10% of its starting score and change color to red
+        const startingHealth = 250; // Change this value based on your starting health score
+        if (getHealth() <= 0.2 * startingHealth) {
+            healthElement.style.color = 'red';
+        } else {
+            healthElement.style.color = 'black'; // Set it back to the default color
+        }
+    }
 }
+
+
 
 
 function getHealth() {
@@ -480,6 +495,13 @@ document.getElementById('capitalPlayAgainButton').addEventListener('click', func
     resetGame();
 });
 
+function resetHealthElementColor() {
+    // Reset UI elements
+    healthElement = document.getElementById("capitalHealth"); // Assign healthElement here
+    healthElement.textContent = 250;
+    healthElement.style.color = 'black'; // This should work now
+}
+
 
 function resetGame() {
     // Reset game-related variables
@@ -498,6 +520,8 @@ function resetGame() {
     document.getElementById("nextQuestionButton").style.display = 'none';
     document.getElementById("restartButton").style.display = 'none';
     document.getElementById("submitGuessButton").style.display = 'block';
+
+    resetHealthElementColor();
 
     // Start a new game
     startGame();
@@ -519,6 +543,10 @@ function playClapSound() {
     const audioClap = new Audio('./assets/sounds/clap.mp3');
     audioClap.volume = 0.4; // Set the volume to 40%
     audioClap.play();
+}
+
+function showCapitalsOverlayAndPopup() {
+    return;
 }
 
 // Add an event listener to the "Next Question" button
