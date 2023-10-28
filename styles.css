@@ -78,6 +78,7 @@ body {
 .container {
   text-align: center;
   margin-top: 50px;
+  margin-bottom: 150px;
 }
 
 /* Default styles for both PC and mobile */
@@ -441,7 +442,6 @@ button {
   height: 55px;
   vertical-align: middle;
   transition: transform 0.2s ease-in-out;
-  margin-bottom: 10px;
 }
 
 .button-icon:hover {
