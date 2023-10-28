@@ -575,7 +575,6 @@ button {
   z-index: 1;
 }
 
-
 /* Media query for screens with a width of 600px or wider */
 @media (min-width: 600px) {
   .score-rating-container {
@@ -602,7 +601,6 @@ button {
 .score-rating-container .round-value {
   font-size: 28px;
   font-weight: 700;
-  
 }
 
 #resume-button:hover {
