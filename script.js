@@ -337,7 +337,6 @@ function updateTotalHealthDisplay(totalHealth) {
 
 
 function showWarningPopup() {
-  // Display the popup
   warningPopup.style.display = 'block';
 }
 
@@ -808,6 +807,8 @@ resumeButton.addEventListener('click', () => {
 
 // Function to show the overlay and pop-up
 function showOverlayAndPopup() {
+  var menu = document.querySelector('.mobile-menu');
+  menu.classList.remove('active');
   startGameOverlay.style.visibility = 'visible';
   startGameOverlay.style.opacity = 1;
 }
@@ -954,24 +955,38 @@ function openTab(tabName) {
   var i, tabContent, tabButtons;
   tabContent = document.getElementsByClassName("tab-content");
   tabButtons = document.getElementsByClassName("tab");
+  // Close the mobile menu by removing the 'active' class
+  var menu = document.querySelector('.mobile-menu');
+  menu.classList.remove('active');
 
   // Hide all tab contents and remove active class from all tabs
   for (i = 0; i < tabContent.length; i++) {
-      tabContent[i].style.display = "none";
-      tabButtons[i].classList.remove("active");
+    tabContent[i].style.display = "none";
+    tabButtons[i].classList.remove("active");
   }
 
   // Check if the tabName is "Dates"
   if (tabName === "Dates") {
-      // Call the function to show overlay and popup
-      document.querySelector(".container").style.display = "block";
-      showOverlayAndPopup();
+    // Call the function to show overlay and popup
+    document.querySelector(".container").style.display = "block";
+    showOverlayAndPopup();
   }
 
   if (tabName === "Capitals") {
     // Call the function to show overlay and popup
     showCapitalsOverlayAndPopup();
-}
+  }
+
+  // Show the selected tab and add active class to the selected tab
+  var selectedTabContent = document.getElementById(tabName + "Content");
+  selectedTabContent.style.display = "block";
+
+  // Show Leaderboard and Account headers when their respective tabs are clicked
+  if (tabName === "Leaderboard") {
+    document.getElementById("LeaderboardContent").style.display = "block";
+  } else if (tabName === "Account") {
+    document.getElementById("AccountContent").style.display = "block";
+  }
 
   // Display the selected tab and add active class to the selected tab
   document.getElementById(tabName + "Content").style.display = "block";
@@ -981,11 +996,5 @@ function openTab(tabName) {
       }
   }
 }
-
-
-// DELETE THIS WHEN U WANT TO ENABLE TAB 3
-document.getElementById('tab3').style.display = 'none';
-document.getElementById('Home').style.display = 'block';
-
 
 

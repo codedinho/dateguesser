@@ -14,12 +14,64 @@
     <div class="logo">
       <div class="highestScore" id="topScore">Top Score:</div>
     </div>
-    <div class="menu">
-      <div class="tab active" onclick="openTab('Home')">Home</div>
-      <div class="tab" onclick="openTab('Dates')">Dates</div>
-      <div class="tab" onclick="openTab('Capitals')">Capitals</div>
-      <div class="tab" id="tab3" onclick="openTab('Tab3')">Tab3</div>
-    </div>    
+    <!-- Desktop Menu (visible on larger screens) -->
+      <!-- Desktop Menu (visible on larger screens) -->
+      <div class="menu">
+        <div class="tab active" onclick="openTab('Home')">Home</div>
+        <div class="tab" onclick="openTab('Dates')">Dates</div>
+        <div class="tab" onclick="openTab('Capitals')">Capitals</div>
+        <div class="tab" onclick="openTab('Leaderboard')">Leaderboard</div>
+        <div class="tab" onclick="openTab('Account')">Account</div>
+      </div>
+      
+      <!-- Mobile Menu (hidden by default, visible only on mobile devices) -->
+      <div class="mobile-menu">
+        <div class="dropdown-icon" onclick="toggleMobileMenu()">&#9776;</div>
+        <!-- Dropdown Menu -->
+        <div class="dropdown-menu">
+          <div class="menu-item1" onclick="openTab('Home')">Home</div>
+          <div class="menu-item" onclick="openTab('Dates')">Play Dates</div>
+          <div class="menu-item" onclick="openTab('Capitals')">Play Capitals</div>
+          <div class="menu-item" onclick="openTab('Account')">Account</div>
+          <div class="menu-item" onclick="openTab('Leaderboard')">Leaderboard</div>
+          <div class="buttons-container">
+            <button id="openLoginPopupBtn" class="sidebarButton green-button" onclick="showLoginContainer()">Sign In</button>
+            <button id="openSignupPopupBtn" class="sidebarButton dark-grey-button" onclick="showSignupContainer()">Sign Up</button>            
+        </div>        
+      </div> 
+      <div class="signupContainer" id="signupContainer">
+        <h2>Sign Up</h2>
+          <form onsubmit="signup(event)">
+            <div>
+              <input type="text" name="" id="firstname" placeholder="firstname">
+            </div>
+            <div>
+              <input type="text" name="" id="lastname" placeholder="lastname">
+            </div>
+            <div>
+              <input type="email" name="" id="email" placeholder="email">
+            </div>
+            <div>
+              <input type="password" name="" id="password" placeholder="password">
+            </div>
+            <button id="sinupinp" value="Sign Up" class="button">Sign Up</button>
+            <button class="close-black" onclick="closeSignupContainer()">&times;</button>
+          </form>
+        </div>
+      </div>   
+      <div class="signinContainer" id="signinContainer">
+        <h2>Login</h2>
+        <form action="#" onsubmit="login(event)">
+            <div>
+                <input type="email" name="" placeholder="email" id="Email">
+            </div>
+            <div>
+                <input type="password" name="" placeholder="password" id="Password">
+            </div>
+            <button id="signIn" value="Sign In" class="button">Sign In</button>
+            <button class="close-black" onclick="closeLoginContainer()">&times;</button>
+        </form>
+    </div>            
     <div class="icons">
       <!-- icons here -->
     </div>
@@ -215,14 +267,17 @@
   </div>      
 </div>  
   </div>    
-    <div class="tab-content" id="AgeContent">
-      <!-- Age content goes here -->
+    <div class="tab-content" id="LeaderboardContent">
+      <h1>Leaderboard Page</h1>
+    </div>
+    <div class="tab-content" id="AccountContent">
+      <h1>Account Page</h1>
     </div>
   </div>
     <div class="tab-content" id="HomeContent">
       <div class="home-container" id="HomeContainer">
-          <img src="./assets/icons/info-icon.png" alt="Game Over Image" class="game-over-image">
-          <h2>Welcome to Guess Masters!</h2>
+          <img src="./assets/icons/info-icon.png" alt="GameLogo" class="game-logo">
+          <h2>Welcome To Guess Masters</h2>
           <p>Have you got what it takes to survive?</p>
           <h4>Select Gamemode:</h4>
           <div class="icon-container">
@@ -237,6 +292,10 @@
           </div>
       </div>
   </div>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js"></script>
+    <script src="firebase.js" type="module"></script>
+    <script src="login.js" type="module"></script>
+    <script src="accounts.js"></script>
     <script src="script.js"></script>
     <script src="capitals.js"></script>
   </body>

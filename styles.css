@@ -75,11 +75,7 @@ body {
   font-family: 'Staatliches', cursive;
 }
 
-.container {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 150px;
-}
+
 
 /* Default styles for both PC and mobile */
 .menu {
@@ -90,20 +86,6 @@ body {
   margin: 0 auto;
 }
 
-/* Media query for PC (min-width: 768px) */
-@media (min-width: 768px) {
-  .menu {
-    width: 96%;
-  }
-}
-
-/* Media query for mobile devices (max-width: 767px) */
-@media (max-width: 767px) {
-  .menu {
-    width: 80%;
-  }
-}
-
 h1 {
   font-family: 'Staatliches', cursive;
   margin-top: 23px;
@@ -112,7 +94,7 @@ h1 {
 
 .tab {
   cursor: pointer;
-  width: 100px;
+  width: 170px;
   height: 50px;
   display: inline-block;
   transition: background-color 0.3s ease;
@@ -120,6 +102,7 @@ h1 {
   font-size: 18px; /* Adjusted font size */
   text-align: center;
   line-height: 50px;
+  background-color: rgb(0, 0, 0);
 }
 
 .tab:hover {
@@ -137,7 +120,7 @@ h1 {
   font-weight: 700;
   font-size: 18px; /* Adjusted font size */
   background-color: #ffffff;
-  width: 100px;
+  width: 170px;
 }
 
 .tab-content {
@@ -149,6 +132,18 @@ h1 {
 }
 
 #DatesContent {
+  display: block;
+}
+
+#LeaderboardContent {
+  display: block;
+}
+
+#HomeContent {
+  display: block;
+}
+
+#AccountContent {
   display: block;
 }
 
@@ -168,7 +163,7 @@ h1 {
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   display: flex;
-  margin: 15px auto; /* Center horizontally */
+  margin: 8px auto; /* Center horizontally */
   padding: 20px;
   max-width: 600px; /* Limit the maximum width if necessary */
   border-radius: 10px;
@@ -180,10 +175,19 @@ h1 {
 
 .feedback {
   font-weight: bold;
-  margin-top: 0px;
+  margin-top: 15px;
   font-weight: 800;
   position: relative;
 }
+
+/* Media query for larger screens (desktop devices) */
+@media (min-width: 768px) {
+  .feedback {
+      margin-top: 40px; /* Increase margin on desktop devices */
+      margin-bottom: 40px;
+  }
+}
+
 
 button {
   margin-top: 15px;
@@ -218,13 +222,13 @@ button {
   font-size: 18px;
   font-weight: 400;
   text-align: center;
-  margin: -5px;
-  margin-top: 15px;
+  margin-top: -15px;
+  margin-left: -5px;
+  margin-right: -5px;
   width: 110px;
   font-family: 'Staatliches', cursive;
   transition: background-color 0.3s, color 0.3s; /* Add transition for smooth color change */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
 }
 
 .menu-button:hover,
@@ -240,7 +244,7 @@ button {
   height: 25px;
   background-color: rgba(0, 0, 0, 1);
   position: fixed;
-  bottom: 85px; /* Adjust the distance from the bottom as needed */
+  bottom: 75px; /* Adjust the distance from the bottom as needed */
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
@@ -343,8 +347,8 @@ button {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   height: 90px;
 }
 
@@ -382,9 +386,9 @@ button {
 }
 
 .number-button {
-  padding: 5px;
-  margin: 5px;
-  margin-bottom: 15px;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-top: 12px;
   border-radius: 5px;
   font-size: 18px;
   cursor: pointer;
@@ -394,10 +398,20 @@ button {
   font-weight: 550;
 }
 
+/* Media query for smaller screens (mobile devices) */
+@media (max-width: 767px) {
+  .number-button {
+      width: 35px; /* Set font size to 30 pixels on mobile devices */
+      height: 35px; /* Set font size to 30 pixels on mobile devices */
+      margin-left: 16px;
+      margin-right: 16px;
+      margin-top: 16px;
+  }
+}
+
 .number-button:hover {
   transform: scale(1.25); /* Increase size by 25% (10px) on hover */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
 }
 
 
@@ -442,6 +456,7 @@ button {
   height: 55px;
   vertical-align: middle;
   transition: transform 0.2s ease-in-out;
+  margin-top: 10px
 }
 
 .button-icon:hover {
@@ -489,6 +504,10 @@ button {
   margin-right: 10px; /* Reduce the margin */
 }
 
+.game-over-image {
+  width: 75px;
+}
+
 .icons {
   display: flex;
   align-items: center;
@@ -505,7 +524,6 @@ button {
   color: #000000;
   text-align: center;
   width: 100px;
-  
 }
 
 .event-type-button.active {
@@ -565,7 +583,7 @@ button {
   flex-direction: row; /* Vertically align elements */
   align-items: center; /* Horizontally center elements */
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
+  padding: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   max-width: 600px;
   width: 92%; /* Default to 100% width */
@@ -575,10 +593,12 @@ button {
   z-index: 1;
 }
 
+
 /* Media query for screens with a width of 600px or wider */
 @media (min-width: 600px) {
   .score-rating-container {
     width: 600px; /* Set width to 600px on wider screens */
+    padding: 20px;    
     left: calc(50%); /* Center horizontally with 600px width */
   }
 }
@@ -694,7 +714,7 @@ button {
 }
 
 /* CSS styles */
-.game-over-image {
+.game-logo {
   width: 100px; /* Set the width to your desired size */
   height: 100px; /* Set the height to your desired size */
 }
@@ -894,7 +914,8 @@ button {
 
 .container {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 43px;
+  margin-bottom: 250px;
 }
 
 #country-name {
@@ -914,7 +935,7 @@ button {
 #user-guess {
   padding: 15px 0px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   border: none;
   background-color: transparent; /* Remove background color */
   color: #000000;
@@ -937,7 +958,7 @@ button {
   border-bottom: 3px solid #000000; /* Maintain the underline effect when input is focused */
 }
 
-#submitGuessButton, #nextQuestionButton, #restartButton {
+#nextQuestionButton, #restartButton {
   background-color: #000000;
   color: #fff;
   border: none;
@@ -947,11 +968,28 @@ button {
   font-size: 16px;
   transition: background-color 0.3s;
   font-family: 'Staatliches', cursive;
-  margin-top: 40px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   width: 110px;
   font-size: 18px;
   font-weight: 400;
+  margin-top: 0px;
+}
+
+#submitGuessButton {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  font-family: 'Staatliches', cursive;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 110px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 15px;
 }
 
 #submitGuessButton:hover, #nextQuestionButton:hover, #restartButton:hover {
@@ -1067,7 +1105,7 @@ button {
 /* Media query for mobile devices */
 @media (max-width: 766px) {
   #funFactBox {
-    bottom: 100px; /* Adjust the bottom position for mobile devices */
+    bottom: 90px; /* Adjust the bottom position for mobile devices */
     width: 300px;
   }
 }
@@ -1117,7 +1155,8 @@ button {
   color: #000000;
   text-align: center;
   width: 100px;
-  
+  margin-top: 8px;
+  margin-bottom: -7px;
 }
 
 .difficulty-type-button.active {
@@ -1179,3 +1218,341 @@ button {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
 }
+
+/* Default styles for both PC and mobile */
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CSS for mobile menu (visible only on mobile devices) */
+.mobile-menu {
+  max-width: 200px; /* Hidden by default */
+}
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+  .menu {
+      display: none; /* Hide desktop menu on mobile devices */
+  }
+
+  .mobile-menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      /* Add your mobile menu styles for visibility */
+  }
+}
+
+.dropdown-icon {  
+  cursor: pointer;
+  font-size: 36px;
+  transition: transform 0.3s;
+  z-index: 10000;
+  position: fixed; /* Position the element */
+  left: 10px; /* Adjust the left property as needed */
+  top: 0px; /* Adjust the top property as needed */
+}
+
+
+.dropdown-icon.active {
+  transform: scale(1.5); /* Increase the size of the icon when active */
+}
+
+/* Default styles for both PC and mobile */
+.dropdown-menu {
+  position: fixed;
+  top: 0;
+  left: -45%; /* Initially position the menu off-screen to the left */
+  width: 45%; /* Set width to 45% of the viewport */
+  height: 100vh;
+  background-color: #000000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  transition: left 0.75s ease; /* Apply transition effect on left property */
+}
+
+/* Media query for screens with a minimum width of 769px (typical for desktop devices) */
+@media (min-width: 769px) {
+  .dropdown-menu {
+    width: 10%; /* Set width to 20% of the viewport on PC */
+    left: -25%; /* Initially position the menu off-screen to the left */
+  }
+}
+
+
+.mobile-menu.active .dropdown-menu {
+  left: 0; /* Move the menu to the left edge when active class is added */
+  transition: left 0.75s ease; /* Slow down the transition effect to 0.5 seconds */
+}
+
+.menu-item1 {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: #000000;
+  margin-top: 65px;
+}
+
+.menu-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: #000000;
+  margin-top: 10px;
+}
+
+.menu-item:hover, .menu-item1:hover {
+  background-color: #cacaca;
+  color: black;
+}
+
+/* Show the dropdown menu when .active class is added */
+.mobile-menu.active .dropdown-menu {
+  display: block;
+}
+
+/* CSS for the container that holds the auth buttons */
+.button-container {
+  position: relative;
+  margin-top: 20px;
+  /* Add any other styles for the container if needed */
+}
+
+/* CSS for the auth buttons */
+.login-button {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 80%; /* Make the buttons 100% width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  font-family: 'Staatliches', cursive;
+  font-size: 18px;
+  margin-top: 200px;
+}
+
+/* Style the buttons on hover */
+.login-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* CSS for the auth buttons */
+.signup-button {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 80%; /* Make the buttons 100% width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  font-family: 'Staatliches', cursive;
+  font-size: 18px;
+}
+
+/* Style the buttons on hover */
+.signup-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Media query for screens with a minimum width of 768px (typical for desktop devices) */
+@media (min-width: 768px) {
+  /* Center the buttons horizontally and move them down by 20px */
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* CSS for the login and signup popups */
+#loginPopup,
+#signupPopup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 75%;
+  max-width: 400px;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.modal-content {
+  background-color: rgba(2, 2, 2, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative; /* Add this line */
+}
+
+.close {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.close-black {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background-color: rgb(0, 0, 0, 0);
+}
+
+.close-black:hover {
+  background-color: #555555;
+}
+
+
+/* Additional styles for the form inside the popups */
+form {
+  margin-top: 20px;
+  width: 100%;
+}
+
+input[id="email"],
+input[id="password"],
+input[id="firstname"],
+input[id="lastname"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.signupContainer,
+.signinContainer {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(24, 24, 24, 0.9);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 9999;
+    width: 80%; /* Set the width as per your design */
+    max-width: 400px; /* Set the maximum width as per your design */
+}
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.sidebarButton {
+  padding: 10px 20px;
+  width: 130px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 550;
+}
+
+.dark-grey-button {
+  background-color: #242424; /* Dark grey background color */
+  color: #ffffff; /* White text color */
+}
+
+.dark-grey-button:hover {
+  background-color: #555555; /* Dark grey background color on hover */
+}
+
+.green-button {
+  background-color: #4CAF50; /* Green background color */
+  color: white; /* White text color */
+}
+
+.green-button:hover {
+  background-color: #45a049; /* Darker green background color on hover */
+}
+
+.buttons-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 150px; /* Adjust the bottom margin as needed */
+}
+
+/* User Stats */
+
+#LeaderboardContent,
+#AccountContent {
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+

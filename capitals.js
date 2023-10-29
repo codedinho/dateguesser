@@ -66,6 +66,7 @@ const cancelCapitalButton = document.getElementById('cancelCapitalButton');
 
 difficultyButtons.forEach(button => {
     button.addEventListener('click', async function() {
+
         // Show the warning popup when changing difficulty
         warningCapitalPopup.style.display = 'block';
 
@@ -525,6 +526,13 @@ function resetGame() {
 
     // Start a new game
     startGame();
+}
+
+function toggleMobileMenu() {
+    var menu = document.querySelector('.mobile-menu');
+    menu.classList.toggle('active');
+    closeLoginContainer();
+    closeSignupContainer();
 }
 
 function playIncorrectSound() {
